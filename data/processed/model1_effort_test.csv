@@ -1,0 +1,501 @@
+task_id,title,task_type,story_points,dependency_count,historical_median_hours,assignee_user_ratio,actual_hours
+task-ml1-02000,Investigate memory leak in WebSocket notification server (variant #2000),bug,8.0,3,30.3,0.97,32.9
+task-ml1-02001,Set up automated end-to-end Cypress tests for auth (variant #2001),test,3.0,1,10.1,1.18,10.6
+task-ml1-02002,Implement batch export of sprint metrics to CSV/PDF (variant #2002),feature,5.0,3,26.6,0.95,38.8
+task-ml1-02003,Refactor user profile estimation ratio calculator (variant #2003),infra,1.0,1,6.4,1.04,6.2
+task-ml1-02004,Build early risk warning indicator with SHAP badge (variant #2004),infra,5.0,3,27.6,1.3,49.8
+task-ml1-02005,Write release request pre-fill prompt template (variant #2005),feature,5.0,0,29.6,1.06,30.0
+task-ml1-02006,Optimize slow MongoDB aggregate pipeline on time entries (variant #2006),refactor,5.0,2,24.2,1.16,30.0
+task-ml1-02007,Configure Docker multi-stage build for minimal image size (variant #2007),infra,3.0,2,19.1,0.7,17.5
+task-ml1-02008,Design schema for multi-tenant project roles (variant #2008),feature,5.0,2,25.2,0.98,30.9
+task-ml1-02009,Refactor user profile estimation ratio calculator (variant #2009),refactor,5.0,0,24.7,1.31,45.9
+task-ml1-02010,Fix NullPointer when task assignee is unassigned (variant #2010),bug,2.0,0,8.5,1.25,7.3
+task-ml1-02011,Investigate memory leak in WebSocket notification server (variant #2011),bug,8.0,5,28.8,0.95,33.9
+task-ml1-02012,Build early risk warning indicator with SHAP badge (variant #2012),feature,2.0,1,11.1,0.9,8.4
+task-ml1-02013,Implement batch export of sprint metrics to CSV/PDF (variant #2013),feature,5.0,2,26.6,1.05,24.8
+task-ml1-02014,Optimize slow MongoDB aggregate pipeline on time entries (variant #2014),refactor,5.0,1,20.8,1.11,29.2
+task-ml1-02015,Add rate limiting middleware with Redis token bucket (variant #2015),bug,5.0,0,21.0,1.35,23.9
+task-ml1-02016,Document API endpoints with OpenAPI Swagger schemas (variant #2016),docs,2.0,1,5.4,1.01,5.8
+task-ml1-02017,Design schema for multi-tenant project roles (variant #2017),feature,5.0,1,26.0,1.11,34.1
+task-ml1-02018,Migrate Kafka consumer group to async event dispatcher (variant #2018),refactor,8.0,2,34.1,1.04,37.4
+task-ml1-02019,Update dependency vulnerabilities in package.json (variant #2019),infra,2.0,1,12.7,0.83,10.3
+task-ml1-02020,Implement batch export of sprint metrics to CSV/PDF (variant #2020),feature,5.0,1,25.5,0.89,24.3
+task-ml1-02021,Implement batch export of sprint metrics to CSV/PDF (variant #2021),feature,5.0,1,27.8,0.83,19.9
+task-ml1-02022,Write unit tests for suggestions inbox state machine (variant #2022),test,3.0,2,11.2,1.07,13.1
+task-ml1-02023,Investigate memory leak in WebSocket notification server (variant #2023),bug,8.0,6,31.7,1.09,36.2
+task-ml1-02024,Write unit tests for suggestions inbox state machine (variant #2024),docs,1.0,1,2.3,1.21,2.4
+task-ml1-02025,Investigate memory leak in WebSocket notification server (variant #2025),bug,8.0,2,31.7,1.07,38.3
+task-ml1-02026,Implement batch export of sprint metrics to CSV/PDF (variant #2026),feature,5.0,2,26.9,0.88,27.9
+task-ml1-02027,Configure Docker multi-stage build for minimal image size (variant #2027),infra,1.0,0,6.3,0.91,5.0
+task-ml1-02028,Build early risk warning indicator with SHAP badge (variant #2028),feature,5.0,1,26.5,1.12,30.7
+task-ml1-02029,Fix CSS overflow on task card tags in mobile view (variant #2029),bug,1.0,0,4.2,1.03,4.1
+task-ml1-02030,Build early risk warning indicator with SHAP badge (variant #2030),feature,5.0,2,30.1,1.02,46.7
+task-ml1-02031,Write release request pre-fill prompt template (variant #2031),feature,3.0,1,15.1,1.15,13.7
+task-ml1-02032,Fix race condition in database connection pool (variant #2032),bug,3.0,1,12.2,1.02,11.3
+task-ml1-02033,Optimize slow MongoDB aggregate pipeline on time entries (variant #2033),refactor,5.0,3,22.3,1.12,46.1
+task-ml1-02034,Implement batch export of sprint metrics to CSV/PDF (variant #2034),feature,2.0,0,11.6,0.7,8.2
+task-ml1-02035,Write release request pre-fill prompt template (variant #2035),feature,3.0,2,16.7,1.16,20.1
+task-ml1-02036,Add rate limiting middleware with Redis token bucket (variant #2036),infra,13.0,4,76.4,0.96,103.9
+task-ml1-02037,Implement batch export of sprint metrics to CSV/PDF (variant #2037),feature,13.0,4,75.1,1.27,151.4
+task-ml1-02038,Investigate memory leak in WebSocket notification server (variant #2038),bug,8.0,3,33.9,1.16,49.7
+task-ml1-02039,Update dependency vulnerabilities in package.json (variant #2039),infra,2.0,1,11.6,1.03,15.4
+task-ml1-02040,Add rate limiting middleware with Redis token bucket (variant #2040),infra,5.0,3,32.7,0.85,32.2
+task-ml1-02041,Investigate memory leak in WebSocket notification server (variant #2041),bug,8.0,2,33.7,0.97,38.5
+task-ml1-02042,Fix NullPointer when task assignee is unassigned (variant #2042),bug,2.0,1,8.2,1.01,8.1
+task-ml1-02043,Fix race condition in database connection pool (variant #2043),feature,3.0,1,15.7,0.74,13.8
+task-ml1-02044,Fix NullPointer when task assignee is unassigned (variant #2044),bug,2.0,0,7.5,1.11,10.9
+task-ml1-02045,Add webhook listener for GitHub PR merge events (variant #2045),feature,5.0,0,28.4,1.12,36.6
+task-ml1-02046,Fix NullPointer when task assignee is unassigned (variant #2046),bug,2.0,0,8.6,0.93,10.2
+task-ml1-02047,Design schema for multi-tenant project roles (variant #2047),feature,5.0,2,28.7,1.05,34.7
+task-ml1-02048,Create responsive sprint Kanban board component (variant #2048),feature,3.0,0,17.5,1.04,14.9
+task-ml1-02049,Optimize slow MongoDB aggregate pipeline on time entries (variant #2049),refactor,3.0,2,14.8,1.45,19.0
+task-ml1-02050,Fix race condition in database connection pool (variant #2050),bug,3.0,0,13.2,1.02,14.6
+task-ml1-02051,Update dependency vulnerabilities in package.json (variant #2051),infra,2.0,1,11.5,0.78,11.7
+task-ml1-02052,Implement JWT authentication with refresh token rotation (variant #2052),feature,5.0,0,28.9,0.99,23.5
+task-ml1-02053,Add webhook listener for GitHub PR merge events (variant #2053),feature,5.0,1,30.0,1.11,46.8
+task-ml1-02054,Update dependency vulnerabilities in package.json (variant #2054),refactor,13.0,4,58.4,0.97,50.6
+task-ml1-02055,Fix CSS overflow on task card tags in mobile view (variant #2055),bug,1.0,0,3.8,1.22,7.0
+task-ml1-02056,Add webhook listener for GitHub PR merge events (variant #2056),feature,5.0,0,25.6,1.02,21.8
+task-ml1-02057,Refactor user profile estimation ratio calculator (variant #2057),refactor,3.0,0,12.8,1.19,26.0
+task-ml1-02058,Create responsive sprint Kanban board component (variant #2058),feature,8.0,4,47.3,0.8,35.4
+task-ml1-02059,Configure Docker multi-stage build for minimal image size (variant #2059),infra,3.0,0,18.4,1.02,19.1
+task-ml1-02060,Update dependency vulnerabilities in package.json (variant #2060),infra,2.0,0,12.9,0.99,11.2
+task-ml1-02061,Create responsive sprint Kanban board component (variant #2061),feature,8.0,2,45.0,1.23,83.6
+task-ml1-02062,Update dependency vulnerabilities in package.json (variant #2062),infra,8.0,3,46.2,1.07,72.1
+task-ml1-02063,Investigate memory leak in WebSocket notification server (variant #2063),bug,8.0,2,30.8,1.23,32.9
+task-ml1-02064,Create responsive sprint Kanban board component (variant #2064),feature,8.0,2,42.7,1.08,67.0
+task-ml1-02065,Configure Docker multi-stage build for minimal image size (variant #2065),infra,3.0,0,19.8,1.08,39.1
+task-ml1-02066,Fix CSS overflow on task card tags in mobile view (variant #2066),bug,1.0,1,4.1,0.97,2.1
+task-ml1-02067,Build early risk warning indicator with SHAP badge (variant #2067),feature,5.0,0,25.2,0.95,22.7
+task-ml1-02068,Add rate limiting middleware with Redis token bucket (variant #2068),infra,5.0,0,29.9,1.32,38.7
+task-ml1-02069,Build early risk warning indicator with SHAP badge (variant #2069),feature,5.0,1,28.1,0.74,24.8
+task-ml1-02070,Fix CSS overflow on task card tags in mobile view (variant #2070),bug,1.0,1,4.4,1.03,3.4
+task-ml1-02071,Set up automated end-to-end Cypress tests for auth (variant #2071),test,8.0,4,30.6,1.02,39.0
+task-ml1-02072,Document API endpoints with OpenAPI Swagger schemas (variant #2072),docs,2.0,1,5.3,1.08,9.1
+task-ml1-02073,Update dependency vulnerabilities in package.json (variant #2073),infra,2.0,1,12.8,1.29,33.1
+task-ml1-02074,Fix NullPointer when task assignee is unassigned (variant #2074),bug,2.0,1,8.4,0.99,9.5
+task-ml1-02075,Configure Docker multi-stage build for minimal image size (variant #2075),infra,3.0,0,18.4,1.03,17.2
+task-ml1-02076,Create responsive sprint Kanban board component (variant #2076),feature,8.0,2,42.5,1.08,58.9
+task-ml1-02077,Migrate Kafka consumer group to async event dispatcher (variant #2077),refactor,8.0,4,33.9,1.1,49.2
+task-ml1-02078,Migrate Kafka consumer group to async event dispatcher (variant #2078),refactor,8.0,3,32.5,0.97,36.7
+task-ml1-02079,Design schema for multi-tenant project roles (variant #2079),bug,3.0,1,11.4,1.05,13.9
+task-ml1-02080,Set up automated end-to-end Cypress tests for auth (variant #2080),test,8.0,3,28.5,1.15,39.2
+task-ml1-02081,Refactor user profile estimation ratio calculator (variant #2081),refactor,2.0,0,8.6,1.18,10.8
+task-ml1-02082,Migrate Kafka consumer group to async event dispatcher (variant #2082),infra,8.0,2,49.7,1.19,99.4
+task-ml1-02083,Migrate Kafka consumer group to async event dispatcher (variant #2083),refactor,1.0,0,4.2,1.25,4.0
+task-ml1-02084,Investigate memory leak in WebSocket notification server (variant #2084),bug,1.0,0,4.4,1.04,5.1
+task-ml1-02085,Add webhook listener for GitHub PR merge events (variant #2085),feature,5.0,0,29.1,0.81,26.0
+task-ml1-02086,Refactor user profile estimation ratio calculator (variant #2086),refactor,3.0,1,14.5,1.07,16.8
+task-ml1-02087,Create responsive sprint Kanban board component (variant #2087),feature,8.0,2,46.6,1.05,40.3
+task-ml1-02088,Write unit tests for suggestions inbox state machine (variant #2088),test,3.0,0,10.2,0.82,11.2
+task-ml1-02089,Build early risk warning indicator with SHAP badge (variant #2089),feature,5.0,3,29.5,1.15,32.0
+task-ml1-02090,Update dependency vulnerabilities in package.json (variant #2090),infra,2.0,0,11.3,1.13,7.7
+task-ml1-02091,Migrate Kafka consumer group to async event dispatcher (variant #2091),refactor,8.0,3,37.0,0.93,56.7
+task-ml1-02092,Optimize slow MongoDB aggregate pipeline on time entries (variant #2092),refactor,5.0,0,24.0,0.86,22.4
+task-ml1-02093,Update dependency vulnerabilities in package.json (variant #2093),infra,2.0,0,10.9,1.19,11.5
+task-ml1-02094,Design schema for multi-tenant project roles (variant #2094),feature,5.0,1,28.9,1.14,33.3
+task-ml1-02095,Optimize slow MongoDB aggregate pipeline on time entries (variant #2095),refactor,5.0,0,24.3,1.09,41.8
+task-ml1-02096,Set up automated end-to-end Cypress tests for auth (variant #2096),test,8.0,2,26.4,0.7,17.9
+task-ml1-02097,Fix race condition in database connection pool (variant #2097),bug,3.0,1,12.4,1.12,15.7
+task-ml1-02098,Optimize slow MongoDB aggregate pipeline on time entries (variant #2098),refactor,5.0,3,21.3,1.07,20.9
+task-ml1-02099,Design schema for multi-tenant project roles (variant #2099),feature,5.0,2,30.1,1.0,38.2
+task-ml1-02100,Write unit tests for suggestions inbox state machine (variant #2100),test,3.0,0,10.2,1.31,14.6
+task-ml1-02101,Configure Docker multi-stage build for minimal image size (variant #2101),test,13.0,4,46.4,1.02,85.7
+task-ml1-02102,Fix race condition in database connection pool (variant #2102),bug,3.0,0,13.1,0.76,11.1
+task-ml1-02103,Design schema for multi-tenant project roles (variant #2103),feature,5.0,1,29.3,0.95,25.2
+task-ml1-02104,Fix NullPointer when task assignee is unassigned (variant #2104),bug,2.0,2,8.3,1.07,10.3
+task-ml1-02105,Write release request pre-fill prompt template (variant #2105),feature,3.0,0,14.9,1.1,18.1
+task-ml1-02106,Implement batch export of sprint metrics to CSV/PDF (variant #2106),refactor,5.0,2,22.2,1.02,17.9
+task-ml1-02107,Migrate Kafka consumer group to async event dispatcher (variant #2107),refactor,8.0,1,34.2,0.92,43.4
+task-ml1-02108,Design schema for multi-tenant project roles (variant #2108),feature,5.0,0,28.1,1.08,23.0
+task-ml1-02109,Add rate limiting middleware with Redis token bucket (variant #2109),infra,5.0,2,29.1,1.27,32.2
+task-ml1-02110,Refactor user profile estimation ratio calculator (variant #2110),refactor,3.0,0,12.4,0.8,8.1
+task-ml1-02111,Create responsive sprint Kanban board component (variant #2111),feature,8.0,3,43.1,0.9,57.2
+task-ml1-02112,Investigate memory leak in WebSocket notification server (variant #2112),bug,8.0,0,33.9,1.17,33.9
+task-ml1-02113,Add webhook listener for GitHub PR merge events (variant #2113),feature,5.0,0,25.2,0.9,20.5
+task-ml1-02114,Optimize slow MongoDB aggregate pipeline on time entries (variant #2114),refactor,5.0,5,24.7,0.83,41.9
+task-ml1-02115,Build early risk warning indicator with SHAP badge (variant #2115),refactor,5.0,2,24.7,0.98,34.4
+task-ml1-02116,Write release request pre-fill prompt template (variant #2116),feature,3.0,0,16.3,1.31,21.8
+task-ml1-02117,Implement JWT authentication with refresh token rotation (variant #2117),feature,5.0,2,29.4,0.95,33.4
+task-ml1-02118,Add rate limiting middleware with Redis token bucket (variant #2118),infra,5.0,2,27.0,1.02,32.1
+task-ml1-02119,Write unit tests for suggestions inbox state machine (variant #2119),bug,3.0,1,10.9,1.15,10.3
+task-ml1-02120,Add webhook listener for GitHub PR merge events (variant #2120),feature,2.0,0,11.4,1.1,9.4
+task-ml1-02121,Build early risk warning indicator with SHAP badge (variant #2121),feature,5.0,1,25.9,1.16,31.7
+task-ml1-02122,Write unit tests for suggestions inbox state machine (variant #2122),test,3.0,0,10.9,1.09,9.6
+task-ml1-02123,Add webhook listener for GitHub PR merge events (variant #2123),feature,5.0,3,28.1,1.22,31.2
+task-ml1-02124,Write unit tests for suggestions inbox state machine (variant #2124),test,3.0,1,10.7,1.21,15.1
+task-ml1-02125,Add webhook listener for GitHub PR merge events (variant #2125),feature,5.0,1,26.9,1.17,36.5
+task-ml1-02126,Fix NullPointer when task assignee is unassigned (variant #2126),bug,2.0,2,8.7,0.86,9.2
+task-ml1-02127,Update dependency vulnerabilities in package.json (variant #2127),infra,2.0,1,11.6,1.09,10.8
+task-ml1-02128,Write release request pre-fill prompt template (variant #2128),feature,3.0,0,15.2,0.7,13.1
+task-ml1-02129,Create responsive sprint Kanban board component (variant #2129),feature,13.0,6,73.5,1.16,138.3
+task-ml1-02130,Add rate limiting middleware with Redis token bucket (variant #2130),test,5.0,1,17.7,0.95,28.4
+task-ml1-02131,Migrate Kafka consumer group to async event dispatcher (variant #2131),infra,8.0,2,51.1,0.7,35.6
+task-ml1-02132,Optimize slow MongoDB aggregate pipeline on time entries (variant #2132),test,5.0,3,15.9,0.99,22.4
+task-ml1-02133,Set up automated end-to-end Cypress tests for auth (variant #2133),test,8.0,1,25.7,1.1,36.2
+task-ml1-02134,Design schema for multi-tenant project roles (variant #2134),feature,3.0,0,17.3,1.12,15.0
+task-ml1-02135,Configure Docker multi-stage build for minimal image size (variant #2135),infra,3.0,2,17.5,0.86,14.3
+task-ml1-02136,Refactor user profile estimation ratio calculator (variant #2136),refactor,3.0,2,12.3,0.96,13.7
+task-ml1-02137,Configure Docker multi-stage build for minimal image size (variant #2137),infra,2.0,0,12.5,0.89,13.2
+task-ml1-02138,Refactor user profile estimation ratio calculator (variant #2138),refactor,3.0,1,14.0,0.95,20.7
+task-ml1-02139,Design schema for multi-tenant project roles (variant #2139),feature,5.0,3,28.6,0.97,30.3
+task-ml1-02140,Fix NullPointer when task assignee is unassigned (variant #2140),bug,2.0,1,7.9,0.95,6.5
+task-ml1-02141,Create responsive sprint Kanban board component (variant #2141),bug,8.0,1,30.5,1.31,45.2
+task-ml1-02142,Implement batch export of sprint metrics to CSV/PDF (variant #2142),feature,5.0,3,28.9,1.23,39.3
+task-ml1-02143,Refactor user profile estimation ratio calculator (variant #2143),refactor,3.0,0,12.3,1.08,10.8
+task-ml1-02144,Optimize slow MongoDB aggregate pipeline on time entries (variant #2144),refactor,2.0,0,9.5,0.9,11.0
+task-ml1-02145,Investigate memory leak in WebSocket notification server (variant #2145),bug,8.0,4,34.7,1.07,33.9
+task-ml1-02146,Document API endpoints with OpenAPI Swagger schemas (variant #2146),docs,2.0,1,5.1,0.92,7.9
+task-ml1-02147,Implement JWT authentication with refresh token rotation (variant #2147),feature,5.0,3,29.3,0.86,34.1
+task-ml1-02148,Configure Docker multi-stage build for minimal image size (variant #2148),infra,3.0,1,18.9,0.74,14.9
+task-ml1-02149,Write unit tests for suggestions inbox state machine (variant #2149),test,3.0,1,11.1,1.02,12.8
+task-ml1-02150,Update dependency vulnerabilities in package.json (variant #2150),infra,5.0,1,31.0,1.0,30.8
+task-ml1-02151,Add webhook listener for GitHub PR merge events (variant #2151),feature,3.0,1,15.0,1.21,25.1
+task-ml1-02152,Build early risk warning indicator with SHAP badge (variant #2152),feature,5.0,1,29.2,1.13,37.6
+task-ml1-02153,Add webhook listener for GitHub PR merge events (variant #2153),bug,5.0,2,20.5,0.93,16.8
+task-ml1-02154,Migrate Kafka consumer group to async event dispatcher (variant #2154),refactor,8.0,1,36.6,0.77,29.0
+task-ml1-02155,Configure Docker multi-stage build for minimal image size (variant #2155),infra,3.0,3,19.4,0.8,19.1
+task-ml1-02156,Migrate Kafka consumer group to async event dispatcher (variant #2156),refactor,8.0,1,35.1,0.92,40.1
+task-ml1-02157,Add rate limiting middleware with Redis token bucket (variant #2157),infra,5.0,0,27.3,1.01,26.1
+task-ml1-02158,Write unit tests for suggestions inbox state machine (variant #2158),test,3.0,2,10.1,1.0,12.9
+task-ml1-02159,Set up automated end-to-end Cypress tests for auth (variant #2159),bug,2.0,0,8.2,0.83,10.8
+task-ml1-02160,Fix race condition in database connection pool (variant #2160),bug,5.0,4,20.4,1.29,28.0
+task-ml1-02161,Refactor user profile estimation ratio calculator (variant #2161),refactor,3.0,0,13.3,0.94,7.1
+task-ml1-02162,Write release request pre-fill prompt template (variant #2162),feature,3.0,0,16.4,1.06,17.7
+task-ml1-02163,Write unit tests for suggestions inbox state machine (variant #2163),feature,3.0,2,17.5,1.1,14.9
+task-ml1-02164,Configure Docker multi-stage build for minimal image size (variant #2164),infra,8.0,0,46.6,1.04,52.9
+task-ml1-02165,Migrate Kafka consumer group to async event dispatcher (variant #2165),refactor,8.0,1,38.3,1.15,46.4
+task-ml1-02166,Fix CSS overflow on task card tags in mobile view (variant #2166),bug,1.0,0,4.0,0.92,5.9
+task-ml1-02167,Build early risk warning indicator with SHAP badge (variant #2167),feature,1.0,0,5.8,1.0,6.0
+task-ml1-02168,Design schema for multi-tenant project roles (variant #2168),feature,5.0,1,28.0,1.01,18.4
+task-ml1-02169,Add webhook listener for GitHub PR merge events (variant #2169),docs,5.0,1,11.3,1.0,11.8
+task-ml1-02170,Optimize slow MongoDB aggregate pipeline on time entries (variant #2170),refactor,5.0,0,20.9,1.14,12.0
+task-ml1-02171,Optimize slow MongoDB aggregate pipeline on time entries (variant #2171),refactor,1.0,0,4.9,1.11,4.2
+task-ml1-02172,Set up automated end-to-end Cypress tests for auth (variant #2172),test,8.0,2,27.2,0.9,26.4
+task-ml1-02173,Set up automated end-to-end Cypress tests for auth (variant #2173),test,8.0,1,28.9,0.75,19.5
+task-ml1-02174,Implement JWT authentication with refresh token rotation (variant #2174),feature,8.0,2,44.6,1.17,54.3
+task-ml1-02175,Set up automated end-to-end Cypress tests for auth (variant #2175),test,8.0,1,30.5,0.74,22.0
+task-ml1-02176,Update dependency vulnerabilities in package.json (variant #2176),feature,2.0,1,10.8,0.77,9.2
+task-ml1-02177,Configure Docker multi-stage build for minimal image size (variant #2177),infra,1.0,1,6.4,0.85,5.0
+task-ml1-02178,Write release request pre-fill prompt template (variant #2178),feature,3.0,1,18.0,0.93,13.7
+task-ml1-02179,Implement batch export of sprint metrics to CSV/PDF (variant #2179),feature,5.0,1,26.6,1.32,39.1
+task-ml1-02180,Implement batch export of sprint metrics to CSV/PDF (variant #2180),bug,5.0,0,20.9,1.37,35.9
+task-ml1-02181,Configure Docker multi-stage build for minimal image size (variant #2181),infra,3.0,1,18.6,1.41,21.8
+task-ml1-02182,Write unit tests for suggestions inbox state machine (variant #2182),refactor,3.0,1,13.6,1.18,20.3
+task-ml1-02183,Configure Docker multi-stage build for minimal image size (variant #2183),infra,3.0,1,17.3,1.01,16.1
+task-ml1-02184,Fix NullPointer when task assignee is unassigned (variant #2184),bug,2.0,2,8.8,0.82,8.5
+task-ml1-02185,Build early risk warning indicator with SHAP badge (variant #2185),feature,5.0,1,29.6,1.24,39.6
+task-ml1-02186,Implement batch export of sprint metrics to CSV/PDF (variant #2186),feature,5.0,0,25.0,0.99,28.5
+task-ml1-02187,Refactor user profile estimation ratio calculator (variant #2187),refactor,3.0,3,14.6,1.15,24.1
+task-ml1-02188,Document API endpoints with OpenAPI Swagger schemas (variant #2188),docs,2.0,1,4.9,1.05,7.5
+task-ml1-02189,Create responsive sprint Kanban board component (variant #2189),infra,8.0,1,45.2,1.25,61.1
+task-ml1-02190,Design schema for multi-tenant project roles (variant #2190),feature,5.0,2,27.6,0.9,17.4
+task-ml1-02191,Investigate memory leak in WebSocket notification server (variant #2191),bug,8.0,5,32.4,1.28,73.1
+task-ml1-02192,Create responsive sprint Kanban board component (variant #2192),feature,8.0,0,42.1,0.95,32.7
+task-ml1-02193,Investigate memory leak in WebSocket notification server (variant #2193),bug,8.0,1,30.8,0.9,37.5
+task-ml1-02194,Configure Docker multi-stage build for minimal image size (variant #2194),infra,3.0,1,18.4,1.26,23.9
+task-ml1-02195,Configure Docker multi-stage build for minimal image size (variant #2195),infra,3.0,0,19.7,1.35,22.7
+task-ml1-02196,Fix race condition in database connection pool (variant #2196),bug,3.0,1,12.6,0.97,9.1
+task-ml1-02197,Refactor user profile estimation ratio calculator (variant #2197),docs,3.0,1,8.0,1.19,10.3
+task-ml1-02198,Migrate Kafka consumer group to async event dispatcher (variant #2198),refactor,8.0,3,36.1,0.9,46.8
+task-ml1-02199,Build early risk warning indicator with SHAP badge (variant #2199),docs,5.0,0,13.5,1.01,15.9
+task-ml1-02200,Add rate limiting middleware with Redis token bucket (variant #2200),infra,5.0,1,32.5,0.97,33.8
+task-ml1-02201,Fix race condition in database connection pool (variant #2201),docs,3.0,1,8.2,1.0,7.1
+task-ml1-02202,Update dependency vulnerabilities in package.json (variant #2202),infra,2.0,2,12.3,1.1,11.4
+task-ml1-02203,Set up automated end-to-end Cypress tests for auth (variant #2203),test,8.0,3,27.5,1.07,49.3
+task-ml1-02204,Add rate limiting middleware with Redis token bucket (variant #2204),infra,8.0,6,46.1,0.94,53.4
+task-ml1-02205,Migrate Kafka consumer group to async event dispatcher (variant #2205),refactor,8.0,2,36.3,1.07,42.0
+task-ml1-02206,Implement JWT authentication with refresh token rotation (variant #2206),feature,13.0,6,78.4,1.09,92.2
+task-ml1-02207,Investigate memory leak in WebSocket notification server (variant #2207),bug,8.0,5,29.0,0.76,36.1
+task-ml1-02208,Document API endpoints with OpenAPI Swagger schemas (variant #2208),docs,2.0,1,4.7,0.93,5.9
+task-ml1-02209,Document API endpoints with OpenAPI Swagger schemas (variant #2209),docs,2.0,1,5.1,1.34,10.7
+task-ml1-02210,Implement batch export of sprint metrics to CSV/PDF (variant #2210),feature,2.0,2,11.1,1.01,13.9
+task-ml1-02211,Implement JWT authentication with refresh token rotation (variant #2211),feature,5.0,6,28.6,1.04,31.9
+task-ml1-02212,Fix CSS overflow on task card tags in mobile view (variant #2212),bug,1.0,0,3.9,0.82,2.9
+task-ml1-02213,Write unit tests for suggestions inbox state machine (variant #2213),test,3.0,0,10.4,1.02,9.6
+task-ml1-02214,Write release request pre-fill prompt template (variant #2214),feature,3.0,0,17.4,0.88,13.0
+task-ml1-02215,Set up automated end-to-end Cypress tests for auth (variant #2215),refactor,2.0,1,9.8,1.19,11.9
+task-ml1-02216,Write unit tests for suggestions inbox state machine (variant #2216),test,3.0,0,9.6,1.08,7.1
+task-ml1-02217,Investigate memory leak in WebSocket notification server (variant #2217),bug,8.0,3,30.1,1.15,43.6
+task-ml1-02218,Update dependency vulnerabilities in package.json (variant #2218),infra,2.0,1,11.1,1.07,10.6
+task-ml1-02219,Implement batch export of sprint metrics to CSV/PDF (variant #2219),feature,13.0,1,67.2,1.37,114.1
+task-ml1-02220,Refactor user profile estimation ratio calculator (variant #2220),refactor,3.0,1,13.9,0.8,18.8
+task-ml1-02221,Update dependency vulnerabilities in package.json (variant #2221),infra,2.0,2,11.1,0.91,11.1
+task-ml1-02222,Configure Docker multi-stage build for minimal image size (variant #2222),refactor,3.0,3,12.3,0.91,17.2
+task-ml1-02223,Update dependency vulnerabilities in package.json (variant #2223),infra,2.0,0,10.9,0.83,7.5
+task-ml1-02224,Investigate memory leak in WebSocket notification server (variant #2224),bug,1.0,0,4.1,1.07,3.3
+task-ml1-02225,Refactor user profile estimation ratio calculator (variant #2225),refactor,3.0,1,13.2,0.99,13.6
+task-ml1-02226,Migrate Kafka consumer group to async event dispatcher (variant #2226),refactor,8.0,2,35.2,0.7,38.7
+task-ml1-02227,Investigate memory leak in WebSocket notification server (variant #2227),test,8.0,4,25.7,1.0,21.3
+task-ml1-02228,Fix NullPointer when task assignee is unassigned (variant #2228),bug,2.0,0,8.0,1.04,8.1
+task-ml1-02229,Add rate limiting middleware with Redis token bucket (variant #2229),infra,3.0,1,18.2,0.94,17.5
+task-ml1-02230,Set up automated end-to-end Cypress tests for auth (variant #2230),test,8.0,4,29.8,1.55,68.7
+task-ml1-02231,Add webhook listener for GitHub PR merge events (variant #2231),feature,5.0,4,25.7,1.13,47.5
+task-ml1-02232,Set up automated end-to-end Cypress tests for auth (variant #2232),infra,8.0,2,49.6,0.7,36.7
+task-ml1-02233,Implement batch export of sprint metrics to CSV/PDF (variant #2233),feature,5.0,2,26.0,1.02,38.9
+task-ml1-02234,Fix NullPointer when task assignee is unassigned (variant #2234),bug,2.0,0,7.6,0.94,7.8
+task-ml1-02235,Add rate limiting middleware with Redis token bucket (variant #2235),infra,5.0,0,27.1,1.27,32.4
+task-ml1-02236,Create responsive sprint Kanban board component (variant #2236),feature,2.0,2,11.4,1.24,20.8
+task-ml1-02237,Add rate limiting middleware with Redis token bucket (variant #2237),infra,5.0,1,31.4,0.95,62.5
+task-ml1-02238,Investigate memory leak in WebSocket notification server (variant #2238),bug,8.0,2,29.4,0.93,25.6
+task-ml1-02239,Fix race condition in database connection pool (variant #2239),bug,3.0,0,12.4,0.9,15.0
+task-ml1-02240,Migrate Kafka consumer group to async event dispatcher (variant #2240),refactor,8.0,3,34.8,1.02,46.1
+task-ml1-02241,Fix race condition in database connection pool (variant #2241),bug,3.0,0,11.6,1.33,18.6
+task-ml1-02242,Optimize slow MongoDB aggregate pipeline on time entries (variant #2242),refactor,2.0,0,9.6,0.92,13.7
+task-ml1-02243,Investigate memory leak in WebSocket notification server (variant #2243),bug,8.0,1,32.4,0.81,33.0
+task-ml1-02244,Fix NullPointer when task assignee is unassigned (variant #2244),bug,2.0,2,8.1,0.87,6.8
+task-ml1-02245,Write release request pre-fill prompt template (variant #2245),feature,13.0,2,78.2,0.85,65.3
+task-ml1-02246,Build early risk warning indicator with SHAP badge (variant #2246),feature,1.0,0,5.5,0.92,4.8
+task-ml1-02247,Set up automated end-to-end Cypress tests for auth (variant #2247),test,8.0,3,30.4,1.17,75.6
+task-ml1-02248,Optimize slow MongoDB aggregate pipeline on time entries (variant #2248),refactor,5.0,2,23.1,0.81,20.7
+task-ml1-02249,Document API endpoints with OpenAPI Swagger schemas (variant #2249),docs,2.0,0,5.0,1.04,5.1
+task-ml1-02250,Write release request pre-fill prompt template (variant #2250),feature,1.0,1,5.6,0.85,7.0
+task-ml1-02251,Fix CSS overflow on task card tags in mobile view (variant #2251),bug,3.0,1,11.5,1.05,11.1
+task-ml1-02252,Set up automated end-to-end Cypress tests for auth (variant #2252),test,8.0,2,30.0,1.07,22.7
+task-ml1-02253,Optimize slow MongoDB aggregate pipeline on time entries (variant #2253),refactor,5.0,3,24.0,0.76,16.7
+task-ml1-02254,Write unit tests for suggestions inbox state machine (variant #2254),bug,3.0,0,12.2,1.25,11.4
+task-ml1-02255,Refactor user profile estimation ratio calculator (variant #2255),refactor,5.0,2,24.3,1.06,14.8
+task-ml1-02256,Add webhook listener for GitHub PR merge events (variant #2256),feature,3.0,0,14.9,1.11,20.8
+task-ml1-02257,Fix NullPointer when task assignee is unassigned (variant #2257),bug,2.0,1,7.8,0.86,5.9
+task-ml1-02258,Design schema for multi-tenant project roles (variant #2258),feature,5.0,1,25.7,1.23,23.4
+task-ml1-02259,Refactor user profile estimation ratio calculator (variant #2259),refactor,5.0,4,22.3,1.06,29.9
+task-ml1-02260,Refactor user profile estimation ratio calculator (variant #2260),refactor,3.0,3,12.6,1.01,16.4
+task-ml1-02261,Build early risk warning indicator with SHAP badge (variant #2261),feature,5.0,2,25.8,1.21,24.4
+task-ml1-02262,Implement JWT authentication with refresh token rotation (variant #2262),feature,5.0,1,26.0,1.02,25.3
+task-ml1-02263,Build early risk warning indicator with SHAP badge (variant #2263),feature,3.0,1,16.4,1.08,13.9
+task-ml1-02264,Implement batch export of sprint metrics to CSV/PDF (variant #2264),feature,1.0,0,5.5,0.83,6.5
+task-ml1-02265,Implement batch export of sprint metrics to CSV/PDF (variant #2265),feature,5.0,1,25.8,1.2,36.2
+task-ml1-02266,Write unit tests for suggestions inbox state machine (variant #2266),test,13.0,3,49.7,0.9,54.7
+task-ml1-02267,Build early risk warning indicator with SHAP badge (variant #2267),feature,5.0,3,29.5,1.14,52.0
+task-ml1-02268,Write release request pre-fill prompt template (variant #2268),feature,3.0,1,15.9,0.92,19.5
+task-ml1-02269,Add webhook listener for GitHub PR merge events (variant #2269),feature,3.0,0,16.6,1.02,18.4
+task-ml1-02270,Build early risk warning indicator with SHAP badge (variant #2270),feature,5.0,2,27.1,1.14,39.6
+task-ml1-02271,Set up automated end-to-end Cypress tests for auth (variant #2271),test,8.0,4,28.4,1.0,47.0
+task-ml1-02272,Document API endpoints with OpenAPI Swagger schemas (variant #2272),docs,2.0,1,5.4,1.13,9.3
+task-ml1-02273,Fix NullPointer when task assignee is unassigned (variant #2273),bug,2.0,0,7.2,1.27,8.5
+task-ml1-02274,Implement batch export of sprint metrics to CSV/PDF (variant #2274),feature,5.0,0,28.4,1.28,30.5
+task-ml1-02275,Create responsive sprint Kanban board component (variant #2275),infra,8.0,3,48.9,0.84,48.3
+task-ml1-02276,Write unit tests for suggestions inbox state machine (variant #2276),test,3.0,0,9.5,0.99,5.6
+task-ml1-02277,Fix CSS overflow on task card tags in mobile view (variant #2277),test,1.0,0,3.8,0.93,5.5
+task-ml1-02278,Add webhook listener for GitHub PR merge events (variant #2278),feature,1.0,0,6.0,1.07,6.2
+task-ml1-02279,Write release request pre-fill prompt template (variant #2279),feature,3.0,1,17.7,0.98,12.8
+task-ml1-02280,Configure Docker multi-stage build for minimal image size (variant #2280),infra,3.0,0,18.8,0.98,12.2
+task-ml1-02281,Optimize slow MongoDB aggregate pipeline on time entries (variant #2281),refactor,5.0,2,21.3,1.31,25.9
+task-ml1-02282,Migrate Kafka consumer group to async event dispatcher (variant #2282),refactor,8.0,2,34.8,1.3,55.9
+task-ml1-02283,Fix race condition in database connection pool (variant #2283),bug,3.0,1,13.0,0.76,19.6
+task-ml1-02284,Set up automated end-to-end Cypress tests for auth (variant #2284),test,8.0,1,25.9,0.78,19.3
+task-ml1-02285,Set up automated end-to-end Cypress tests for auth (variant #2285),test,8.0,5,26.9,0.75,19.4
+task-ml1-02286,Update dependency vulnerabilities in package.json (variant #2286),infra,2.0,0,12.7,0.93,8.4
+task-ml1-02287,Write release request pre-fill prompt template (variant #2287),feature,3.0,1,15.0,1.24,19.7
+task-ml1-02288,Configure Docker multi-stage build for minimal image size (variant #2288),infra,3.0,1,18.2,1.2,36.4
+task-ml1-02289,Update dependency vulnerabilities in package.json (variant #2289),infra,2.0,1,12.7,1.14,9.3
+task-ml1-02290,Build early risk warning indicator with SHAP badge (variant #2290),feature,8.0,2,40.4,1.16,45.4
+task-ml1-02291,Update dependency vulnerabilities in package.json (variant #2291),infra,2.0,0,12.2,1.02,10.8
+task-ml1-02292,Set up automated end-to-end Cypress tests for auth (variant #2292),docs,8.0,3,21.4,1.16,30.3
+task-ml1-02293,Refactor user profile estimation ratio calculator (variant #2293),feature,3.0,0,17.4,1.5,40.8
+task-ml1-02294,Write unit tests for suggestions inbox state machine (variant #2294),test,3.0,0,10.9,1.14,12.4
+task-ml1-02295,Fix NullPointer when task assignee is unassigned (variant #2295),bug,2.0,0,8.4,0.99,7.6
+task-ml1-02296,Write release request pre-fill prompt template (variant #2296),feature,3.0,0,16.2,0.91,12.2
+task-ml1-02297,Migrate Kafka consumer group to async event dispatcher (variant #2297),refactor,8.0,4,35.9,1.03,34.2
+task-ml1-02298,Set up automated end-to-end Cypress tests for auth (variant #2298),test,8.0,0,29.0,0.99,22.1
+task-ml1-02299,Refactor user profile estimation ratio calculator (variant #2299),refactor,2.0,0,9.7,1.33,7.7
+task-ml1-02300,Investigate memory leak in WebSocket notification server (variant #2300),bug,13.0,3,47.0,1.02,46.9
+task-ml1-02301,Build early risk warning indicator with SHAP badge (variant #2301),feature,2.0,0,11.8,0.71,8.0
+task-ml1-02302,Set up automated end-to-end Cypress tests for auth (variant #2302),test,8.0,3,29.9,1.28,64.7
+task-ml1-02303,Write release request pre-fill prompt template (variant #2303),feature,3.0,1,16.5,1.33,29.9
+task-ml1-02304,Document API endpoints with OpenAPI Swagger schemas (variant #2304),docs,3.0,1,7.7,1.41,14.3
+task-ml1-02305,Update dependency vulnerabilities in package.json (variant #2305),infra,2.0,1,11.9,1.41,19.1
+task-ml1-02306,Optimize slow MongoDB aggregate pipeline on time entries (variant #2306),refactor,5.0,1,24.6,1.42,53.1
+task-ml1-02307,Configure Docker multi-stage build for minimal image size (variant #2307),infra,2.0,0,11.0,0.82,8.1
+task-ml1-02308,Write unit tests for suggestions inbox state machine (variant #2308),test,3.0,1,10.4,1.33,18.8
+task-ml1-02309,Configure Docker multi-stage build for minimal image size (variant #2309),infra,3.0,1,19.3,1.15,22.2
+task-ml1-02310,Investigate memory leak in WebSocket notification server (variant #2310),test,8.0,1,30.6,1.0,29.3
+task-ml1-02311,Fix race condition in database connection pool (variant #2311),bug,3.0,1,11.6,1.03,16.5
+task-ml1-02312,Update dependency vulnerabilities in package.json (variant #2312),infra,2.0,3,12.2,0.95,16.3
+task-ml1-02313,Implement batch export of sprint metrics to CSV/PDF (variant #2313),feature,5.0,3,25.2,1.13,26.9
+task-ml1-02314,Document API endpoints with OpenAPI Swagger schemas (variant #2314),bug,2.0,1,8.7,0.97,8.3
+task-ml1-02315,Set up automated end-to-end Cypress tests for auth (variant #2315),test,8.0,4,30.7,0.77,34.1
+task-ml1-02316,Write unit tests for suggestions inbox state machine (variant #2316),test,3.0,1,9.7,1.12,10.4
+task-ml1-02317,Document API endpoints with OpenAPI Swagger schemas (variant #2317),docs,2.0,0,5.3,1.1,4.1
+task-ml1-02318,Design schema for multi-tenant project roles (variant #2318),feature,5.0,1,26.0,1.35,35.6
+task-ml1-02319,Fix race condition in database connection pool (variant #2319),bug,3.0,0,11.6,0.95,9.5
+task-ml1-02320,Migrate Kafka consumer group to async event dispatcher (variant #2320),refactor,8.0,4,37.1,0.98,45.6
+task-ml1-02321,Implement JWT authentication with refresh token rotation (variant #2321),feature,5.0,1,25.9,1.26,44.1
+task-ml1-02322,Configure Docker multi-stage build for minimal image size (variant #2322),infra,8.0,0,45.5,0.88,32.5
+task-ml1-02323,Create responsive sprint Kanban board component (variant #2323),feature,8.0,2,43.7,0.97,55.1
+task-ml1-02324,Update dependency vulnerabilities in package.json (variant #2324),infra,2.0,0,13.1,0.93,12.1
+task-ml1-02325,Build early risk warning indicator with SHAP badge (variant #2325),feature,5.0,2,25.8,1.31,44.7
+task-ml1-02326,Implement JWT authentication with refresh token rotation (variant #2326),test,1.0,0,3.7,1.15,5.0
+task-ml1-02327,Migrate Kafka consumer group to async event dispatcher (variant #2327),refactor,8.0,6,34.3,0.81,32.9
+task-ml1-02328,Update dependency vulnerabilities in package.json (variant #2328),infra,2.0,0,12.6,0.96,12.9
+task-ml1-02329,Document API endpoints with OpenAPI Swagger schemas (variant #2329),docs,2.0,1,5.3,1.18,4.8
+task-ml1-02330,Investigate memory leak in WebSocket notification server (variant #2330),bug,5.0,6,21.2,1.04,37.4
+task-ml1-02331,Add rate limiting middleware with Redis token bucket (variant #2331),infra,5.0,0,28.7,0.78,18.8
+task-ml1-02332,Add webhook listener for GitHub PR merge events (variant #2332),feature,1.0,0,5.6,0.88,4.3
+task-ml1-02333,Write release request pre-fill prompt template (variant #2333),feature,3.0,0,17.0,1.04,11.5
+task-ml1-02334,Create responsive sprint Kanban board component (variant #2334),feature,8.0,1,41.7,1.33,40.0
+task-ml1-02335,Add rate limiting middleware with Redis token bucket (variant #2335),infra,13.0,2,72.3,0.7,48.9
+task-ml1-02336,Fix race condition in database connection pool (variant #2336),bug,2.0,2,8.5,1.12,11.4
+task-ml1-02337,Refactor user profile estimation ratio calculator (variant #2337),refactor,3.0,1,12.9,1.06,11.2
+task-ml1-02338,Optimize slow MongoDB aggregate pipeline on time entries (variant #2338),bug,5.0,0,20.8,0.86,17.0
+task-ml1-02339,Update dependency vulnerabilities in package.json (variant #2339),infra,2.0,0,11.1,0.84,9.6
+task-ml1-02340,Build early risk warning indicator with SHAP badge (variant #2340),feature,1.0,0,5.0,1.17,5.3
+task-ml1-02341,Add webhook listener for GitHub PR merge events (variant #2341),feature,5.0,2,26.4,0.85,20.0
+task-ml1-02342,Investigate memory leak in WebSocket notification server (variant #2342),docs,8.0,4,21.1,0.91,44.5
+task-ml1-02343,Implement JWT authentication with refresh token rotation (variant #2343),feature,5.0,1,25.1,1.01,34.5
+task-ml1-02344,Optimize slow MongoDB aggregate pipeline on time entries (variant #2344),refactor,5.0,1,22.4,1.11,27.8
+task-ml1-02345,Write unit tests for suggestions inbox state machine (variant #2345),test,3.0,1,11.4,1.0,11.0
+task-ml1-02346,Create responsive sprint Kanban board component (variant #2346),feature,8.0,1,46.3,1.16,45.0
+task-ml1-02347,Write unit tests for suggestions inbox state machine (variant #2347),test,3.0,1,10.9,1.07,15.1
+task-ml1-02348,Design schema for multi-tenant project roles (variant #2348),feature,5.0,1,28.2,1.19,31.2
+task-ml1-02349,Write release request pre-fill prompt template (variant #2349),feature,5.0,2,29.4,0.98,38.1
+task-ml1-02350,Document API endpoints with OpenAPI Swagger schemas (variant #2350),docs,2.0,0,5.0,1.22,6.4
+task-ml1-02351,Implement JWT authentication with refresh token rotation (variant #2351),refactor,5.0,4,22.8,0.94,25.5
+task-ml1-02352,Migrate Kafka consumer group to async event dispatcher (variant #2352),refactor,8.0,1,38.8,0.73,40.8
+task-ml1-02353,Fix NullPointer when task assignee is unassigned (variant #2353),bug,2.0,0,7.5,1.06,8.4
+task-ml1-02354,Build early risk warning indicator with SHAP badge (variant #2354),feature,8.0,4,41.5,0.96,49.3
+task-ml1-02355,Update dependency vulnerabilities in package.json (variant #2355),feature,2.0,0,11.9,1.25,8.0
+task-ml1-02356,Optimize slow MongoDB aggregate pipeline on time entries (variant #2356),refactor,5.0,6,21.8,1.36,32.9
+task-ml1-02357,Migrate Kafka consumer group to async event dispatcher (variant #2357),refactor,8.0,3,39.3,1.19,72.9
+task-ml1-02358,Build early risk warning indicator with SHAP badge (variant #2358),feature,5.0,3,29.7,1.33,52.3
+task-ml1-02359,Add webhook listener for GitHub PR merge events (variant #2359),feature,5.0,1,24.8,0.75,25.7
+task-ml1-02360,Set up automated end-to-end Cypress tests for auth (variant #2360),test,8.0,1,26.8,0.96,33.1
+task-ml1-02361,Add webhook listener for GitHub PR merge events (variant #2361),feature,5.0,2,25.3,0.94,25.1
+task-ml1-02362,Document API endpoints with OpenAPI Swagger schemas (variant #2362),docs,2.0,0,4.9,0.82,4.4
+task-ml1-02363,Write unit tests for suggestions inbox state machine (variant #2363),test,5.0,3,16.0,1.31,22.5
+task-ml1-02364,Implement JWT authentication with refresh token rotation (variant #2364),feature,5.0,0,29.1,1.02,50.9
+task-ml1-02365,Refactor user profile estimation ratio calculator (variant #2365),refactor,3.0,1,14.8,1.05,32.0
+task-ml1-02366,Investigate memory leak in WebSocket notification server (variant #2366),bug,8.0,4,30.6,1.11,41.0
+task-ml1-02367,Create responsive sprint Kanban board component (variant #2367),feature,8.0,1,45.4,0.73,45.9
+task-ml1-02368,Set up automated end-to-end Cypress tests for auth (variant #2368),test,8.0,0,30.2,1.28,35.6
+task-ml1-02369,Implement batch export of sprint metrics to CSV/PDF (variant #2369),feature,5.0,1,27.0,0.91,33.9
+task-ml1-02370,Add rate limiting middleware with Redis token bucket (variant #2370),infra,5.0,1,28.1,0.93,29.7
+task-ml1-02371,Implement JWT authentication with refresh token rotation (variant #2371),infra,5.0,1,30.5,1.33,33.8
+task-ml1-02372,Set up automated end-to-end Cypress tests for auth (variant #2372),docs,3.0,0,8.0,1.04,11.3
+task-ml1-02373,Fix NullPointer when task assignee is unassigned (variant #2373),bug,2.0,0,8.0,1.05,9.6
+task-ml1-02374,Configure Docker multi-stage build for minimal image size (variant #2374),infra,3.0,3,18.2,0.94,24.8
+task-ml1-02375,Investigate memory leak in WebSocket notification server (variant #2375),bug,5.0,0,18.6,1.15,20.4
+task-ml1-02376,Document API endpoints with OpenAPI Swagger schemas (variant #2376),docs,13.0,3,34.5,0.81,37.2
+task-ml1-02377,Implement batch export of sprint metrics to CSV/PDF (variant #2377),infra,5.0,1,31.5,1.02,24.7
+task-ml1-02378,Investigate memory leak in WebSocket notification server (variant #2378),bug,13.0,1,50.9,1.16,64.4
+task-ml1-02379,Update dependency vulnerabilities in package.json (variant #2379),infra,2.0,0,13.1,1.14,22.8
+task-ml1-02380,Add rate limiting middleware with Redis token bucket (variant #2380),bug,5.0,4,19.2,1.23,26.2
+task-ml1-02381,Write unit tests for suggestions inbox state machine (variant #2381),test,3.0,1,9.8,1.12,15.8
+task-ml1-02382,Design schema for multi-tenant project roles (variant #2382),feature,5.0,1,25.1,0.85,16.4
+task-ml1-02383,Migrate Kafka consumer group to async event dispatcher (variant #2383),refactor,8.0,1,37.1,0.84,48.6
+task-ml1-02384,Write release request pre-fill prompt template (variant #2384),feature,3.0,0,17.1,1.26,27.0
+task-ml1-02385,Set up automated end-to-end Cypress tests for auth (variant #2385),refactor,8.0,1,35.8,0.78,18.4
+task-ml1-02386,Fix race condition in database connection pool (variant #2386),bug,3.0,1,12.4,0.98,12.5
+task-ml1-02387,Refactor user profile estimation ratio calculator (variant #2387),refactor,3.0,1,13.4,1.11,25.5
+task-ml1-02388,Set up automated end-to-end Cypress tests for auth (variant #2388),test,8.0,3,28.8,1.03,35.8
+task-ml1-02389,Fix race condition in database connection pool (variant #2389),bug,3.0,1,12.8,1.14,13.4
+task-ml1-02390,Migrate Kafka consumer group to async event dispatcher (variant #2390),refactor,8.0,3,36.0,0.98,46.0
+task-ml1-02391,Add webhook listener for GitHub PR merge events (variant #2391),bug,5.0,1,19.4,1.03,22.3
+task-ml1-02392,Update dependency vulnerabilities in package.json (variant #2392),infra,2.0,1,13.0,1.23,19.8
+task-ml1-02393,Design schema for multi-tenant project roles (variant #2393),feature,5.0,2,25.3,1.02,27.9
+task-ml1-02394,Create responsive sprint Kanban board component (variant #2394),feature,3.0,0,16.7,0.99,20.4
+task-ml1-02395,Configure Docker multi-stage build for minimal image size (variant #2395),docs,5.0,1,11.4,0.84,16.5
+task-ml1-02396,Refactor user profile estimation ratio calculator (variant #2396),refactor,3.0,1,14.1,1.13,14.9
+task-ml1-02397,Add webhook listener for GitHub PR merge events (variant #2397),feature,5.0,3,28.3,1.14,45.3
+task-ml1-02398,Investigate memory leak in WebSocket notification server (variant #2398),bug,8.0,3,31.3,1.17,41.1
+task-ml1-02399,Fix race condition in database connection pool (variant #2399),bug,3.0,0,12.5,1.04,8.6
+task-ml1-02400,Design schema for multi-tenant project roles (variant #2400),feature,5.0,3,24.8,1.28,80.4
+task-ml1-02401,Document API endpoints with OpenAPI Swagger schemas (variant #2401),docs,5.0,0,13.5,0.88,14.0
+task-ml1-02402,Update dependency vulnerabilities in package.json (variant #2402),feature,2.0,3,11.7,0.81,11.9
+task-ml1-02403,Implement batch export of sprint metrics to CSV/PDF (variant #2403),feature,5.0,4,29.2,1.28,48.5
+task-ml1-02404,Create responsive sprint Kanban board component (variant #2404),feature,5.0,3,29.3,1.03,30.5
+task-ml1-02405,Fix race condition in database connection pool (variant #2405),bug,3.0,1,13.1,0.9,15.0
+task-ml1-02406,Create responsive sprint Kanban board component (variant #2406),feature,8.0,0,44.0,1.0,51.1
+task-ml1-02407,Configure Docker multi-stage build for minimal image size (variant #2407),infra,3.0,1,16.9,0.85,13.5
+task-ml1-02408,Document API endpoints with OpenAPI Swagger schemas (variant #2408),docs,2.0,0,5.1,1.31,6.6
+task-ml1-02409,Document API endpoints with OpenAPI Swagger schemas (variant #2409),docs,2.0,2,5.2,0.94,9.3
+task-ml1-02410,Set up automated end-to-end Cypress tests for auth (variant #2410),test,8.0,0,26.6,1.12,33.6
+task-ml1-02411,Document API endpoints with OpenAPI Swagger schemas (variant #2411),docs,2.0,1,5.3,1.18,8.2
+task-ml1-02412,Implement JWT authentication with refresh token rotation (variant #2412),feature,5.0,0,25.6,1.39,35.7
+task-ml1-02413,Fix CSS overflow on task card tags in mobile view (variant #2413),feature,1.0,0,5.1,1.43,6.7
+task-ml1-02414,Create responsive sprint Kanban board component (variant #2414),feature,8.0,1,43.1,0.91,35.4
+task-ml1-02415,Update dependency vulnerabilities in package.json (variant #2415),test,2.0,1,6.5,1.18,10.5
+task-ml1-02416,Refactor user profile estimation ratio calculator (variant #2416),refactor,3.0,0,14.8,1.26,29.5
+task-ml1-02417,Add rate limiting middleware with Redis token bucket (variant #2417),infra,5.0,2,27.8,0.91,26.0
+task-ml1-02418,Fix race condition in database connection pool (variant #2418),test,3.0,0,10.1,1.0,9.0
+task-ml1-02419,Fix NullPointer when task assignee is unassigned (variant #2419),bug,2.0,3,7.5,0.7,5.8
+task-ml1-02420,Write unit tests for suggestions inbox state machine (variant #2420),infra,3.0,0,17.5,0.82,13.2
+task-ml1-02421,Configure Docker multi-stage build for minimal image size (variant #2421),infra,8.0,1,44.1,0.9,30.8
+task-ml1-02422,Write unit tests for suggestions inbox state machine (variant #2422),test,3.0,2,9.6,1.21,15.0
+task-ml1-02423,Write release request pre-fill prompt template (variant #2423),feature,3.0,2,17.4,1.12,26.8
+task-ml1-02424,Fix CSS overflow on task card tags in mobile view (variant #2424),bug,1.0,0,3.8,1.13,5.4
+task-ml1-02425,Fix CSS overflow on task card tags in mobile view (variant #2425),bug,1.0,0,3.8,1.07,4.8
+task-ml1-02426,Investigate memory leak in WebSocket notification server (variant #2426),bug,8.0,3,30.7,0.81,44.2
+task-ml1-02427,Document API endpoints with OpenAPI Swagger schemas (variant #2427),docs,2.0,0,5.0,1.06,9.5
+task-ml1-02428,Update dependency vulnerabilities in package.json (variant #2428),infra,2.0,1,11.0,1.04,10.8
+task-ml1-02429,Refactor user profile estimation ratio calculator (variant #2429),refactor,1.0,1,4.4,1.27,6.8
+task-ml1-02430,Investigate memory leak in WebSocket notification server (variant #2430),bug,2.0,1,8.2,0.81,8.2
+task-ml1-02431,Design schema for multi-tenant project roles (variant #2431),feature,5.0,4,28.4,1.06,46.5
+task-ml1-02432,Investigate memory leak in WebSocket notification server (variant #2432),bug,8.0,1,29.1,1.19,47.7
+task-ml1-02433,Add webhook listener for GitHub PR merge events (variant #2433),feature,5.0,1,28.7,1.01,36.8
+task-ml1-02434,Implement batch export of sprint metrics to CSV/PDF (variant #2434),feature,5.0,2,25.6,0.91,17.3
+task-ml1-02435,Fix NullPointer when task assignee is unassigned (variant #2435),infra,1.0,1,6.0,1.21,7.4
+task-ml1-02436,Write unit tests for suggestions inbox state machine (variant #2436),test,8.0,3,27.3,1.14,38.2
+task-ml1-02437,Fix NullPointer when task assignee is unassigned (variant #2437),feature,3.0,0,17.3,1.01,16.8
+task-ml1-02438,Add rate limiting middleware with Redis token bucket (variant #2438),infra,5.0,3,32.4,0.82,25.1
+task-ml1-02439,Add rate limiting middleware with Redis token bucket (variant #2439),infra,5.0,1,32.5,1.14,22.1
+task-ml1-02440,Add rate limiting middleware with Redis token bucket (variant #2440),infra,3.0,1,17.7,1.0,19.3
+task-ml1-02441,Optimize slow MongoDB aggregate pipeline on time entries (variant #2441),docs,13.0,2,31.4,0.97,40.2
+task-ml1-02442,Optimize slow MongoDB aggregate pipeline on time entries (variant #2442),refactor,5.0,2,22.0,1.08,25.2
+task-ml1-02443,Set up automated end-to-end Cypress tests for auth (variant #2443),test,8.0,3,25.5,1.12,37.8
+task-ml1-02444,Add rate limiting middleware with Redis token bucket (variant #2444),infra,5.0,1,29.2,1.23,38.1
+task-ml1-02445,Document API endpoints with OpenAPI Swagger schemas (variant #2445),docs,2.0,3,4.9,1.01,5.6
+task-ml1-02446,Create responsive sprint Kanban board component (variant #2446),bug,8.0,1,31.6,1.16,39.1
+task-ml1-02447,Fix CSS overflow on task card tags in mobile view (variant #2447),bug,1.0,1,4.0,1.0,4.7
+task-ml1-02448,Add webhook listener for GitHub PR merge events (variant #2448),feature,5.0,1,27.2,1.24,32.6
+task-ml1-02449,Design schema for multi-tenant project roles (variant #2449),feature,5.0,2,25.6,1.33,38.8
+task-ml1-02450,Update dependency vulnerabilities in package.json (variant #2450),infra,2.0,1,11.6,0.98,15.1
+task-ml1-02451,Write unit tests for suggestions inbox state machine (variant #2451),test,3.0,1,10.2,0.94,6.8
+task-ml1-02452,Write unit tests for suggestions inbox state machine (variant #2452),test,3.0,1,10.1,1.4,18.7
+task-ml1-02453,Investigate memory leak in WebSocket notification server (variant #2453),bug,5.0,0,19.0,1.16,24.5
+task-ml1-02454,Document API endpoints with OpenAPI Swagger schemas (variant #2454),test,2.0,0,7.2,1.55,10.8
+task-ml1-02455,Build early risk warning indicator with SHAP badge (variant #2455),feature,5.0,0,27.3,1.01,28.3
+task-ml1-02456,Add rate limiting middleware with Redis token bucket (variant #2456),infra,5.0,2,28.1,0.97,45.0
+task-ml1-02457,Investigate memory leak in WebSocket notification server (variant #2457),bug,8.0,4,29.7,1.05,44.9
+task-ml1-02458,Migrate Kafka consumer group to async event dispatcher (variant #2458),refactor,8.0,2,38.0,0.7,23.4
+task-ml1-02459,Update dependency vulnerabilities in package.json (variant #2459),infra,2.0,0,12.6,0.9,11.9
+task-ml1-02460,Fix CSS overflow on task card tags in mobile view (variant #2460),bug,1.0,2,4.3,1.28,6.3
+task-ml1-02461,Fix CSS overflow on task card tags in mobile view (variant #2461),bug,1.0,1,3.8,0.99,3.8
+task-ml1-02462,Update dependency vulnerabilities in package.json (variant #2462),infra,2.0,2,12.5,1.09,28.2
+task-ml1-02463,Migrate Kafka consumer group to async event dispatcher (variant #2463),refactor,1.0,0,4.7,1.13,6.7
+task-ml1-02464,Configure Docker multi-stage build for minimal image size (variant #2464),infra,3.0,2,18.0,1.28,23.3
+task-ml1-02465,Update dependency vulnerabilities in package.json (variant #2465),test,2.0,1,7.0,1.2,8.5
+task-ml1-02466,Refactor user profile estimation ratio calculator (variant #2466),refactor,3.0,1,12.5,1.21,11.9
+task-ml1-02467,Fix NullPointer when task assignee is unassigned (variant #2467),bug,2.0,2,7.5,1.2,15.6
+task-ml1-02468,Implement batch export of sprint metrics to CSV/PDF (variant #2468),refactor,5.0,1,22.6,1.22,42.4
+task-ml1-02469,Create responsive sprint Kanban board component (variant #2469),feature,8.0,5,44.4,1.26,86.8
+task-ml1-02470,Build early risk warning indicator with SHAP badge (variant #2470),feature,3.0,0,17.2,0.7,14.4
+task-ml1-02471,Design schema for multi-tenant project roles (variant #2471),feature,5.0,3,26.6,1.13,42.2
+task-ml1-02472,Write release request pre-fill prompt template (variant #2472),feature,3.0,1,16.7,0.84,15.7
+task-ml1-02473,Migrate Kafka consumer group to async event dispatcher (variant #2473),refactor,8.0,4,32.7,0.95,46.3
+task-ml1-02474,Migrate Kafka consumer group to async event dispatcher (variant #2474),refactor,8.0,2,32.6,1.06,52.6
+task-ml1-02475,Write unit tests for suggestions inbox state machine (variant #2475),test,3.0,1,10.2,0.95,11.8
+task-ml1-02476,Write release request pre-fill prompt template (variant #2476),feature,3.0,2,17.5,0.97,22.1
+task-ml1-02477,Configure Docker multi-stage build for minimal image size (variant #2477),infra,3.0,1,17.6,0.92,15.7
+task-ml1-02478,Implement batch export of sprint metrics to CSV/PDF (variant #2478),feature,5.0,0,27.9,1.05,27.4
+task-ml1-02479,Implement JWT authentication with refresh token rotation (variant #2479),feature,5.0,3,27.8,0.94,31.6
+task-ml1-02480,Write unit tests for suggestions inbox state machine (variant #2480),test,3.0,0,11.4,0.85,9.9
+task-ml1-02481,Fix CSS overflow on task card tags in mobile view (variant #2481),bug,1.0,1,3.7,1.26,3.4
+task-ml1-02482,Write release request pre-fill prompt template (variant #2482),feature,3.0,0,17.7,1.11,18.7
+task-ml1-02483,Set up automated end-to-end Cypress tests for auth (variant #2483),test,2.0,1,7.1,1.14,6.9
+task-ml1-02484,Refactor user profile estimation ratio calculator (variant #2484),refactor,3.0,0,14.6,0.99,18.1
+task-ml1-02485,Fix CSS overflow on task card tags in mobile view (variant #2485),bug,1.0,0,3.7,0.99,5.1
+task-ml1-02486,Implement JWT authentication with refresh token rotation (variant #2486),feature,5.0,1,30.2,0.88,29.6
+task-ml1-02487,Write unit tests for suggestions inbox state machine (variant #2487),test,3.0,0,10.6,1.07,8.0
+task-ml1-02488,Investigate memory leak in WebSocket notification server (variant #2488),bug,8.0,4,34.5,1.06,43.7
+task-ml1-02489,Add webhook listener for GitHub PR merge events (variant #2489),feature,5.0,0,26.7,1.18,30.3
+task-ml1-02490,Implement batch export of sprint metrics to CSV/PDF (variant #2490),feature,5.0,2,27.6,1.04,43.6
+task-ml1-02491,Configure Docker multi-stage build for minimal image size (variant #2491),infra,1.0,1,6.5,1.26,8.7
+task-ml1-02492,Write unit tests for suggestions inbox state machine (variant #2492),test,3.0,3,10.6,1.18,19.2
+task-ml1-02493,Add webhook listener for GitHub PR merge events (variant #2493),feature,5.0,0,26.7,1.04,33.6
+task-ml1-02494,Document API endpoints with OpenAPI Swagger schemas (variant #2494),docs,2.0,1,4.8,1.14,5.3
+task-ml1-02495,Implement batch export of sprint metrics to CSV/PDF (variant #2495),feature,5.0,0,30.1,1.33,34.2
+task-ml1-02496,Write release request pre-fill prompt template (variant #2496),feature,3.0,2,15.8,1.07,16.2
+task-ml1-02497,Add webhook listener for GitHub PR merge events (variant #2497),feature,5.0,3,26.1,1.11,14.0
+task-ml1-02498,Configure Docker multi-stage build for minimal image size (variant #2498),feature,3.0,1,14.9,0.7,9.2
+task-ml1-02499,Add rate limiting middleware with Redis token bucket (variant #2499),docs,5.0,1,11.6,0.92,7.9

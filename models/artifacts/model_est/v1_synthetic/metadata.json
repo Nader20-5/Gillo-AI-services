@@ -1,0 +1,27 @@
+{
+  "name": "model_est",
+  "version": "v1_synthetic",
+  "model_file": "model_est.pkl",
+  "trained_on": "synthetic",
+  "trained_at": "2026-10-16T12:00:00Z",
+  "feature_list": [
+    "story_points",
+    "dependency_count",
+    "historical_median_hours",
+    "assignee_user_ratio"
+  ],
+  "library_versions": {
+    "xgboost": "3.2.0",
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6"
+  },
+  "metrics": {
+    "MAE": 5.173,
+    "RMSE": 7.733,
+    "R2_Score": 0.8356,
+    "P25_P75_Coverage_Pct": 41.2,
+    "note": "Metrics evaluated on synthetic test split generated with parametric noise formula"
+  },
+  "sha256": "0415baffe4e03a9f11a42c2a3bdf19bc02809f50ca35d8a5771f0ec46e45f3c3",
+  "description": "XGBoost Quantile Regressor (P25, P50, P75) trained on synthetic data for pipeline validation"
+}

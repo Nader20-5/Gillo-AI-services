@@ -1,0 +1,18 @@
+{
+  "total_rows_scanned": 9253419,
+  "rows_retained": 409573,
+  "valid_issues_count": 41475,
+  "target_fields": [
+    "status",
+    "Actual Story Points",
+    "assignee",
+    "resolution",
+    "Story points",
+    "Story Points",
+    "Sprint",
+    "Link"
+  ],
+  "file_path": "d:\\Gillo AI Service\\benchmark_v2\\work\\changelog_slim.parquet",
+  "file_size_mb": 8.95,
+  "elapsed_seconds": 82.53
+}

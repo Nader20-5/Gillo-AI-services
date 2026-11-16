@@ -1,0 +1,41 @@
+services:
+  gillo-mongodb:
+    image: mongo:7.0
+    container_name: gillo-mongodb
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${MONGO_PORT:-27017}:27017"
+    environment:
+      MONGO_INITDB_DATABASE: ${MONGO_DB:-gillo_ai}
+    volumes:
+      - gillo_mongo_data:/data/db
+    networks:
+      - gillo-network
+
+  # Web-based UI to visually inspect MongoDB collections and seeded data
+  gillo-mongo-express:
+    image: mongo-express:latest
+    container_name: gillo-mongo-express
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: gillo-mongodb
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
+      ME_CONFIG_BASICAUTH: "true"
+      ME_CONFIG_BASICAUTH_USERNAME: ${MONGO_EXPRESS_USER}
+      ME_CONFIG_BASICAUTH_PASSWORD: ${MONGO_EXPRESS_PASSWORD}
+    depends_on:
+      - gillo-mongodb
+    networks:
+      - gillo-network
+
+volumes:
+  gillo_mongo_data:
+    name: gillo_mongo_data
+
+networks:
+  gillo-network:
+    name: gillo-network
+    driver: bridge

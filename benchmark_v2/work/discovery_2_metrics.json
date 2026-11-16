@@ -1,0 +1,374 @@
+{
+  "q1_sprint_format": {
+    "total_sprint_change_rows": 77327,
+    "from_string_multiple_count": 19006,
+    "to_string_multiple_count": 28594,
+    "sample_rows": [
+      {
+        "Issue_ID": 89,
+        "From_Value": "",
+        "To_Value": "108",
+        "From_String": "",
+        "To_String": "Sprint 68",
+        "Creation_Date": "2016-02-22 15:46:19"
+      },
+      {
+        "Issue_ID": 90,
+        "From_Value": "",
+        "To_Value": "108",
+        "From_String": "",
+        "To_String": "Sprint 68",
+        "Creation_Date": "2016-02-17 14:30:38"
+      },
+      {
+        "Issue_ID": 91,
+        "From_Value": "",
+        "To_Value": "108",
+        "From_String": "",
+        "To_String": "Sprint 68",
+        "Creation_Date": "2016-02-17 05:23:02"
+      },
+      {
+        "Issue_ID": 92,
+        "From_Value": "",
+        "To_Value": "108",
+        "From_String": "",
+        "To_String": "Sprint 68",
+        "Creation_Date": "2016-02-13 19:10:36"
+      },
+      {
+        "Issue_ID": 93,
+        "From_Value": "",
+        "To_Value": "107",
+        "From_String": "",
+        "To_String": "Sprint 67",
+        "Creation_Date": "2016-02-12 17:49:16"
+      },
+      {
+        "Issue_ID": 93,
+        "From_Value": "107",
+        "To_Value": "108",
+        "From_String": "Sprint 67",
+        "To_String": "Sprint 68",
+        "Creation_Date": "2016-02-13 19:10:03"
+      },
+      {
+        "Issue_ID": 94,
+        "From_Value": "",
+        "To_Value": "107",
+        "From_String": "",
+        "To_String": "Sprint 67",
+        "Creation_Date": "2016-02-05 16:17:13"
+      },
+      {
+        "Issue_ID": 95,
+        "From_Value": "107",
+        "To_Value": "108",
+        "From_String": "Sprint 67",
+        "To_String": "Sprint 68",
+        "Creation_Date": "2016-02-13 19:10:10"
+      },
+      {
+        "Issue_ID": 96,
+        "From_Value": "",
+        "To_Value": "107",
+        "From_String": "",
+        "To_String": "Sprint 67",
+        "Creation_Date": "2016-02-02 17:57:51"
+      },
+      {
+        "Issue_ID": 99,
+        "From_Value": "",
+        "To_Value": "107",
+        "From_String": "",
+        "To_String": "Sprint 65",
+        "Creation_Date": "2016-01-15 20:02:00"
+      }
+    ]
+  },
+  "q2_sprint_coverage": {
+    "total_closed_sprint_issues": 41475,
+    "issues_with_sprint_change_rows": 32540,
+    "issues_without_sprint_change_rows": 8935,
+    "fraction_with_change_history": 0.7846,
+    "only_issue_sprint_id_evidence": 8935
+  },
+  "q3_multi_sprint": {
+    "issues_with_multi_sprints_in_history": 15998,
+    "total_issues_analyzed": 32540,
+    "percentage_of_issues_with_sprint_changes": 49.16,
+    "issue_sprint_id_column_limitation": "issue.csv only stores a single scalar Sprint_ID representing the final sprint at export time."
+  },
+  "q4_status_reconstruction": {
+    "total_status_change_rows": 171183,
+    "issues_with_status_history": 41093,
+    "top_30_statuses": {
+      "In Progress": 70692,
+      "Resolved": 35031,
+      "Closed": 31207,
+      "Open": 30236,
+      "In Review": 21046,
+      "Done": 20241,
+      "To Do": 16245,
+      "Reviewed": 10941,
+      "Development in progress": 6791,
+      "Accepted": 6729,
+      "Reopened": 5953,
+      "Waiting for integration review": 5298,
+      "Awaiting Quality Review": 5158,
+      "Reviewable": 5085,
+      "Quality Review": 5053,
+      "Waiting for peer review": 5049,
+      "Peer review in progress": 4536,
+      "New": 3821,
+      "In  Review": 3652,
+      "Integration review in progress": 3177,
+      "Waiting for testing": 3022,
+      "Testing in progress": 3022,
+      "In Code Review": 2738,
+      "Tested": 2580,
+      "Awaiting Deployment": 2396,
+      "To Test": 2267,
+      "Code Review": 2238,
+      "Waiting for Review": 2044,
+      "To Be Tested": 2000,
+      "TO DO": 1871
+    },
+    "proposed_mapping": {
+      "todo": [
+        "Open",
+        "Unconfirmed",
+        "New",
+        "Submitted",
+        "Needs Triage",
+        "Reopened",
+        "To Do",
+        "Created",
+        "Untriaged",
+        "Backlog"
+      ],
+      "in_progress": [
+        "In Review",
+        "Blocked",
+        "Under Review",
+        "In Testing",
+        "Testing",
+        "Review",
+        "Patch Available",
+        "In Development",
+        "Code Review",
+        "In Progress"
+      ],
+      "done": [
+        "Closed",
+        "Verified",
+        "Complete",
+        "Resolved",
+        "Completed",
+        "Done",
+        "Delivered"
+      ]
+    }
+  },
+  "q5_resolution_date_agreement": {
+    "issues_compared": 38495,
+    "disagreement_gt_1h": 4776,
+    "disagreement_rate_gt_1h": 0.1241,
+    "disagreement_gt_24h": 4445,
+    "disagreement_rate_gt_24h": 0.1155,
+    "median_diff_hours": 0.0,
+    "p95_diff_hours": 5878.48
+  },
+  "q6_link_rows": {
+    "total_link_changes": 42751,
+    "sample_rows": [
+      {
+        "Issue_ID": 89,
+        "From_String": "",
+        "To_String": "This issue is related to XD-2567",
+        "Creation_Date": "2016-02-22 15:28:17"
+      },
+      {
+        "Issue_ID": 90,
+        "From_String": "",
+        "To_String": "This issue depends on INT-3956",
+        "Creation_Date": "2016-02-17 14:28:51"
+      },
+      {
+        "Issue_ID": 96,
+        "From_String": "",
+        "To_String": "This issue relates to XD-3721",
+        "Creation_Date": "2016-02-02 17:56:59"
+      },
+      {
+        "Issue_ID": 112,
+        "From_String": "",
+        "To_String": "This issue is related to XD-3737",
+        "Creation_Date": "2016-02-02 17:56:59"
+      },
+      {
+        "Issue_ID": 124,
+        "From_String": "",
+        "To_String": "This issue is related to INT-3896",
+        "Creation_Date": "2015-11-21 17:40:20"
+      },
+      {
+        "Issue_ID": 160,
+        "From_String": "",
+        "To_String": "This issue is related to XD-3613",
+        "Creation_Date": "2015-11-02 17:00:01"
+      },
+      {
+        "Issue_ID": 185,
+        "From_String": "",
+        "To_String": "This issue relates to XD-3559",
+        "Creation_Date": "2015-10-27 21:30:09"
+      },
+      {
+        "Issue_ID": 216,
+        "From_String": "",
+        "To_String": "This issue is depended on by XD-2882",
+        "Creation_Date": "2015-10-14 15:52:41"
+      },
+      {
+        "Issue_ID": 235,
+        "From_String": "",
+        "To_String": "This issue is related to INT-3848",
+        "Creation_Date": "2015-10-07 16:02:31"
+      },
+      {
+        "Issue_ID": 240,
+        "From_String": "",
+        "To_String": "This issue is depended on by XD-3489",
+        "Creation_Date": "2015-10-15 15:09:57"
+      }
+    ],
+    "top_to_strings": {
+      "": 3062,
+      "This issue is blocked by MDL-44084": 47,
+      "This issue relates to DM-6179": 27,
+      "This issue relates to TIMOB-20624": 20,
+      "This issue is contained by DM-21983": 16,
+      "This issue is child task of DM-5716": 16,
+      "This issue is contained by DM-22525": 15,
+      "This issue is blocked by MDL-62560": 14,
+      "This issue depends on COMPASS-2495": 14,
+      "This issue depends on COMPASS-3289": 14
+    },
+    "can_count_links_before_t": true,
+    "explanation": "Yes, unlike issue_link.csv which has NO timestamps, change_log.csv records each link addition with an exact Creation_Date timestamp."
+  },
+  "q7_sprint_dates": {
+    "total_sprints": 4594,
+    "activated_date_coverage": 342,
+    "activated_date_coverage_pct": 7.44,
+    "complete_date_coverage": 4507,
+    "complete_date_coverage_pct": 98.11,
+    "complete_minus_end_days_quantiles": {
+      "P5": -1.16,
+      "P25": -0.02,
+      "P50": 0.33,
+      "P75": 2.96,
+      "P95": 23.06,
+      "mean": 7.77,
+      "std": 63.46
+    }
+  },
+  "q8_effort_metrics": {
+    "effort_coverage_and_quantiles": {
+      "In_Progress_Minutes": {
+        "total_notna": 41475,
+        "total_gt0": 26089,
+        "coverage_pct": 62.9,
+        "median": 2692.0,
+        "p95": 70422.8
+      },
+      "Timespent": {
+        "total_notna": 829,
+        "total_gt0": 829,
+        "coverage_pct": 2.0,
+        "median": 240.0,
+        "p95": 2551.8
+      },
+      "Total_Effort_Minutes": {
+        "total_notna": 41475,
+        "total_gt0": 32650,
+        "coverage_pct": 78.72,
+        "median": 7331.5,
+        "p95": 117554.4
+      }
+    },
+    "top_5_projects_correlation_with_story_points": {
+      "28": {
+        "In_Progress_Minutes": {
+          "spearman_or_pearson_corr": 0.2073,
+          "n_samples": 5743
+        },
+        "Timespent": {
+          "spearman_or_pearson_corr": 0.1865,
+          "n_samples": 126
+        },
+        "Total_Effort_Minutes": {
+          "spearman_or_pearson_corr": 0.2113,
+          "n_samples": 6817
+        }
+      },
+      "12": {
+        "In_Progress_Minutes": {
+          "spearman_or_pearson_corr": 0.0631,
+          "n_samples": 2039
+        },
+        "Timespent": {
+          "spearman_or_pearson_corr": null,
+          "n_samples": 0
+        },
+        "Total_Effort_Minutes": {
+          "spearman_or_pearson_corr": 0.0931,
+          "n_samples": 2600
+        }
+      },
+      "36": {
+        "In_Progress_Minutes": {
+          "spearman_or_pearson_corr": 0.2112,
+          "n_samples": 2194
+        },
+        "Timespent": {
+          "spearman_or_pearson_corr": null,
+          "n_samples": 0
+        },
+        "Total_Effort_Minutes": {
+          "spearman_or_pearson_corr": 0.2112,
+          "n_samples": 2193
+        }
+      },
+      "4": {
+        "In_Progress_Minutes": {
+          "spearman_or_pearson_corr": 0.1761,
+          "n_samples": 1386
+        },
+        "Timespent": {
+          "spearman_or_pearson_corr": null,
+          "n_samples": 1
+        },
+        "Total_Effort_Minutes": {
+          "spearman_or_pearson_corr": 0.1332,
+          "n_samples": 1772
+        }
+      },
+      "1": {
+        "In_Progress_Minutes": {
+          "spearman_or_pearson_corr": 0.297,
+          "n_samples": 1691
+        },
+        "Timespent": {
+          "spearman_or_pearson_corr": null,
+          "n_samples": 2
+        },
+        "Total_Effort_Minutes": {
+          "spearman_or_pearson_corr": 0.2885,
+          "n_samples": 1801
+        }
+      }
+    }
+  }
+}

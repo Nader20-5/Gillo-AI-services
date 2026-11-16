@@ -1,0 +1,135 @@
+{
+  "c_cold_start": 0.1147,
+  "per_fold_coverage_pct": [
+    45.48,
+    55.82,
+    46.04,
+    42.23,
+    64.61
+  ],
+  "same_treatment_results": {
+    "continuous_raw": {
+      "model_MAE": 1.7607,
+      "model_MdAE": 1.0932,
+      "model_frac_le_1": 46.2,
+      "baseline_MAE": 1.9729,
+      "baseline_MdAE": 1.0,
+      "baseline_frac_le_1": 51.32
+    },
+    "snapped_fibonacci": {
+      "model_MAE": 1.7411,
+      "model_MdAE": 1.0,
+      "model_frac_le_1": 63.42,
+      "baseline_MAE": 1.9729,
+      "baseline_MdAE": 1.0,
+      "baseline_frac_le_1": 51.32
+    }
+  },
+  "losing_projects_table": [
+    {
+      "project_id": 11,
+      "fold": 2,
+      "tickets": 941,
+      "MAE_final_model": 2.933,
+      "MAE_per_type_median": 2.7715,
+      "diff_MAE": 0.1614,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 3,
+      "fold": 3,
+      "tickets": 992,
+      "MAE_final_model": 1.2611,
+      "MAE_per_type_median": 1.1561,
+      "diff_MAE": 0.1049,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 17,
+      "fold": 3,
+      "tickets": 134,
+      "MAE_final_model": 1.2733,
+      "MAE_per_type_median": 1.1712,
+      "diff_MAE": 0.1021,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 42,
+      "fold": 3,
+      "tickets": 1496,
+      "MAE_final_model": 1.1211,
+      "MAE_per_type_median": 0.8241,
+      "diff_MAE": 0.297,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 21,
+      "fold": 4,
+      "tickets": 282,
+      "MAE_final_model": 1.3744,
+      "MAE_per_type_median": 1.3032,
+      "diff_MAE": 0.0713,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 24,
+      "fold": 4,
+      "tickets": 464,
+      "MAE_final_model": 1.3546,
+      "MAE_per_type_median": 1.2457,
+      "diff_MAE": 0.109,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 6,
+      "fold": 5,
+      "tickets": 145,
+      "MAE_final_model": 4.4702,
+      "MAE_per_type_median": 4.4448,
+      "diff_MAE": 0.0254,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 27,
+      "fold": 5,
+      "tickets": 729,
+      "MAE_final_model": 1.0205,
+      "MAE_per_type_median": 0.9451,
+      "diff_MAE": 0.0754,
+      "status": "LOSS"
+    },
+    {
+      "project_id": 29,
+      "fold": 5,
+      "tickets": 496,
+      "MAE_final_model": 1.0501,
+      "MAE_per_type_median": 0.9536,
+      "diff_MAE": 0.0965,
+      "status": "LOSS"
+    }
+  ],
+  "type_median_fallback": {
+    "description": "Per-type median story points computed from TAWOS training data (Epic-excluded, N=29,330)",
+    "global_median": 3.0,
+    "type_medians": {
+      "Bug": 2.0,
+      "Build Failure": 1.0,
+      "Documentation": 2.0,
+      "Enhancement Request": 5.0,
+      "Improvement": 3.0,
+      "Incident": 1.0,
+      "New Feature": 3.0,
+      "Problem Ticket": 1.0,
+      "Question": 1.0,
+      "Story": 3.0,
+      "Sub-task": 2.0,
+      "Suggestion": 3.0,
+      "Support Request": 4.0,
+      "Task": 3.0,
+      "Technical Debt": 2.5,
+      "Technical task": 5.0,
+      "Wish": 3.0
+    }
+  },
+  "type_median_fallback_sha256": "8d250d2e5bb08a3c94ff68fca1186cfe5adc7431f95e972e42fe892654b32978"
+}

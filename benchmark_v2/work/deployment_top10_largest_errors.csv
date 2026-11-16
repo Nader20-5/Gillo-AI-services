@@ -1,0 +1,11 @@
+Issue_ID,Title,Type,Project_ID,True_Story_Point,Predicted_Story_Point,Absolute_Error,Signed_Error
+225277,"""LDF FFY20 Planned Acquisitions""",Epic,28,100.0,20.75,79.25,-79.25
+226646,"""BDC systems setup""",Epic,28,100.0,20.8,79.2,-79.2
+223976,"""QA tooling and monitoring of the AP pipeline in S20B""",Epic,28,99.9,21.0,78.9,-78.9
+225714,"""DRP efforts toward Gen 3 Middleware and PipelineTask conversion in S20A""",Epic,28,99.0,20.99,78.01,-78.01
+223086,"""QA including fakes, sims, and drill down tools in F20A""",Epic,28,97.4,21.37,76.03,-76.03
+223212,"""AP QA, debugging, and diagnostics in F20A""",Epic,28,88.8,20.82,67.98,-67.98
+221592,"""Emergent work for DRP in f20B""",Epic,28,88.25,20.91,67.34,-67.34
+224581,"""DRP efforts toward Gen 3 middleware S20B: PipelineTask conversion""",Epic,28,87.0,21.29,65.71,-65.71
+221591,"""QA including fakes, sims, and drill down tools in F20B""",Epic,28,85.39,21.37,64.02,-64.02
+222523,"""Dome Work Phase 5""",Epic,28,80.0,20.94,59.06,-59.06

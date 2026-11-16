@@ -1,0 +1,33 @@
+{
+  "dataset": "TAWOS Real Jira Benchmark",
+  "task": "Sprint Midpoint Carry-Over Prediction",
+  "train_samples": 30168,
+  "test_samples": 10057,
+  "split_method": "Strict Temporal Split (by Sprint_Start Date)",
+  "test_prevalence_carry_over": 0.5357,
+  "Baseline_LogisticRegression": {
+    "ROC_AUC": 0.5296,
+    "PR_AUC": 0.5759,
+    "Brier_Score": 0.2528
+  },
+  "Model2_LightGBM": {
+    "ROC_AUC": 0.6281,
+    "PR_AUC": 0.6458,
+    "Accuracy": 0.5948,
+    "Precision": 0.6215,
+    "Recall": 0.6234,
+    "F1_Score": 0.6224,
+    "Brier_Score": 0.2371,
+    "Brier_Skill_Score_Pct": 4.66,
+    "Confusion_Matrix": [
+      [
+        2623,
+        2046
+      ],
+      [
+        2029,
+        3359
+      ]
+    ]
+  }
+}

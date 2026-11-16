@@ -1,0 +1,479 @@
+{
+  "metadata": {
+    "pipeline": "model2_final_audits",
+    "generated_at": "2026-11-13 23:32:50",
+    "canonical_test_sprints_count": 148
+  },
+  "base_rates": {
+    "train": 0.6595,
+    "val_f50": 0.749,
+    "test_f50": 0.7418,
+    "heldout_f50": 0.6968
+  },
+  "models_comparison": {
+    "LR(23)": {
+      "roc_auc": 0.681,
+      "pr_auc": 0.8551,
+      "brier_score": 0.2186,
+      "within_sprint_auc": 0.6898,
+      "macro_proj_auc": 0.6641,
+      "precision@3": 0.8716,
+      "precision@5": 0.8446,
+      "precision@20_pct": 0.8845,
+      "lift_ratio_means": 1.1673,
+      "lift_mean_ratios": 1.2063
+    },
+    "LightGBM Taskove": {
+      "roc_auc": 0.7222,
+      "pr_auc": 0.8786,
+      "brier_score": 0.1712,
+      "within_sprint_auc": 0.7039,
+      "macro_proj_auc": 0.6748,
+      "precision@3": 0.8716,
+      "precision@5": 0.8568,
+      "precision@20_pct": 0.8635,
+      "lift_ratio_means": 1.1842,
+      "lift_mean_ratios": 1.2293
+    },
+    "LR(54)": {
+      "roc_auc": 0.7081,
+      "pr_auc": 0.8698,
+      "brier_score": 0.1992,
+      "within_sprint_auc": 0.7225,
+      "macro_proj_auc": 0.6725,
+      "precision@3": 0.9122,
+      "precision@5": 0.8838,
+      "precision@20_pct": 0.9082,
+      "lift_ratio_means": 1.2215,
+      "lift_mean_ratios": 1.2836
+    },
+    "LightGBM Full": {
+      "roc_auc": 0.7475,
+      "pr_auc": 0.8854,
+      "brier_score": 0.1646,
+      "within_sprint_auc": 0.7214,
+      "macro_proj_auc": 0.685,
+      "precision@3": 0.8919,
+      "precision@5": 0.8649,
+      "precision@20_pct": 0.8778,
+      "lift_ratio_means": 1.1954,
+      "lift_mean_ratios": 1.2442
+    }
+  },
+  "bootstrap_tk_vs_lr23": {
+    "auc": {
+      "mean_diff": 0.0381,
+      "ci_95": [
+        0.0136,
+        0.0638
+      ],
+      "excludes_zero": true
+    },
+    "within_auc": {
+      "mean_diff": 0.0142,
+      "ci_95": [
+        -0.013,
+        0.0428
+      ],
+      "excludes_zero": false
+    },
+    "p5": {
+      "mean_diff": 0.0118,
+      "ci_95": [
+        -0.0108,
+        0.0338
+      ],
+      "excludes_zero": false
+    },
+    "p20": {
+      "mean_diff": -0.0216,
+      "ci_95": [
+        -0.0457,
+        0.0034
+      ],
+      "excludes_zero": false
+    }
+  },
+  "bootstrap_tk_vs_lr54": {
+    "auc": {
+      "mean_diff": 0.0216,
+      "ci_95": [
+        -0.0029,
+        0.0446
+      ],
+      "excludes_zero": false
+    },
+    "within_auc": {
+      "mean_diff": -0.0183,
+      "ci_95": [
+        -0.0448,
+        0.008
+      ],
+      "excludes_zero": false
+    },
+    "p5": {
+      "mean_diff": -0.0274,
+      "ci_95": [
+        -0.0554,
+        -0.0014
+      ],
+      "excludes_zero": true
+    },
+    "p20": {
+      "mean_diff": -0.0454,
+      "ci_95": [
+        -0.0791,
+        -0.0148
+      ],
+      "excludes_zero": true
+    }
+  },
+  "calibration": {
+    "brier_val_b": {
+      "isotonic": 0.169,
+      "platt": 0.1693,
+      "grouped": 0.1698
+    },
+    "brier_test": {
+      "isotonic": 0.1712,
+      "platt": 0.1699,
+      "grouped": 0.1733
+    },
+    "lr23_test_brier": {
+      "uncalibrated": 0.2186,
+      "platt_calibrated": 0.1791
+    },
+    "taskove_brier_skill_score": 0.1065,
+    "taskove_decile_reliability": [
+      {
+        "bin_index": 1,
+        "bin_range": "[0.0, 0.1)",
+        "count": 12,
+        "mean_predicted": 0.0,
+        "observed_rate": 0.3333,
+        "gap": 0.3333
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "[0.1, 0.2)",
+        "count": 0,
+        "mean_predicted": "n/a",
+        "observed_rate": "n/a",
+        "gap": "n/a"
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "[0.2, 0.3)",
+        "count": 15,
+        "mean_predicted": 0.25,
+        "observed_rate": 0.2667,
+        "gap": 0.0167
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "[0.3, 0.4)",
+        "count": 138,
+        "mean_predicted": 0.3193,
+        "observed_rate": 0.3841,
+        "gap": 0.0648
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "[0.4, 0.5)",
+        "count": 713,
+        "mean_predicted": 0.4732,
+        "observed_rate": 0.5498,
+        "gap": 0.0766
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "[0.5, 0.6)",
+        "count": 150,
+        "mean_predicted": 0.5812,
+        "observed_rate": 0.6,
+        "gap": 0.0188
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "[0.6, 0.7)",
+        "count": 857,
+        "mean_predicted": 0.6526,
+        "observed_rate": 0.6418,
+        "gap": -0.0108
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "[0.7, 0.8)",
+        "count": 811,
+        "mean_predicted": 0.752,
+        "observed_rate": 0.767,
+        "gap": 0.0149
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "[0.8, 0.9)",
+        "count": 712,
+        "mean_predicted": 0.8676,
+        "observed_rate": 0.8118,
+        "gap": -0.0558
+      },
+      {
+        "bin_index": 10,
+        "bin_range": "[0.9, 1.0]",
+        "count": 1363,
+        "mean_predicted": 0.933,
+        "observed_rate": 0.9142,
+        "gap": -0.0188
+      }
+    ],
+    "full_decile_reliability": [
+      {
+        "bin_index": 1,
+        "bin_range": "[0.0, 0.1)",
+        "count": 27,
+        "mean_predicted": 0.0303,
+        "observed_rate": 0.037,
+        "gap": 0.0067
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "[0.1, 0.2)",
+        "count": 84,
+        "mean_predicted": 0.1231,
+        "observed_rate": 0.369,
+        "gap": 0.2459
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "[0.2, 0.3)",
+        "count": 125,
+        "mean_predicted": 0.2603,
+        "observed_rate": 0.392,
+        "gap": 0.1317
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "[0.3, 0.4)",
+        "count": 75,
+        "mean_predicted": 0.3776,
+        "observed_rate": 0.5733,
+        "gap": 0.1957
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "[0.4, 0.5)",
+        "count": 624,
+        "mean_predicted": 0.4612,
+        "observed_rate": 0.4984,
+        "gap": 0.0372
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "[0.5, 0.6)",
+        "count": 521,
+        "mean_predicted": 0.5529,
+        "observed_rate": 0.6123,
+        "gap": 0.0594
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "[0.6, 0.7)",
+        "count": 302,
+        "mean_predicted": 0.694,
+        "observed_rate": 0.6921,
+        "gap": -0.002
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "[0.7, 0.8)",
+        "count": 1219,
+        "mean_predicted": 0.7706,
+        "observed_rate": 0.7875,
+        "gap": 0.0169
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "[0.8, 0.9)",
+        "count": 428,
+        "mean_predicted": 0.8641,
+        "observed_rate": 0.8435,
+        "gap": -0.0206
+      },
+      {
+        "bin_index": 10,
+        "bin_range": "[0.9, 1.0]",
+        "count": 1366,
+        "mean_predicted": 0.9307,
+        "observed_rate": 0.9187,
+        "gap": -0.0119
+      }
+    ]
+  },
+  "threshold_policy_taskove": [
+    {
+      "threshold": 0.5,
+      "flag_rate_pct": 81.6,
+      "precision": 0.7927,
+      "recall": 0.872,
+      "lift": 1.0687
+    },
+    {
+      "threshold": 0.6,
+      "flag_rate_pct": 78.45,
+      "precision": 0.8004,
+      "recall": 0.8466,
+      "lift": 1.0791
+    },
+    {
+      "threshold": 0.7,
+      "flag_rate_pct": 60.49,
+      "precision": 0.8475,
+      "recall": 0.6912,
+      "lift": 1.1426
+    },
+    {
+      "threshold": 0.8,
+      "flag_rate_pct": 43.49,
+      "precision": 0.879,
+      "recall": 0.5154,
+      "lift": 1.185
+    },
+    {
+      "threshold": 0.9,
+      "flag_rate_pct": 28.57,
+      "precision": 0.9142,
+      "recall": 0.3521,
+      "lift": 1.2324
+    },
+    {
+      "threshold": 0.92,
+      "flag_rate_pct": 17.69,
+      "precision": 0.9502,
+      "recall": 0.2266,
+      "lift": 1.281
+    },
+    {
+      "threshold": 0.95,
+      "flag_rate_pct": 1.15,
+      "precision": 0.9455,
+      "recall": 0.0147,
+      "lift": 1.2746
+    },
+    {
+      "threshold": "Flag All (0.00)",
+      "flag_rate_pct": 100.0,
+      "precision": 0.7418,
+      "recall": 1.0,
+      "lift": 1.0
+    }
+  ],
+  "held_out_projects": {
+    "train_dates": [
+      "2012-02-28",
+      "2018-03-01"
+    ],
+    "set1": {
+      "projects": [
+        11,
+        19,
+        21,
+        28,
+        35
+      ],
+      "dates": [
+        "2012-02-28",
+        "2020-10-12"
+      ],
+      "overlap_with_train": true,
+      "project_28_included": true,
+      "table": [
+        {
+          "model": "Rule: status_category == todo",
+          "roc_auc": 0.6165,
+          "pr_auc": 0.8304,
+          "within_sprint_auc": 0.6252,
+          "macro_proj_auc": 0.6214,
+          "precision@3": 0.7901,
+          "precision@5": 0.7844
+        },
+        {
+          "model": "Rule: carry_count > 0",
+          "roc_auc": 0.6005,
+          "pr_auc": 0.8319,
+          "within_sprint_auc": 0.5762,
+          "macro_proj_auc": 0.5541,
+          "precision@3": 0.7556,
+          "precision@5": 0.7548
+        },
+        {
+          "model": "LR(23)",
+          "roc_auc": 0.6816,
+          "pr_auc": 0.8167,
+          "within_sprint_auc": 0.6984,
+          "macro_proj_auc": 0.6617,
+          "precision@3": 0.8049,
+          "precision@5": 0.8044
+        },
+        {
+          "model": "Taskove LightGBM",
+          "roc_auc": 0.7066,
+          "pr_auc": 0.8278,
+          "within_sprint_auc": 0.7253,
+          "macro_proj_auc": 0.6737,
+          "precision@3": 0.8358,
+          "precision@5": 0.8296
+        }
+      ]
+    },
+    "set2": {
+      "projects": [
+        1,
+        3,
+        6,
+        20,
+        23
+      ],
+      "seed": 123,
+      "min_sprints": 20,
+      "project_28_included": false,
+      "table": [
+        {
+          "model": "Rule: status_category == todo",
+          "roc_auc": 0.6116,
+          "pr_auc": 0.6688,
+          "within_sprint_auc": 0.5941,
+          "macro_proj_auc": 0.5929,
+          "precision@3": 0.5219,
+          "precision@5": 0.5394
+        },
+        {
+          "model": "Rule: carry_count > 0",
+          "roc_auc": 0.5498,
+          "pr_auc": 0.603,
+          "within_sprint_auc": 0.5364,
+          "macro_proj_auc": 0.5456,
+          "precision@3": 0.4714,
+          "precision@5": 0.4606
+        },
+        {
+          "model": "LR(23)",
+          "roc_auc": 0.6507,
+          "pr_auc": 0.6171,
+          "within_sprint_auc": 0.6448,
+          "macro_proj_auc": 0.6262,
+          "precision@3": 0.6128,
+          "precision@5": 0.5919
+        },
+        {
+          "model": "Taskove LightGBM",
+          "roc_auc": 0.7064,
+          "pr_auc": 0.6668,
+          "within_sprint_auc": 0.6891,
+          "macro_proj_auc": 0.6768,
+          "precision@3": 0.6465,
+          "precision@5": 0.6384
+        }
+      ]
+    }
+  }
+}

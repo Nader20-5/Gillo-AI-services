@@ -1,0 +1,20 @@
+{
+  "model": "LightGBM Binary Classifier + SHAP",
+  "Accuracy": 0.775,
+  "Precision": 0.5635,
+  "Recall": 0.6456,
+  "F1_Score": 0.6018,
+  "ROC_AUC": 0.8001,
+  "Confusion_Matrix": [
+    [
+      363,
+      79
+    ],
+    [
+      56,
+      102
+    ]
+  ],
+  "train_samples": 2400,
+  "test_samples": 600
+}

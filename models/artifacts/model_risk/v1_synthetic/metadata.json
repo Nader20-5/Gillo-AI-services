@@ -1,0 +1,30 @@
+{
+  "name": "model_risk",
+  "version": "v1_synthetic",
+  "model_file": "model_risk.pkl",
+  "trained_on": "synthetic",
+  "trained_at": "2026-10-16T12:00:00Z",
+  "feature_list": [
+    "stalled_days",
+    "dependency_depth",
+    "active_blockers",
+    "assignee_load_ratio",
+    "logged_vs_estimated_ratio",
+    "story_points"
+  ],
+  "library_versions": {
+    "lightgbm": "4.7.0",
+    "shap": "0.49.1",
+    "scikit-learn": "1.7.2"
+  },
+  "metrics": {
+    "Accuracy": 0.775,
+    "Precision": 0.5635,
+    "Recall": 0.6456,
+    "F1_Score": 0.6018,
+    "ROC_AUC": 0.8001,
+    "note": "Metrics evaluated on synthetic test split generated with logistic scoring formula"
+  },
+  "sha256": "8efbb2010e2d7fd5822e04a5a57a00e89dfb4dfe75ba667f34df372bd63b8cb5",
+  "description": "LightGBM Binary Classifier + SHAP TreeExplainer trained on synthetic data for pipeline validation"
+}

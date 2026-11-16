@@ -1,0 +1,269 @@
+{
+  "description": "Per-type median story points and descriptive [Q25, Q75] range computed from TAWOS training data (Epic-excluded, N=29,330)",
+  "global_median": 3.0,
+  "global_interval": [
+    1.0,
+    5.0
+  ],
+  "type_medians": {
+    "Bug": 2.0,
+    "Build Failure": 1.0,
+    "Documentation": 2.0,
+    "Enhancement Request": 5.0,
+    "Improvement": 3.0,
+    "Incident": 1.0,
+    "New Feature": 3.0,
+    "Problem Ticket": 1.0,
+    "Question": 1.0,
+    "Story": 3.0,
+    "Sub-task": 2.0,
+    "Suggestion": 3.0,
+    "Support Request": 4.0,
+    "Task": 3.0,
+    "Technical Debt": 2.5,
+    "Technical task": 5.0,
+    "Wish": 3.0
+  },
+  "type_intervals": {
+    "Bug": [
+      1.0,
+      5.0
+    ],
+    "Build Failure": [
+      1.0,
+      1.0
+    ],
+    "Documentation": [
+      1.0,
+      3.0
+    ],
+    "Enhancement Request": [
+      3.0,
+      8.0
+    ],
+    "Improvement": [
+      1.0,
+      5.0
+    ],
+    "Incident": [
+      1.0,
+      1.5
+    ],
+    "New Feature": [
+      2.0,
+      5.0
+    ],
+    "Problem Ticket": [
+      1.0,
+      2.0
+    ],
+    "Question": [
+      1.0,
+      1.2
+    ],
+    "Story": [
+      1.0,
+      5.0
+    ],
+    "Sub-task": [
+      1.0,
+      4.0
+    ],
+    "Suggestion": [
+      2.0,
+      4.0
+    ],
+    "Support Request": [
+      4.0,
+      4.0
+    ],
+    "Task": [
+      2.0,
+      5.0
+    ],
+    "Technical Debt": [
+      2.0,
+      4.5
+    ],
+    "Technical task": [
+      3.0,
+      8.0
+    ],
+    "Wish": [
+      2.5,
+      5.5
+    ]
+  },
+  "details": {
+    "Bug": {
+      "count": 9682,
+      "q25": 1.0,
+      "q50": 2.0,
+      "q75": 5.0,
+      "interval": [
+        1.0,
+        5.0
+      ]
+    },
+    "Build Failure": {
+      "count": 80,
+      "q25": 1.0,
+      "q50": 1.0,
+      "q75": 1.0,
+      "interval": [
+        1.0,
+        1.0
+      ]
+    },
+    "Documentation": {
+      "count": 76,
+      "q25": 1.0,
+      "q50": 2.0,
+      "q75": 3.0,
+      "interval": [
+        1.0,
+        3.0
+      ]
+    },
+    "Enhancement Request": {
+      "count": 654,
+      "q25": 3.0,
+      "q50": 5.0,
+      "q75": 8.0,
+      "interval": [
+        3.0,
+        8.0
+      ]
+    },
+    "Improvement": {
+      "count": 3449,
+      "q25": 1.0,
+      "q50": 3.0,
+      "q75": 5.0,
+      "interval": [
+        1.0,
+        5.0
+      ]
+    },
+    "Incident": {
+      "count": 3,
+      "q25": 1.0,
+      "q50": 1.0,
+      "q75": 1.5,
+      "interval": [
+        1.0,
+        1.5
+      ]
+    },
+    "New Feature": {
+      "count": 1276,
+      "q25": 2.0,
+      "q50": 3.0,
+      "q75": 5.0,
+      "interval": [
+        2.0,
+        5.0
+      ]
+    },
+    "Problem Ticket": {
+      "count": 15,
+      "q25": 1.0,
+      "q50": 1.0,
+      "q75": 2.0,
+      "interval": [
+        1.0,
+        2.0
+      ]
+    },
+    "Question": {
+      "count": 4,
+      "q25": 1.0,
+      "q50": 1.0,
+      "q75": 1.25,
+      "interval": [
+        1.0,
+        1.2
+      ]
+    },
+    "Story": {
+      "count": 9299,
+      "q25": 1.0,
+      "q50": 3.0,
+      "q75": 5.0,
+      "interval": [
+        1.0,
+        5.0
+      ]
+    },
+    "Sub-task": {
+      "count": 464,
+      "q25": 1.0,
+      "q50": 2.0,
+      "q75": 4.0,
+      "interval": [
+        1.0,
+        4.0
+      ]
+    },
+    "Suggestion": {
+      "count": 1239,
+      "q25": 2.0,
+      "q50": 3.0,
+      "q75": 4.0,
+      "interval": [
+        2.0,
+        4.0
+      ]
+    },
+    "Support Request": {
+      "count": 4,
+      "q25": 4.0,
+      "q50": 4.0,
+      "q75": 4.0,
+      "interval": [
+        4.0,
+        4.0
+      ]
+    },
+    "Task": {
+      "count": 2763,
+      "q25": 2.0,
+      "q50": 3.0,
+      "q75": 5.0,
+      "interval": [
+        2.0,
+        5.0
+      ]
+    },
+    "Technical Debt": {
+      "count": 6,
+      "q25": 2.0,
+      "q50": 2.5,
+      "q75": 4.5,
+      "interval": [
+        2.0,
+        4.5
+      ]
+    },
+    "Technical task": {
+      "count": 313,
+      "q25": 3.0,
+      "q50": 5.0,
+      "q75": 8.0,
+      "interval": [
+        3.0,
+        8.0
+      ]
+    },
+    "Wish": {
+      "count": 3,
+      "q25": 2.5,
+      "q50": 3.0,
+      "q75": 5.5,
+      "interval": [
+        2.5,
+        5.5
+      ]
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "name": "model_sp_taskove",
+  "version": "v2_taskove",
+  "trained_on": "tawos",
+  "target": "story_points",
+  "architecture": "LightGBM (TF-IDF + Type, No Priority, L1)",
+  "ordered_input_fields": [
+    "title",
+    "description",
+    "type"
+  ],
+  "priority_field_status": "EXCLUDED (Priority is not available in Taskove and is omitted to prevent cross-tenant fragility)",
+  "excluded_populations": [
+    "Type == Epic (Taskove estimates sprint tasks and stories, not multi-month epics)",
+    "Story_Point > 100.0 (implausible extreme outliers)",
+    "Resolution in [wontfix, duplicate, invalid, cannot reproduce]",
+    "Story_Point_Changed_After_Estimation == 1",
+    "Title_Changed_After_Estimation == 1",
+    "Description_Changed_After_Estimation == 1"
+  ],
+  "taskove_to_tawos_type_mapping": [
+    {
+      "taskove_type": "feature",
+      "mapped_tawos_type": "Story",
+      "mapping_nature": "approximate",
+      "notes": "Mapped to Scrum user story; alternatively New Feature"
+    },
+    {
+      "taskove_type": "bug",
+      "mapped_tawos_type": "Bug",
+      "mapping_nature": "exact",
+      "notes": "Identical semantic bug defect definition"
+    },
+    {
+      "taskove_type": "infra",
+      "mapped_tawos_type": "Technical task",
+      "mapping_nature": "approximate",
+      "notes": "Mapped to technical/infrastructure maintenance task"
+    },
+    {
+      "taskove_type": "refactor",
+      "mapped_tawos_type": "Improvement",
+      "mapping_nature": "approximate",
+      "notes": "Code refactoring mapped to Improvement or Technical Debt"
+    },
+    {
+      "taskove_type": "test",
+      "mapped_tawos_type": "Technical task",
+      "mapping_nature": "approximate",
+      "notes": "Testing task mapped to Technical task"
+    },
+    {
+      "taskove_type": "docs",
+      "mapped_tawos_type": "Documentation",
+      "mapping_nature": "exact",
+      "notes": "Exact documentation task mapping"
+    },
+    {
+      "taskove_type": "qa",
+      "mapped_tawos_type": "Technical task",
+      "mapping_nature": "approximate",
+      "notes": "Quality assurance and testing task mapped to Technical task"
+    },
+    {
+      "taskove_type": "backend",
+      "mapped_tawos_type": "Technical task",
+      "mapping_nature": "approximate",
+      "notes": "Backend engineering task mapped to Technical task"
+    },
+    {
+      "taskove_type": "frontend",
+      "mapped_tawos_type": "Technical task",
+      "mapping_nature": "approximate",
+      "notes": "Frontend engineering task mapped to Technical task"
+    },
+    {
+      "taskove_type": "ml",
+      "mapped_tawos_type": "Task",
+      "mapping_nature": "approximate",
+      "notes": "Machine learning engineering task mapped to generic Task"
+    }
+  ],
+  "encoder_known_types": [
+    "Bug",
+    "Build Failure",
+    "Documentation",
+    "Enhancement Request",
+    "Improvement",
+    "Incident",
+    "New Feature",
+    "Problem Ticket",
+    "Question",
+    "Story",
+    "Sub-task",
+    "Suggestion",
+    "Support Request",
+    "Task",
+    "Technical Debt",
+    "Technical task",
+    "Wish"
+  ],
+  "feature_count": 2517,
+  "library_versions": {
+    "python": "3.10.0",
+    "scikit-learn": "1.7.2",
+    "lightgbm": "4.7.0",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  },
+  "artifacts": {
+    "model_sp_final_sha256": "1a26a35c770b5265285ca0b9150aa8b624986e7b79f2ab3447f5de554c1ed7a4",
+    "model_sp_q25_sha256": "c7115ae554116f900372ed4b0591b084dcb2bbec8e3883b8ee114ba82bfba67d",
+    "model_sp_q50_sha256": "92ab7ea1cd426b65e666c8075eb5a27bca309b6cf70931a4dcd625883d581185",
+    "model_sp_q75_sha256": "d2d00ee4851157bcaed01c66138e7e5e2537d3bb7bb00831ef5988f1171297c0",
+    "tfidf_vectorizer_sha256": "2836420bd1a7e82ac266f6cf6a8701625827f32a4b24ff2fccb6029ab20116a7",
+    "ohe_encoder_sha256": "0d69585161e414888b448d09287c58f0bca97441c1d1c44eb43ea59ade33d5bd",
+    "type_median_fallback_sha256": "b31286f9574b35f13382144c852e0fcf0ddd48c90f1a9fab36d114088f5972b8"
+  },
+  "conformal_interval": {
+    "adjustment_constant": 0.0177,
+    "nominal_coverage_pct": 50.0,
+    "test_coverage_pct": 51.6783,
+    "test_mean_width_points": 2.9217,
+    "in_domain": {
+      "adjustment_constant": 0.0177,
+      "test_coverage_pct": 51.6783,
+      "test_mean_width_points": 2.9217
+    },
+    "cold_start": {
+      "c_cold_start": 0.1147,
+      "pooled_out_of_project_coverage_pct": 50.84,
+      "per_fold_coverage_pct": [
+        45.48,
+        55.82,
+        46.04,
+        42.23,
+        64.61
+      ],
+      "mean_interval_width_points": 2.8935
+    },
+    "c_cold_start": 0.1147
+  },
+  "test_metrics": {
+    "MAE": 1.7607,
+    "MdAE": 1.0932,
+    "RMSE": 3.2217,
+    "Standardized_Accuracy": 0.4581,
+    "Snapped_MAE": 1.7391
+  },
+  "baseline_comparison": {
+    "per_type_median_MAE": 1.9729,
+    "model_MAE": 1.7607,
+    "relative_improvement_pct": 10.75
+  },
+  "taskove_type_mapping": {
+    "feature": {
+      "tawos_type": "Story",
+      "fidelity": "approximate"
+    },
+    "bug": {
+      "tawos_type": "Bug",
+      "fidelity": "exact"
+    },
+    "infra": {
+      "tawos_type": "Technical task",
+      "fidelity": "approximate"
+    },
+    "refactor": {
+      "tawos_type": "Improvement",
+      "fidelity": "approximate"
+    },
+    "test": {
+      "tawos_type": "Technical task",
+      "fidelity": "approximate"
+    },
+    "docs": {
+      "tawos_type": "Documentation",
+      "fidelity": "exact"
+    },
+    "backend": {
+      "tawos_type": "Technical task",
+      "fidelity": "approximate"
+    },
+    "frontend": {
+      "tawos_type": "Technical task",
+      "fidelity": "approximate"
+    },
+    "ml": {
+      "tawos_type": "Task",
+      "fidelity": "approximate"
+    },
+    "qa": {
+      "tawos_type": "Technical task",
+      "fidelity": "approximate"
+    }
+  },
+  "taskove_types_audit": {
+    "verified_sources": [
+      "app/models/read_models.py",
+      "scripts/seed_data.py",
+      "tests",
+      "app/services/llm_provider.py",
+      "scripts/prepare_ml_datasets.py"
+    ],
+    "distinct_real_types": [
+      "feature",
+      "bug",
+      "infra",
+      "refactor",
+      "test",
+      "docs",
+      "backend",
+      "frontend",
+      "ml",
+      "qa"
+    ],
+    "removed_invented_types": [
+      "chore"
+    ],
+    "added_real_types": [
+      "qa"
+    ]
+  },
+  "fallback_baseline": {
+    "description": "Per-type median story points and descriptive [Q25, Q75] range computed from TAWOS training data (Epic-excluded, N=29,330)",
+    "global_median": 3.0,
+    "global_interval": [
+      1.0,
+      5.0
+    ],
+    "type_medians": {
+      "Bug": 2.0,
+      "Build Failure": 1.0,
+      "Documentation": 2.0,
+      "Enhancement Request": 5.0,
+      "Improvement": 3.0,
+      "Incident": 1.0,
+      "New Feature": 3.0,
+      "Problem Ticket": 1.0,
+      "Question": 1.0,
+      "Story": 3.0,
+      "Sub-task": 2.0,
+      "Suggestion": 3.0,
+      "Support Request": 4.0,
+      "Task": 3.0,
+      "Technical Debt": 2.5,
+      "Technical task": 5.0,
+      "Wish": 3.0
+    },
+    "type_intervals": {
+      "Bug": [
+        1.0,
+        5.0
+      ],
+      "Build Failure": [
+        1.0,
+        1.0
+      ],
+      "Documentation": [
+        1.0,
+        3.0
+      ],
+      "Enhancement Request": [
+        3.0,
+        8.0
+      ],
+      "Improvement": [
+        1.0,
+        5.0
+      ],
+      "Incident": [
+        1.0,
+        1.5
+      ],
+      "New Feature": [
+        2.0,
+        5.0
+      ],
+      "Problem Ticket": [
+        1.0,
+        2.0
+      ],
+      "Question": [
+        1.0,
+        1.2
+      ],
+      "Story": [
+        1.0,
+        5.0
+      ],
+      "Sub-task": [
+        1.0,
+        4.0
+      ],
+      "Suggestion": [
+        2.0,
+        4.0
+      ],
+      "Support Request": [
+        4.0,
+        4.0
+      ],
+      "Task": [
+        2.0,
+        5.0
+      ],
+      "Technical Debt": [
+        2.0,
+        4.5
+      ],
+      "Technical task": [
+        3.0,
+        8.0
+      ],
+      "Wish": [
+        2.5,
+        5.5
+      ]
+    }
+  }
+}

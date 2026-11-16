@@ -1,0 +1,66 @@
+{
+  "model_name": "model2_sprint_carryover_risk_taskove",
+  "version": "v2_taskove_features",
+  "trained_on": "tawos",
+  "dataset_variant": "full_universe",
+  "base_rate": 0.6595,
+  "test_base_rate_f50": 0.7418,
+  "ordered_feature_list": [
+    "f",
+    "sprint_open_tasks",
+    "sprint_open_points",
+    "fraction_points_done",
+    "assignee_open_points",
+    "assignee_open_tasks",
+    "days_in_current_status",
+    "days_since_last_event",
+    "story_points",
+    "has_sp",
+    "added_after_sprint_start",
+    "assignee_present",
+    "links_depends_on",
+    "status_category_is_todo",
+    "type_Bug",
+    "type_Story",
+    "type_Improvement",
+    "type_Task",
+    "type_New Feature",
+    "type_Suggestion",
+    "type_Enhancement Request",
+    "type_Epic",
+    "type_other"
+  ],
+  "feature_count": 23,
+  "best_hyperparameters": {
+    "num_leaves": 31,
+    "learning_rate": 0.03,
+    "min_child_samples": 100
+  },
+  "validation_threshold_policy": {
+    "selection_rule": "Max recall on validation half B subject to flag_rate <= 30%",
+    "chosen_threshold": 0.92,
+    "val_half_b_flag_rate_pct": 24.2,
+    "val_half_b_recall": 0.315,
+    "test_flag_rate_pct": 20.48,
+    "test_precision": 0.9335,
+    "test_recall": 0.2577
+  },
+  "metrics_test_f50": {
+    "roc_auc": 0.7222,
+    "pr_auc": 0.8786,
+    "brier_score": 0.1712,
+    "within_sprint_auc": 0.7039,
+    "macro_proj_auc": 0.6748,
+    "precision@3": 0.8716,
+    "precision@5": 0.8568,
+    "precision@20_pct": 0.8635,
+    "lift_ratio_means": 1.1842,
+    "lift_mean_ratios": 1.2293
+  },
+  "brier_skill_score_vs_baserate": 0.1065,
+  "artifacts": {
+    "model2_taskove_lightgbm_sha256": "2aa9b4fc70fbf069bfefdee3444213846932ff874e6a26f3ec696f1de5a5abcb",
+    "model2_taskove_calibrator_sha256": "843e9fdabfb39a710ffef86060d66c2ad556dffc824298916c4018a1295190e7",
+    "model2_taskove_transformer_sha256": "faa6c096b19254e2a0a65275c1cf718e51ab9c43b4fbffc0a427a2b86c7138bf"
+  }
+}

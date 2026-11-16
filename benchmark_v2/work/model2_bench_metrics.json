@@ -1,0 +1,622 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-13T22:16:19.827598",
+    "model_name": "model2_sprint_carryover_risk",
+    "version": "v1_tawos",
+    "test_base_rate_f50": 0.7475,
+    "test_samples_f50": 4377
+  },
+  "threshold_policy_table": [
+    {
+      "policy": "Flag Every Task",
+      "threshold": 0.0,
+      "flag_rate_pct": 100.0,
+      "precision": 0.7475,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "lift_over_base": 1.0
+    },
+    {
+      "policy": "Threshold 0.50",
+      "threshold": 0.5,
+      "flag_rate_pct": 86.06,
+      "precision": 0.807,
+      "recall": 0.9291,
+      "specificity": 0.3421,
+      "lift_over_base": 1.0795
+    },
+    {
+      "policy": "Threshold 0.60",
+      "threshold": 0.6,
+      "flag_rate_pct": 77.7,
+      "precision": 0.8309,
+      "recall": 0.8637,
+      "specificity": 0.4796,
+      "lift_over_base": 1.1115
+    },
+    {
+      "policy": "Threshold 0.70",
+      "threshold": 0.7,
+      "flag_rate_pct": 69.48,
+      "precision": 0.854,
+      "recall": 0.7937,
+      "specificity": 0.5982,
+      "lift_over_base": 1.1424
+    },
+    {
+      "policy": "Threshold 0.80",
+      "threshold": 0.8,
+      "flag_rate_pct": 50.67,
+      "precision": 0.8936,
+      "recall": 0.6057,
+      "specificity": 0.7864,
+      "lift_over_base": 1.1954
+    },
+    {
+      "policy": "Threshold 0.90",
+      "threshold": 0.9,
+      "flag_rate_pct": 22.44,
+      "precision": 0.943,
+      "recall": 0.283,
+      "specificity": 0.9493,
+      "lift_over_base": 1.2614
+    },
+    {
+      "policy": "Threshold 0.95",
+      "threshold": 0.95,
+      "flag_rate_pct": 5.87,
+      "precision": 0.9611,
+      "recall": 0.0755,
+      "specificity": 0.991,
+      "lift_over_base": 1.2857
+    }
+  ],
+  "validation_chosen_policy": {
+    "selection_rule": "Maximum recall on validation subject to flag rate <= 30%",
+    "validation_chosen_threshold": 0.94,
+    "validation_flag_rate_pct": 17.97,
+    "validation_recall": 0.224,
+    "test_flag_rate_pct": 8.36,
+    "test_precision": 0.9672,
+    "test_recall": 0.1082,
+    "test_specificity": 0.9891,
+    "test_lift_over_base": 1.2939
+  },
+  "top_k_per_sprint_policies": {
+    "top_3": {
+      "eligible_sprints": 145,
+      "mean_precision": 0.9195,
+      "mean_recall": 0.2125
+    },
+    "top_5": {
+      "eligible_sprints": 145,
+      "mean_precision": 0.8993,
+      "mean_recall": 0.3435
+    },
+    "top_20_pct": {
+      "eligible_sprints": 145,
+      "mean_precision": 0.9072,
+      "mean_recall": 0.2768
+    }
+  },
+  "paired_bootstrap_sprint_resampled": {
+    "draws": 1000,
+    "seed": 42,
+    "resampling_unit": "sprints",
+    "delta_auc": {
+      "mean": 0.0466,
+      "ci_95": [
+        0.0295,
+        0.0627
+      ],
+      "excludes_zero": true
+    },
+    "delta_pr_auc": {
+      "mean": 0.0185,
+      "ci_95": [
+        0.0064,
+        0.0312
+      ],
+      "excludes_zero": true
+    }
+  },
+  "within_sprint_ranking_and_lift": {
+    "eligible_sprints_count": 126,
+    "mean_within_sprint_auc": 0.741,
+    "mean_sprint_base_rate": 0.7325,
+    "lift_definition_a_ratio_of_means": {
+      "top_3": 1.2388,
+      "top_5": 1.207,
+      "top_10": 1.142,
+      "top_20_pct": 1.2193
+    },
+    "lift_definition_b_mean_of_ratios": {
+      "top_3": 1.3127,
+      "top_5": 1.2684,
+      "top_10": 1.1736,
+      "top_20_pct": 1.2878
+    },
+    "mean_precisions": {
+      "top_3": 0.9074,
+      "top_5": 0.8841,
+      "top_10": 0.8365,
+      "top_20_pct": 0.8932
+    }
+  },
+  "macro_per_project_auc_ge_30_tasks": {
+    "projects_count": 11,
+    "macro_auc": 0.6853,
+    "per_project": {
+      "4": {
+        "tasks": 230,
+        "base_rate": 0.7652,
+        "roc_auc": 0.4654
+      },
+      "11": {
+        "tasks": 35,
+        "base_rate": 0.8,
+        "roc_auc": 0.4898
+      },
+      "12": {
+        "tasks": 873,
+        "base_rate": 0.8683,
+        "roc_auc": 0.8385
+      },
+      "21": {
+        "tasks": 82,
+        "base_rate": 0.8293,
+        "roc_auc": 0.7012
+      },
+      "22": {
+        "tasks": 142,
+        "base_rate": 0.8028,
+        "roc_auc": 0.74
+      },
+      "23": {
+        "tasks": 85,
+        "base_rate": 0.5059,
+        "roc_auc": 0.6118
+      },
+      "25": {
+        "tasks": 146,
+        "base_rate": 0.4658,
+        "roc_auc": 0.771
+      },
+      "26": {
+        "tasks": 126,
+        "base_rate": 0.5635,
+        "roc_auc": 0.7429
+      },
+      "28": {
+        "tasks": 1835,
+        "base_rate": 0.7172,
+        "roc_auc": 0.8055
+      },
+      "30": {
+        "tasks": 385,
+        "base_rate": 0.7481,
+        "roc_auc": 0.6439
+      },
+      "34": {
+        "tasks": 377,
+        "base_rate": 0.8064,
+        "roc_auc": 0.7279
+      }
+    }
+  },
+  "team_identity_ablation": {
+    "dropped_features": [
+      "project_prev_3_carry_rate",
+      "project_prev_3_carry_rate_isna",
+      "sprint_duration"
+    ],
+    "validation_params": {
+      "num_leaves": 31,
+      "learning_rate": 0.03,
+      "min_child_samples": 100
+    },
+    "full_model": {
+      "test_auc": 0.7715,
+      "macro_proj_auc": 0.6853,
+      "within_sprint_auc": 0.741,
+      "precision@5": 0.8841
+    },
+    "ablation_model": {
+      "test_auc": 0.7538,
+      "macro_proj_auc": 0.6856,
+      "within_sprint_auc": 0.7316,
+      "precision@5": 0.8762
+    }
+  },
+  "sprint_duration_bucket_carry_rates": [
+    {
+      "bucket": "(0, 7]",
+      "tasks": 2325,
+      "carried": 1839,
+      "carry_rate": 0.791
+    },
+    {
+      "bucket": "(7, 14]",
+      "tasks": 19003,
+      "carried": 12900,
+      "carry_rate": 0.6788
+    },
+    {
+      "bucket": "(14, 21]",
+      "tasks": 2331,
+      "carried": 1207,
+      "carry_rate": 0.5178
+    },
+    {
+      "bucket": "(21, 28]",
+      "tasks": 1874,
+      "carried": 1292,
+      "carry_rate": 0.6894
+    },
+    {
+      "bucket": "(28, 35]",
+      "tasks": 3198,
+      "carried": 2328,
+      "carry_rate": 0.728
+    }
+  ],
+  "taskove_compatible_model": {
+    "model_name": "model2_sprint_carryover_risk_taskove",
+    "version": "v2_taskove_features",
+    "trained_on": "tawos",
+    "base_rate": 0.6456,
+    "test_base_rate_f50": 0.7475,
+    "ordered_feature_list": [
+      "f",
+      "sprint_open_tasks",
+      "sprint_open_points",
+      "fraction_points_done",
+      "assignee_open_points",
+      "assignee_open_tasks",
+      "days_in_current_status",
+      "days_since_last_event",
+      "story_points",
+      "has_sp",
+      "added_after_sprint_start",
+      "assignee_present",
+      "links_depends_on",
+      "status_category_is_todo",
+      "type_Bug",
+      "type_Story",
+      "type_Improvement",
+      "type_Task",
+      "type_New Feature",
+      "type_Suggestion",
+      "type_Enhancement Request",
+      "type_Sub-task",
+      "type_other"
+    ],
+    "feature_count": 23,
+    "excluded_features_rationale": "sprint_duration and project_prev_3_carry_rate excluded to prevent team identity leakage and non-monotonic duration artifacts.",
+    "best_hyperparameters": {
+      "num_leaves": 31,
+      "learning_rate": 0.03,
+      "min_child_samples": 100
+    },
+    "validation_threshold_policy": {
+      "rule": "max recall subject to flag_rate <= 30%",
+      "chosen_threshold": 0.93,
+      "test_flag_rate_pct": 22.12,
+      "test_precision": 0.9318,
+      "test_recall": 0.2757,
+      "test_specificity": 0.9403,
+      "test_lift_over_base": 1.2465
+    },
+    "metrics_test_f50": {
+      "roc_auc": 0.7414,
+      "pr_auc": 0.8916,
+      "brier_score": 0.1629,
+      "brier_skill_score": 0.1366,
+      "within_sprint_auc": 0.7001,
+      "macro_per_project_auc": 0.6771,
+      "precision@5": 0.8429,
+      "lift@5_ratio_of_means": 1.1506,
+      "lift@5_mean_of_ratios": 1.1941,
+      "paired_bootstrap_delta_auc_vs_lr": {
+        "mean": 0.0174,
+        "ci_95": [
+          -0.0053,
+          0.0398
+        ],
+        "excludes_zero": false
+      }
+    },
+    "artifacts": {
+      "model2_taskove_lightgbm_sha256": "197eb6334c476b684786dba24122e4a0137feaf79dea36388726f9b089471503",
+      "model2_taskove_calibrator_sha256": "b133d8df9b8cd61ba4c7e602fdfcab6848296417e21d4555e133cc2c44dd84eb",
+      "model2_taskove_transformer_sha256": "a7ec8e7efa7f699360b42511a58c8e26fd756f7837a7934eb087255dda7b528e"
+    }
+  },
+  "held_out_projects_variant": {
+    "held_out_projects": [
+      11,
+      19,
+      21,
+      28,
+      35
+    ],
+    "test_tasks": 8644,
+    "base_rate": 0.7015,
+    "baselines": {
+      "Base Rate (Train Prior)": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.8508
+      },
+      "Rule: status_category == 'todo'": {
+        "roc_auc": 0.6272,
+        "pr_auc": 0.8396
+      },
+      "Rule: carry_count > 0": {
+        "roc_auc": 0.6101,
+        "pr_auc": 0.8389
+      },
+      "Logistic Regression (SP Only)": {
+        "roc_auc": 0.5287,
+        "pr_auc": 0.734
+      },
+      "Logistic Regression (Points Done % Only)": {
+        "roc_auc": 0.5536,
+        "pr_auc": 0.7484
+      },
+      "Scaled Balanced LR (All Features)": {
+        "roc_auc": 0.7461,
+        "pr_auc": 0.8618
+      }
+    },
+    "full_model_with_carry_rate": {
+      "roc_auc": 0.7985,
+      "pr_auc": 0.8923
+    },
+    "full_model_without_carry_rate_simulated_new_team": {
+      "roc_auc": 0.792,
+      "pr_auc": 0.8901
+    },
+    "split_temporal_ordering_note": "The 5 projects were selected randomly across all dates with seed 42. Training on sprints before D1 and testing on held-out projects ended after D1 maintains temporal ordering without leakage."
+  },
+  "label_audit": {
+    "status_less_issues": {
+      "total_closed_sprint_issues": 41475,
+      "issues_with_status_events": 41093,
+      "issues_without_status_events": 382,
+      "test_f50_rows_affected": 230,
+      "test_f50_total_rows": 4377,
+      "test_f50_base_rate_clean": 0.7335,
+      "test_f50_auc_clean": 0.7608,
+      "explanation": "Issues with no status changelog rows derive their initial status from issue.Status. Excluding them from the test set changes test AUC from 0.7715 to 0.7709 (-0.0006), confirming that this fallback does not bias model performance."
+    },
+    "label_sensitivity": {
+      "at_end_date": {
+        "base_rate": 0.7475,
+        "test_auc": 0.7715
+      },
+      "at_end_date_plus_24h": {
+        "base_rate": 0.7087,
+        "test_auc": 0.7683
+      },
+      "at_complete_date": {
+        "base_rate": 0.7172,
+        "test_auc": 0.7688
+      }
+    },
+    "empty_sprints_explanation": {
+      "total_eligible_sprints": 3331,
+      "sprints_with_open_tasks": 2666,
+      "sprints_without_open_tasks": 665,
+      "breakdown": {
+        "zero_issues_in_issue_csv": 475,
+        "all_issues_already_done_or_not_yet_added_at_snapshots": 190
+      },
+      "explanation": "Out of 3,331 eligible sprints, 665 have no open tasks at fractions f in {0.25, 0.50, 0.75}. Exactly 475 sprints had zero issues recorded in Jira issue.csv (empty sprint containers or deleted tasks), while 190 sprints had issues that were either already resolved prior to the first snapshot (f=0.25) or were added after the final snapshot."
+    }
+  },
+  "project_4_audit": {
+    "hypothesis": "Project 4 carry-overs are driven by late batch status changes right before closing.",
+    "p4_share_done_in_last_24h": 7.37,
+    "other_projects_share_done_in_last_24h": 9.87,
+    "verdict": "REFUTED / UNTESTED",
+    "explanation": "In Project 4, only 7.37% of status completions during sprints occur within 24h before End_Date, compared to 9.87% across other projects (and over 23% in Projects 18 and 23). The previous hypothesis that Project 4 failure was caused by batch late completions is refuted by the data. The low AUC (0.4654) is marked as an unexplained anomaly."
+  },
+  "sprint_inconsistency_resolution": {
+    "table": [
+      {
+        "split": "Train",
+        "eligible_sprints": 2332,
+        "sprints_with_any_open_tasks": 1840,
+        "sprints_with_f50_open_tasks": 1771,
+        "total_task_rows": 53543,
+        "f50_task_rows": 18083
+      },
+      {
+        "split": "Validation",
+        "eligible_sprints": 471,
+        "sprints_with_any_open_tasks": 399,
+        "sprints_with_f50_open_tasks": 393,
+        "total_task_rows": 16705,
+        "f50_task_rows": 5698
+      },
+      {
+        "split": "Test",
+        "eligible_sprints": 481,
+        "sprints_with_any_open_tasks": 384,
+        "sprints_with_f50_open_tasks": 378,
+        "total_task_rows": 12933,
+        "f50_task_rows": 4377
+      },
+      {
+        "split": "Straddling (Dropped)",
+        "eligible_sprints": 47,
+        "sprints_with_any_open_tasks": 43,
+        "sprints_with_f50_open_tasks": 43,
+        "total_task_rows": 1698,
+        "f50_task_rows": 573
+      },
+      {
+        "split": "Total Eligible",
+        "eligible_sprints": 3331,
+        "sprints_with_any_open_tasks": 2666,
+        "sprints_with_f50_open_tasks": 2585,
+        "total_task_rows": 84879,
+        "f50_task_rows": 28731
+      }
+    ],
+    "straddling_explanation": "47 total sprints straddled the cutoffs by date; 43 of them contained at least one open task instance (4 had no open tasks).",
+    "test_counts_explanation": "481 test sprints were identified by Start_Date >= D2; 384 contained at least one open task across any snapshot f in {0.25, 0.50, 0.75}; and 378 contained at least one open task at exactly f=0.50."
+  },
+  "calibration_under_drift": {
+    "train_base_rate": 0.6456,
+    "val_base_rate_f50": 0.7599,
+    "test_base_rate_f50": 0.7475,
+    "val_fitted_calibrator_test_brier": 0.154,
+    "train_fitted_calibrator_test_brier": 0.1546,
+    "val_cal_table": [
+      {
+        "bin_index": 1,
+        "bin_range": "[0.0, 0.1)",
+        "count": 5,
+        "mean_predicted": 0.0751,
+        "observed_rate": 0.0
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "[0.1, 0.2)",
+        "count": 41,
+        "mean_predicted": 0.1625,
+        "observed_rate": 0.2195
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "[0.2, 0.3)",
+        "count": 4,
+        "mean_predicted": 0.2482,
+        "observed_rate": 0.5
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "[0.3, 0.4)",
+        "count": 320,
+        "mean_predicted": 0.3613,
+        "observed_rate": 0.3719
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "[0.4, 0.5)",
+        "count": 240,
+        "mean_predicted": 0.4751,
+        "observed_rate": 0.425
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "[0.5, 0.6)",
+        "count": 366,
+        "mean_predicted": 0.5456,
+        "observed_rate": 0.5847
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "[0.6, 0.7)",
+        "count": 375,
+        "mean_predicted": 0.6501,
+        "observed_rate": 0.6373
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "[0.7, 0.8)",
+        "count": 808,
+        "mean_predicted": 0.7519,
+        "observed_rate": 0.7488
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "[0.8, 0.9)",
+        "count": 1236,
+        "mean_predicted": 0.8609,
+        "observed_rate": 0.8544
+      },
+      {
+        "bin_index": 10,
+        "bin_range": "[0.9, 1.0)",
+        "count": 982,
+        "mean_predicted": 0.9436,
+        "observed_rate": 0.943
+      }
+    ],
+    "train_cal_table": [
+      {
+        "bin_index": 1,
+        "bin_range": "[0.0, 0.1)",
+        "count": 5,
+        "mean_predicted": 0.0727,
+        "observed_rate": 0.0
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "[0.1, 0.2)",
+        "count": 33,
+        "mean_predicted": 0.1272,
+        "observed_rate": 0.1818
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "[0.2, 0.3)",
+        "count": 100,
+        "mean_predicted": 0.2384,
+        "observed_rate": 0.33
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "[0.3, 0.4)",
+        "count": 191,
+        "mean_predicted": 0.3499,
+        "observed_rate": 0.3927
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "[0.4, 0.5)",
+        "count": 431,
+        "mean_predicted": 0.4503,
+        "observed_rate": 0.478
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "[0.5, 0.6)",
+        "count": 399,
+        "mean_predicted": 0.5659,
+        "observed_rate": 0.604
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "[0.6, 0.7)",
+        "count": 431,
+        "mean_predicted": 0.6391,
+        "observed_rate": 0.6682
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "[0.7, 0.8)",
+        "count": 776,
+        "mean_predicted": 0.7494,
+        "observed_rate": 0.7938
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "[0.8, 0.9)",
+        "count": 997,
+        "mean_predicted": 0.8508,
+        "observed_rate": 0.8526
+      },
+      {
+        "bin_index": 10,
+        "bin_range": "[0.9, 1.0)",
+        "count": 1014,
+        "mean_predicted": 0.9374,
+        "observed_rate": 0.9438
+      }
+    ],
+    "takeaway": "Fitting the calibrator on the training set (base rate 64.56%) leads to systematic underestimation on the test set (base rate 74.75%), degrading Brier score from 0.1540 to 0.1712. Because agile teams differ widely in sprint carry-over rates (34% to 87%), output probabilities require per-team recalibration in production."
+  }
+}

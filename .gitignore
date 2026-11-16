@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Environment variables (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Raw and large datasets (GitHub 100MB file limit)
+tawos_csv/
+data/raw/
+
+# Heavy intermediate benchmark artifacts (>50MB / parquet dumps)
+benchmark_v2/work/*.parquet
+benchmark_v2/work/*.npz
+
+# Model weights and checkpoints (general rule)
+*.joblib
+*.pt
+*.bin
+models/checkpoints/
+
+# Model pickles: ignore general, but track production artifacts
+*.pkl
+!models/artifacts/*.pkl
+!models/artifacts/**/*.pkl
+!benchmark_v2/artifacts/**/*.pkl
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+

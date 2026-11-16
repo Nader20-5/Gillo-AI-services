@@ -1,0 +1,32 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.10.0, pytest-9.1.1, pluggy-1.7.0 -- D:\Gillo AI Service\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Gillo AI Service
+configfile: pytest.ini
+plugins: anyio-4.15.1, asyncio-1.4.0, cov-7.1.0
+asyncio: mode=auto, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 15 items
+
+tests/test_security_audit.py::test_mock_auth_default_disabled PASSED     [  6%]
+tests/test_security_audit.py::test_production_refuses_mock_auth PASSED   [ 13%]
+tests/test_security_audit.py::test_production_refuses_default_or_short_jwt_secret PASSED [ 20%]
+tests/test_security_audit.py::test_jwt_algorithm_pinning PASSED          [ 26%]
+tests/test_security_audit.py::test_mock_auth_forbidden_in_production_runtime PASSED [ 33%]
+tests/test_security_audit.py::test_jwt_requires_exp_claim PASSED         [ 40%]
+tests/test_security_audit.py::test_project_scoping_sprint_estimate PASSED [ 46%]
+tests/test_security_audit.py::test_project_scoping_sprint_fit_check PASSED [ 53%]
+tests/test_security_audit.py::test_project_scoping_sprint_scan_risks PASSED [ 60%]
+tests/test_security_audit.py::test_project_scoping_suggestions_mutations PASSED [ 66%]
+tests/test_security_audit.py::test_suggestions_sort_by_allowlist PASSED  [ 73%]
+tests/test_security_audit.py::test_oversized_chat_query_rejected PASSED  [ 80%]
+tests/test_security_audit.py::test_oversized_suggestion_comment_rejected PASSED [ 86%]
+tests/test_security_audit.py::test_sanitize_mongo_uri PASSED             [ 93%]
+tests/test_security_audit.py::test_health_check_no_internal_exception_leak PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_security_audit.py::test_suggestions_sort_by_allowlist
+  D:\Gillo AI Service\.venv\lib\site-packages\fastapi\routing.py:360: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+    return await dependant.call(**values)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 15 passed, 1 warning in 0.57s ========================

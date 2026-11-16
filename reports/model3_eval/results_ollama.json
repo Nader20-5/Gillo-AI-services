@@ -1,0 +1,7 @@
+{
+  "provider": "ollama",
+  "status": "NOT RUN: Ollama daemon not reachable at http://localhost:11434",
+  "reason": "Connection to http://localhost:11434/api/tags failed: All connection attempts failed",
+  "scenarios_evaluated": 0,
+  "timestamp": "2026-11-14T12:26:36.055087+00:00"
+}

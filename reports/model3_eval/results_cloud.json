@@ -1,0 +1,7 @@
+{
+  "provider": "cloud",
+  "status": "NOT RUN: Cloud LLM API key not configured",
+  "reason": "CLOUD_LLM_API_KEY environment variable is unset.",
+  "scenarios_evaluated": 0,
+  "timestamp": "2026-11-14T12:26:45.502533+00:00"
+}

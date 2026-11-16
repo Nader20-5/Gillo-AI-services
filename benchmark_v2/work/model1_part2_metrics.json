@@ -1,0 +1,896 @@
+{
+  "item1_seed_noise": {
+    "deployment_model": {
+      "display_name": "Deployment Model (TF-IDF + Type + Priority)",
+      "seeds": [
+        42,
+        100,
+        200,
+        300,
+        400
+      ],
+      "MAE": {
+        "mean": 2.4251,
+        "std": 0.0034
+      },
+      "MdAE": {
+        "mean": 1.0355,
+        "std": 0.0156
+      },
+      "RMSE": {
+        "mean": 6.1846,
+        "std": 0.0132
+      },
+      "per_seed_runs": [
+        {
+          "seed": 42,
+          "model_name": "Deployment (seed=42)",
+          "MAE": 2.4283,
+          "MdAE": 1.0452,
+          "RMSE": 6.183,
+          "Standardized_Accuracy": 0.488,
+          "Snapped_MAE": 2.4104
+        },
+        {
+          "seed": 100,
+          "model_name": "Deployment (seed=100)",
+          "MAE": 2.4193,
+          "MdAE": 1.0085,
+          "RMSE": 6.1711,
+          "Standardized_Accuracy": 0.4899,
+          "Snapped_MAE": 2.4089
+        },
+        {
+          "seed": 200,
+          "model_name": "Deployment (seed=200)",
+          "MAE": 2.4255,
+          "MdAE": 1.0362,
+          "RMSE": 6.2062,
+          "Standardized_Accuracy": 0.4886,
+          "Snapped_MAE": 2.4139
+        },
+        {
+          "seed": 300,
+          "model_name": "Deployment (seed=300)",
+          "MAE": 2.4263,
+          "MdAE": 1.0414,
+          "RMSE": 6.185,
+          "Standardized_Accuracy": 0.4884,
+          "Snapped_MAE": 2.4116
+        },
+        {
+          "seed": 400,
+          "model_name": "Deployment (seed=400)",
+          "MAE": 2.426,
+          "MdAE": 1.046,
+          "RMSE": 6.1776,
+          "Standardized_Accuracy": 0.4884,
+          "Snapped_MAE": 2.4228
+        }
+      ]
+    },
+    "type_priority_only": {
+      "display_name": "Type + Priority Only Model",
+      "seeds": [
+        42,
+        100,
+        200,
+        300,
+        400
+      ],
+      "MAE": {
+        "mean": 2.4449,
+        "std": 0.0018
+      },
+      "MdAE": {
+        "mean": 1.0002,
+        "std": 0.0001
+      },
+      "RMSE": {
+        "mean": 5.8719,
+        "std": 0.0171
+      },
+      "per_seed_runs": [
+        {
+          "seed": 42,
+          "model_name": "Type+Priority (seed=42)",
+          "MAE": 2.4435,
+          "MdAE": 1.0002,
+          "RMSE": 5.8561,
+          "Standardized_Accuracy": 0.4848,
+          "Snapped_MAE": 2.5239
+        },
+        {
+          "seed": 100,
+          "model_name": "Type+Priority (seed=100)",
+          "MAE": 2.4444,
+          "MdAE": 1.0001,
+          "RMSE": 5.859,
+          "Standardized_Accuracy": 0.4846,
+          "Snapped_MAE": 2.5231
+        },
+        {
+          "seed": 200,
+          "model_name": "Type+Priority (seed=200)",
+          "MAE": 2.4479,
+          "MdAE": 1.0001,
+          "RMSE": 5.891,
+          "Standardized_Accuracy": 0.4838,
+          "Snapped_MAE": 2.5233
+        },
+        {
+          "seed": 300,
+          "model_name": "Type+Priority (seed=300)",
+          "MAE": 2.4437,
+          "MdAE": 1.0002,
+          "RMSE": 5.8636,
+          "Standardized_Accuracy": 0.4847,
+          "Snapped_MAE": 2.5196
+        },
+        {
+          "seed": 400,
+          "model_name": "Type+Priority (seed=400)",
+          "MAE": 2.4451,
+          "MdAE": 1.0002,
+          "RMSE": 5.8898,
+          "Standardized_Accuracy": 0.4844,
+          "Snapped_MAE": 2.5197
+        }
+      ]
+    },
+    "sbert_lgbm": {
+      "display_name": "S-BERT + LightGBM Model",
+      "seeds": [
+        42,
+        100,
+        200,
+        300,
+        400
+      ],
+      "MAE": {
+        "mean": 2.4024,
+        "std": 0.0033
+      },
+      "MdAE": {
+        "mean": 1.0294,
+        "std": 0.0074
+      },
+      "RMSE": {
+        "mean": 6.1173,
+        "std": 0.0274
+      },
+      "per_seed_runs": [
+        {
+          "seed": 42,
+          "model_name": "S-BERT (seed=42)",
+          "MAE": 2.4005,
+          "MdAE": 1.04,
+          "RMSE": 6.0722,
+          "Standardized_Accuracy": 0.4938,
+          "Snapped_MAE": 2.4005
+        },
+        {
+          "seed": 100,
+          "model_name": "S-BERT (seed=100)",
+          "MAE": 2.3979,
+          "MdAE": 1.0281,
+          "RMSE": 6.1178,
+          "Standardized_Accuracy": 0.4944,
+          "Snapped_MAE": 2.3955
+        },
+        {
+          "seed": 200,
+          "model_name": "S-BERT (seed=200)",
+          "MAE": 2.4064,
+          "MdAE": 1.0334,
+          "RMSE": 6.1198,
+          "Standardized_Accuracy": 0.4926,
+          "Snapped_MAE": 2.4006
+        },
+        {
+          "seed": 300,
+          "model_name": "S-BERT (seed=300)",
+          "MAE": 2.4041,
+          "MdAE": 1.0216,
+          "RMSE": 6.1327,
+          "Standardized_Accuracy": 0.4931,
+          "Snapped_MAE": 2.3941
+        },
+        {
+          "seed": 400,
+          "model_name": "S-BERT (seed=400)",
+          "MAE": 2.4031,
+          "MdAE": 1.024,
+          "RMSE": 6.1442,
+          "Standardized_Accuracy": 0.4933,
+          "Snapped_MAE": 2.4009
+        }
+      ]
+    }
+  },
+  "item2_paired_bootstrap": {
+    "text_vs_type_priority": {
+      "description": "MAE(text + Type + Priority) - MAE(Type + Priority only)",
+      "ticket_level": {
+        "mean_difference": -0.0153,
+        "ci_95": [
+          -0.0519,
+          0.023
+        ],
+        "excludes_zero": false
+      },
+      "project_level": {
+        "mean_difference": -0.0115,
+        "ci_95": [
+          -0.0586,
+          0.059
+        ],
+        "excludes_zero": false
+      }
+    },
+    "sbert_vs_type_priority": {
+      "description": "MAE(S-BERT + Type + Priority) - MAE(Type + Priority only)",
+      "ticket_level": {
+        "mean_difference": -0.0428,
+        "ci_95": [
+          -0.0811,
+          -0.0066
+        ],
+        "excludes_zero": true
+      },
+      "project_level": {
+        "mean_difference": -0.0388,
+        "ci_95": [
+          -0.0872,
+          0.0209
+        ],
+        "excludes_zero": false
+      }
+    },
+    "plain_statement": "Plain takeaway on whether text helps:\n1. TF-IDF Text (Deployment vs Type+Priority only): Mean MAE difference is -0.0153 points. Ticket-level 95% CI is [-0.0519, 0.023] (excludes 0: False). Project-level 95% CI is [-0.0586, 0.059] (excludes 0: False). Because both confidence intervals span zero, TF-IDF text does NOT provide a statistically significant improvement over Type+Priority metadata alone.\n2. S-BERT Embeddings (S-BERT vs Type+Priority only): Mean MAE difference is -0.0428 points. Ticket-level 95% CI is [-0.0811, -0.0066] (excludes 0: True). Project-level 95% CI is [-0.0872, 0.0209] (excludes 0: False). S-BERT semantic text provides a statistically significant improvement at the individual ticket level, but not across project-level cluster resampling."
+  },
+  "item3_taskove_variants": {
+    "models_evaluation": {
+      "Baseline: Per-Type Train Median": {
+        "model_name": "Baseline: Per-Type Train Median",
+        "MAE": 2.668,
+        "MdAE": 1.5,
+        "RMSE": 6.0645,
+        "Standardized_Accuracy": 0.4374,
+        "Snapped_MAE": 2.6867,
+        "diff_vs_per_type_median": 0.0,
+        "rel_improvement_vs_type_pct": 0.0
+      },
+      "Type Only (No Priority)": {
+        "model_name": "Type Only (No Priority)",
+        "MAE": 2.668,
+        "MdAE": 1.5,
+        "RMSE": 6.0645,
+        "Standardized_Accuracy": 0.4374,
+        "Snapped_MAE": 2.6854,
+        "diff_vs_per_type_median": 0.0,
+        "rel_improvement_vs_type_pct": 0.0
+      },
+      "Text + Type (No Priority)": {
+        "model_name": "Text + Type (No Priority)",
+        "MAE": 2.4826,
+        "MdAE": 1.1455,
+        "RMSE": 6.2286,
+        "Standardized_Accuracy": 0.4765,
+        "Snapped_MAE": 2.4688,
+        "diff_vs_per_type_median": -0.1854,
+        "rel_improvement_vs_type_pct": 6.95
+      },
+      "S-BERT + Type (No Priority)": {
+        "model_name": "S-BERT + Type (No Priority)",
+        "MAE": 2.476,
+        "MdAE": 1.1783,
+        "RMSE": 6.1001,
+        "Standardized_Accuracy": 0.4779,
+        "Snapped_MAE": 2.4732,
+        "diff_vs_per_type_median": -0.192,
+        "rel_improvement_vs_type_pct": 7.2
+      }
+    },
+    "top10_projects_priority_vocabulary": [
+      {
+        "project_id": 28,
+        "test_ticket_count": 3560,
+        "total_clean_ticket_count": 14318,
+        "distinct_priorities_in_test": [],
+        "distinct_priorities_in_clean": []
+      },
+      {
+        "project_id": 43,
+        "test_ticket_count": 1709,
+        "total_clean_ticket_count": 4126,
+        "distinct_priorities_in_test": [
+          "Critical - P2",
+          "Major - P3",
+          "Minor - P4",
+          "Trivial - P5"
+        ],
+        "distinct_priorities_in_clean": [
+          "Blocker - P1",
+          "Critical - P2",
+          "Major - P3",
+          "Minor - P4",
+          "Trivial - P5"
+        ]
+      },
+      {
+        "project_id": 12,
+        "test_ticket_count": 227,
+        "total_clean_ticket_count": 2366,
+        "distinct_priorities_in_test": [
+          "Critical",
+          "High",
+          "Low",
+          "Medium"
+        ],
+        "distinct_priorities_in_clean": [
+          "Critical",
+          "High",
+          "Low",
+          "Medium",
+          "Trivial"
+        ]
+      },
+      {
+        "project_id": 33,
+        "test_ticket_count": 218,
+        "total_clean_ticket_count": 562,
+        "distinct_priorities_in_test": [
+          "Critical - P2",
+          "Major - P3",
+          "Minor - P4",
+          "Trivial - P5"
+        ],
+        "distinct_priorities_in_clean": [
+          "Critical - P2",
+          "Major - P3",
+          "Minor - P4",
+          "Trivial - P5"
+        ]
+      },
+      {
+        "project_id": 34,
+        "test_ticket_count": 120,
+        "total_clean_ticket_count": 856,
+        "distinct_priorities_in_test": [
+          "Blocker",
+          "Critical",
+          "Major",
+          "Minor"
+        ],
+        "distinct_priorities_in_clean": [
+          "Blocker",
+          "Critical",
+          "Major",
+          "Minor",
+          "Trivial"
+        ]
+      },
+      {
+        "project_id": 4,
+        "test_ticket_count": 103,
+        "total_clean_ticket_count": 2207,
+        "distinct_priorities_in_test": [
+          "Blocker",
+          "Critical",
+          "Major",
+          "Minor"
+        ],
+        "distinct_priorities_in_clean": [
+          "Blocker",
+          "Critical",
+          "Major",
+          "Minor",
+          "Trivial"
+        ]
+      },
+      {
+        "project_id": 24,
+        "test_ticket_count": 86,
+        "total_clean_ticket_count": 465,
+        "distinct_priorities_in_test": [
+          "High",
+          "Highest",
+          "Medium"
+        ],
+        "distinct_priorities_in_clean": [
+          "High",
+          "Highest",
+          "Low",
+          "Medium"
+        ]
+      },
+      {
+        "project_id": 30,
+        "test_ticket_count": 73,
+        "total_clean_ticket_count": 381,
+        "distinct_priorities_in_test": [
+          "Critical - P2",
+          "Major - P3",
+          "Minor - P4"
+        ],
+        "distinct_priorities_in_clean": [
+          "Critical - P2",
+          "Major - P3",
+          "Minor - P4"
+        ]
+      },
+      {
+        "project_id": 26,
+        "test_ticket_count": 72,
+        "total_clean_ticket_count": 427,
+        "distinct_priorities_in_test": [
+          "High",
+          "Medium"
+        ],
+        "distinct_priorities_in_clean": [
+          "High",
+          "Highest",
+          "Low",
+          "Medium"
+        ]
+      },
+      {
+        "project_id": 25,
+        "test_ticket_count": 60,
+        "total_clean_ticket_count": 410,
+        "distinct_priorities_in_test": [
+          "High",
+          "Medium"
+        ],
+        "distinct_priorities_in_clean": [
+          "High",
+          "Highest",
+          "Low",
+          "Medium"
+        ]
+      }
+    ],
+    "tawos_raw_type_counts": {
+      "Bug": 215570,
+      "Suggestion": 96370,
+      "Improvement": 42691,
+      "Story": 31394,
+      "Task": 28338,
+      "Sub-task": 14396,
+      "New Feature": 14239,
+      "Epic": 4157,
+      "Enhancement Request": 3239,
+      "Support Request": 2368,
+      "Build Failure": 1715,
+      "Question": 1396,
+      "Technical task": 987,
+      "Documentation": 699,
+      "Test Task": 336,
+      "Problem Ticket": 113,
+      "Wish": 88,
+      "Milestone": 44,
+      "Technical Debt": 30,
+      "Investigation": 22,
+      "Incident": 18,
+      "Test": 17,
+      "Release": 4,
+      "Public Security Vulnerability": 1
+    },
+    "tawos_clean_type_counts": {
+      "Story": 14920,
+      "Bug": 11935,
+      "Improvement": 4849,
+      "Task": 4721,
+      "New Feature": 2070,
+      "Suggestion": 1259,
+      "Epic": 1126,
+      "Enhancement Request": 661,
+      "Sub-task": 525,
+      "Technical task": 358,
+      "Build Failure": 130,
+      "Documentation": 83,
+      "Problem Ticket": 47,
+      "Question": 17,
+      "Incident": 8,
+      "Technical Debt": 7,
+      "Support Request": 4,
+      "Wish": 4
+    }
+  },
+  "item4_epic_excluded_population": {
+    "dropped_counts": {
+      "train_dropped_epics": 576,
+      "train_remaining": 29330,
+      "val_dropped_epics": 308,
+      "val_remaining": 6101,
+      "test_dropped_epics": 242,
+      "test_remaining": 6167,
+      "total_dropped_epics": 1126
+    },
+    "models_evaluation": {
+      "Baseline: Per-Type Median": {
+        "model_name": "Baseline: Per-Type Median (No Epics)",
+        "MAE": 1.9729,
+        "MdAE": 1.0,
+        "RMSE": 3.3185,
+        "Standardized_Accuracy": 0.3928,
+        "Snapped_MAE": 1.9729,
+        "diff_vs_per_type_median": 0.0,
+        "rel_improvement_vs_type_pct": 0.0
+      },
+      "Type + Priority Only": {
+        "model_name": "Type + Priority Only (No Epics)",
+        "MAE": 1.7637,
+        "MdAE": 1.0,
+        "RMSE": 3.35,
+        "Standardized_Accuracy": 0.4572,
+        "Snapped_MAE": 1.8061,
+        "diff_vs_per_type_median": -0.2092,
+        "rel_improvement_vs_type_pct": 10.6
+      },
+      "Deployment Model (Text+Type+Prio)": {
+        "model_name": "Deployment Model (TF-IDF+Type+Prio, No Epics)",
+        "MAE": 1.706,
+        "MdAE": 0.9922,
+        "RMSE": 3.2074,
+        "Standardized_Accuracy": 0.475,
+        "Snapped_MAE": 1.6846,
+        "diff_vs_per_type_median": -0.2669,
+        "rel_improvement_vs_type_pct": 13.53
+      },
+      "Text + Type": {
+        "model_name": "Text + Type (No Epics)",
+        "MAE": 1.7607,
+        "MdAE": 1.0932,
+        "RMSE": 3.2217,
+        "Standardized_Accuracy": 0.4581,
+        "Snapped_MAE": 1.7391,
+        "diff_vs_per_type_median": -0.2122,
+        "rel_improvement_vs_type_pct": 10.76
+      },
+      "S-BERT (+Type+Priority)": {
+        "model_name": "S-BERT + Type + Priority (No Epics)",
+        "MAE": 1.692,
+        "MdAE": 0.9786,
+        "RMSE": 3.1809,
+        "Standardized_Accuracy": 0.4793,
+        "Snapped_MAE": 1.6744,
+        "diff_vs_per_type_median": -0.2809,
+        "rel_improvement_vs_type_pct": 14.24
+      }
+    },
+    "project_28_error_share": {
+      "test_tickets_p28": 3324,
+      "total_test_tickets": 6167,
+      "ticket_share_pct": 53.9,
+      "total_abs_error_p28": 7226.57,
+      "total_abs_error_all": 10520.7,
+      "error_share_pct": 68.69
+    },
+    "top10_largest_errors": [
+      {
+        "Issue_ID": 226039,
+        "Project_ID": 28,
+        "Type": "Story",
+        "True_SP": 48.0,
+        "Pred_SP": 2.74,
+        "Absolute_Error": 45.26,
+        "Signed_Error": -45.26
+      },
+      {
+        "Issue_ID": 227041,
+        "Project_ID": 28,
+        "Type": "Improvement",
+        "True_SP": 40.0,
+        "Pred_SP": 2.09,
+        "Absolute_Error": 37.91,
+        "Signed_Error": -37.91
+      },
+      {
+        "Issue_ID": 223728,
+        "Project_ID": 28,
+        "Type": "Story",
+        "True_SP": 40.0,
+        "Pred_SP": 2.47,
+        "Absolute_Error": 37.53,
+        "Signed_Error": -37.53
+      },
+      {
+        "Issue_ID": 226516,
+        "Project_ID": 28,
+        "Type": "Story",
+        "True_SP": 40.0,
+        "Pred_SP": 3.59,
+        "Absolute_Error": 36.41,
+        "Signed_Error": -36.41
+      },
+      {
+        "Issue_ID": 226973,
+        "Project_ID": 28,
+        "Type": "Story",
+        "True_SP": 38.0,
+        "Pred_SP": 2.74,
+        "Absolute_Error": 35.26,
+        "Signed_Error": -35.26
+      },
+      {
+        "Issue_ID": 226737,
+        "Project_ID": 28,
+        "Type": "Improvement",
+        "True_SP": 40.0,
+        "Pred_SP": 4.91,
+        "Absolute_Error": 35.09,
+        "Signed_Error": -35.09
+      },
+      {
+        "Issue_ID": 224170,
+        "Project_ID": 28,
+        "Type": "Story",
+        "True_SP": 40.0,
+        "Pred_SP": 5.22,
+        "Absolute_Error": 34.78,
+        "Signed_Error": -34.78
+      },
+      {
+        "Issue_ID": 221738,
+        "Project_ID": 28,
+        "Type": "Story",
+        "True_SP": 35.0,
+        "Pred_SP": 2.89,
+        "Absolute_Error": 32.11,
+        "Signed_Error": -32.11
+      },
+      {
+        "Issue_ID": 37710,
+        "Project_ID": 10,
+        "Type": "New Feature",
+        "True_SP": 34.0,
+        "Pred_SP": 4.87,
+        "Absolute_Error": 29.13,
+        "Signed_Error": -29.13
+      },
+      {
+        "Issue_ID": 37696,
+        "Project_ID": 10,
+        "Type": "Story",
+        "True_SP": 33.0,
+        "Pred_SP": 4.75,
+        "Absolute_Error": 28.25,
+        "Signed_Error": -28.25
+      }
+    ]
+  },
+  "item5_intervals": {
+    "top10_test_projects_full_population": [
+      {
+        "project_id": 28,
+        "test_tickets": 3560,
+        "raw_coverage_pct": 49.19,
+        "raw_mean_width": 4.9289,
+        "conformal_coverage_pct": 51.6,
+        "conformal_mean_width": 5.0319
+      },
+      {
+        "project_id": 43,
+        "test_tickets": 1709,
+        "raw_coverage_pct": 46.93,
+        "raw_mean_width": 1.1564,
+        "conformal_coverage_pct": 55.06,
+        "conformal_mean_width": 1.2604
+      },
+      {
+        "project_id": 12,
+        "test_tickets": 227,
+        "raw_coverage_pct": 59.03,
+        "raw_mean_width": 3.4288,
+        "conformal_coverage_pct": 59.03,
+        "conformal_mean_width": 3.5328
+      },
+      {
+        "project_id": 33,
+        "test_tickets": 218,
+        "raw_coverage_pct": 44.95,
+        "raw_mean_width": 1.1373,
+        "conformal_coverage_pct": 53.67,
+        "conformal_mean_width": 1.2411
+      },
+      {
+        "project_id": 34,
+        "test_tickets": 120,
+        "raw_coverage_pct": 35.83,
+        "raw_mean_width": 4.532,
+        "conformal_coverage_pct": 38.33,
+        "conformal_mean_width": 4.636
+      },
+      {
+        "project_id": 4,
+        "test_tickets": 103,
+        "raw_coverage_pct": 45.63,
+        "raw_mean_width": 2.9115,
+        "conformal_coverage_pct": 51.46,
+        "conformal_mean_width": 3.0155
+      },
+      {
+        "project_id": 24,
+        "test_tickets": 86,
+        "raw_coverage_pct": 37.21,
+        "raw_mean_width": 2.8654,
+        "conformal_coverage_pct": 38.37,
+        "conformal_mean_width": 2.9694
+      },
+      {
+        "project_id": 30,
+        "test_tickets": 73,
+        "raw_coverage_pct": 32.88,
+        "raw_mean_width": 1.3499,
+        "conformal_coverage_pct": 35.62,
+        "conformal_mean_width": 1.4539
+      },
+      {
+        "project_id": 26,
+        "test_tickets": 72,
+        "raw_coverage_pct": 43.06,
+        "raw_mean_width": 2.5207,
+        "conformal_coverage_pct": 43.06,
+        "conformal_mean_width": 2.6246
+      },
+      {
+        "project_id": 25,
+        "test_tickets": 60,
+        "raw_coverage_pct": 43.33,
+        "raw_mean_width": 2.5297,
+        "conformal_coverage_pct": 45.0,
+        "conformal_mean_width": 2.6337
+      }
+    ],
+    "epic_excluded_overall": {
+      "raw_coverage_pct": 48.13,
+      "raw_mean_width": 2.5702,
+      "conformal_coverage_pct": 51.99,
+      "conformal_mean_width": 2.6451,
+      "adjustment_constant": 0.0376
+    },
+    "top10_test_projects_epic_excluded": [
+      {
+        "project_id": 28,
+        "test_tickets": 3324,
+        "raw_coverage_pct": 49.55,
+        "raw_mean_width": 3.257,
+        "conformal_coverage_pct": 51.38,
+        "conformal_mean_width": 3.3316
+      },
+      {
+        "project_id": 43,
+        "test_tickets": 1709,
+        "raw_coverage_pct": 48.22,
+        "raw_mean_width": 1.2294,
+        "conformal_coverage_pct": 56.82,
+        "conformal_mean_width": 1.3045
+      },
+      {
+        "project_id": 12,
+        "test_tickets": 226,
+        "raw_coverage_pct": 59.29,
+        "raw_mean_width": 3.2564,
+        "conformal_coverage_pct": 59.29,
+        "conformal_mean_width": 3.3316
+      },
+      {
+        "project_id": 33,
+        "test_tickets": 218,
+        "raw_coverage_pct": 40.37,
+        "raw_mean_width": 1.2494,
+        "conformal_coverage_pct": 47.71,
+        "conformal_mean_width": 1.3246
+      },
+      {
+        "project_id": 34,
+        "test_tickets": 119,
+        "raw_coverage_pct": 36.13,
+        "raw_mean_width": 4.2982,
+        "conformal_coverage_pct": 38.66,
+        "conformal_mean_width": 4.3733
+      },
+      {
+        "project_id": 4,
+        "test_tickets": 100,
+        "raw_coverage_pct": 43.0,
+        "raw_mean_width": 2.4096,
+        "conformal_coverage_pct": 48.0,
+        "conformal_mean_width": 2.4848
+      },
+      {
+        "project_id": 24,
+        "test_tickets": 86,
+        "raw_coverage_pct": 36.05,
+        "raw_mean_width": 2.8482,
+        "conformal_coverage_pct": 36.05,
+        "conformal_mean_width": 2.9234
+      },
+      {
+        "project_id": 30,
+        "test_tickets": 73,
+        "raw_coverage_pct": 30.14,
+        "raw_mean_width": 1.4426,
+        "conformal_coverage_pct": 35.62,
+        "conformal_mean_width": 1.5178
+      },
+      {
+        "project_id": 26,
+        "test_tickets": 72,
+        "raw_coverage_pct": 40.28,
+        "raw_mean_width": 2.5656,
+        "conformal_coverage_pct": 40.28,
+        "conformal_mean_width": 2.6407
+      },
+      {
+        "project_id": 25,
+        "test_tickets": 60,
+        "raw_coverage_pct": 50.0,
+        "raw_mean_width": 2.5951,
+        "conformal_coverage_pct": 50.0,
+        "conformal_mean_width": 2.6702
+      }
+    ]
+  },
+  "item6_epic_prediction_distribution": {
+    "count": 242,
+    "true_sp": {
+      "mean": 33.9958,
+      "std": 24.3612,
+      "min": 1.0,
+      "p10": 6.0,
+      "p25": 12.0,
+      "median": 30.0,
+      "p75": 54.0,
+      "p90": 72.0,
+      "p95": 80.0,
+      "p99": 99.531,
+      "max": 100.0
+    },
+    "pred_sp": {
+      "mean": 21.0769,
+      "std": 0.8802,
+      "min": 15.6445,
+      "p10": 20.5714,
+      "p25": 20.7934,
+      "median": 21.0354,
+      "p75": 21.4968,
+      "p90": 21.9923,
+      "p95": 22.209,
+      "p99": 22.6647,
+      "max": 23.7424
+    }
+  },
+  "item7_metadata": {
+    "trained_on": "tawos",
+    "clean_unfiltered_info": {
+      "dataset_filtering": "tawos_clean",
+      "filtering_description": "Clean subset with no post-estimation changes (Story_Point, Title, Description), valid resolutions (excluding wontfix, duplicate, invalid, cannot reproduce), and plausible Story_Point <= 100.",
+      "clean_rows": 42724,
+      "unfiltered_rows": 59250
+    },
+    "encoder_known_types": [
+      "Bug",
+      "Build Failure",
+      "Documentation",
+      "Enhancement Request",
+      "Epic",
+      "Improvement",
+      "Incident",
+      "New Feature",
+      "Problem Ticket",
+      "Question",
+      "Story",
+      "Sub-task",
+      "Suggestion",
+      "Support Request",
+      "Task",
+      "Technical Debt",
+      "Technical task",
+      "Wish"
+    ]
+  },
+  "total_execution_time_seconds": 413.2
+}

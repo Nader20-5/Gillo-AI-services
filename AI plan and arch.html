@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taskove (Gillo) AI Service: System Architecture, ML Pipeline &amp; Execution Plan</title>
+<style>
+:root{--bg:#fbfbf9;--fg:#1c2226;--mut:#5d676d;--rule:#d9dcd8;--acc:#0f5c5c;--tint:#eef3f1;--code:#f1f2ef}
+@media (prefers-color-scheme:dark){:root{--bg:#14181a;--fg:#e4e8e6;--mut:#9aa5a8;--rule:#2d3538;--acc:#6cc4b8;--tint:#1b2325;--code:#1d2427}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:880px;margin:0 auto;padding:40px 20px 80px}
+h1{font:600 30px/1.2 system-ui,sans-serif;margin:0 0 8px}
+h2{font:600 21px/1.3 system-ui,sans-serif;margin:48px 0 12px;padding-top:18px;border-top:1px solid var(--rule)}
+h3{font:600 16px/1.4 system-ui,sans-serif;margin:24px 0 8px;color:var(--acc)}
+p,li{max-width:74ch}
+.sub{color:var(--mut);margin:0 0 24px;font-size:17px}
+table{border-collapse:collapse;width:100%;font:14px/1.5 system-ui,sans-serif;display:block;overflow-x:auto;margin:12px 0}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{background:var(--tint);font-weight:600}
+code{font:13px ui-monospace,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:3px}
+pre{font:12.5px/1.5 ui-monospace,Menlo,Consolas,monospace;background:var(--code);padding:14px;overflow-x:auto;border-radius:4px;margin:8px 0}
+.dia{overflow-x:auto;border:1px solid var(--rule);background:#fff;padding:12px;border-radius:4px;margin:12px 0}
+details{margin:8px 0 0}
+summary{cursor:pointer;font:14px system-ui,sans-serif;color:var(--acc)}
+summary:focus-visible{outline:2px solid var(--acc)}
+.note{background:var(--tint);border-left:3px solid var(--acc);padding:12px 16px;margin:18px 0}
+@media print{details{display:block}details>summary{display:none}.dia{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1>Taskove AI Service: Architecture, ML Pipeline &amp; Build Plan</h1>
+<p class="sub">Unified specification for the AI Service, its <code>MongoDB-AI</code> database, custom-trained ML/LLM models, and standalone execution roadmap for Nader &amp; Sama.</p>
+
+<h2>1. Service Scope &amp; Human-in-the-Loop Model</h2>
+<p>The AI Service powers five core project intelligence features (Features 1, 2, 3, 5, and 6) alongside a centralized <strong>AI Suggestions Inbox</strong>. Proposed-task triage is removed from scope, and assignee recommendations are consolidated into Feature 1 as a <code>reassign</code> action.</p>
+
+<table>
+<tr><th>#</th><th>Feature</th><th>AI Engine Used</th><th>Output Produced</th><th>Human Authority</th></tr>
+<tr>
+  <td><strong>1</strong></td>
+  <td>Sprint estimate &amp; fit check</td>
+  <td>Model 1 (Effort Regressor) + Capacity Rules</td>
+  <td>Per-task hour range, sprint fit verdict (<code>fits</code>, <code>tight</code>, <code>over</code>), and suggested fixes (<code>move</code>, <code>split</code>, <code>reassign</code>)</td>
+  <td>Fixes go to the Inbox: PM/TL accepts or rejects with a mandatory reason</td>
+</tr>
+<tr>
+  <td><strong>2</strong></td>
+  <td>Early risk warning</td>
+  <td>Model 2 (Risk Classifier + SHAP Explainer)</td>
+  <td>Daily detection of tasks likely to slip with step-by-step evidence</td>
+  <td>Inbox: PM/TL acts on or dismisses the warning with a mandatory reason</td>
+</tr>
+<tr>
+  <td><strong>3</strong></td>
+  <td>Release request pre-fill</td>
+  <td>Model 3 (Fine-Tuned Agile LLM)</td>
+  <td>Release summary, release notes, rollback plan, and block explanation</td>
+  <td>Requester reviews and edits the draft before submitting</td>
+</tr>
+<tr>
+  <td><strong>5</strong></td>
+  <td>Standup &amp; retro drafts</td>
+  <td>Model 3 (Fine-Tuned Agile LLM)</td>
+  <td>Personal daily standup draft and sprint retrospective summary draft</td>
+  <td>Owner reviews, edits, and submits the draft</td>
+</tr>
+<tr>
+  <td><strong>6</strong></td>
+  <td>Ask the project (Chat)</td>
+  <td>Model 3 (Fine-Tuned LLM + Live Read Tools)</td>
+  <td>Context-aware, source-cited answers about user tasks and project state</td>
+  <td>Read-only assistant; chat has zero authority to mutate data</td>
+</tr>
+<tr>
+  <td><strong>-</strong></td>
+  <td>AI Suggestions Inbox</td>
+  <td>Shared workflow layer for Features 1 &amp; 2</td>
+  <td>Actionable proposals with before/after previews and audit trail</td>
+  <td>Managed exclusively by PM or TL (Admin is blocked everywhere)</td>
+</tr>
+</table>
+
+<div class="note"><strong>Architectural Principle.</strong> Only actionable sprint fixes and risk warnings belong in <code>ai_suggestions</code>. Task estimates, sprint fit checks, text drafts, and chat sessions are non-suggestion artifacts and live in dedicated collections so the accept/reject state machine stays clean.</div>
+
+<h2>2. Custom AI Models: Datasets, Training &amp; Evaluation</h2>
+<p>To meet both academic graduation requirements and production reliability, the service uses a hybrid AI architecture built on three custom-trained and evaluated models rather than simple external API wrappers.</p>
+
+<div id="ml-slot"></div>
+<details><summary>Mermaid code: ML training and inference pipeline</summary>
+<pre class="src" data-slot="ml-slot">flowchart TD
+  subgraph DATA["1. Dataset Engineering"]
+    D1["Public Jira & Agile Repositories"]
+    D2["Schema-Aligned Synthetic Generator"]
+    D1 --> DS["Unified Agile Dataset (80% Train / 20% Test)"]
+    D2 --> DS
+  end
+  subgraph TRAIN["2. Model Training & Academic Evaluation (Notebooks)"]
+    DS --> M1["Model 1: Task Effort Regressor (TF-IDF + XGBoost)"]
+    DS --> M2["Model 2: Slippage Risk Classifier (LightGBM + SHAP TreeExplainer)"]
+    DS --> M3["Model 3: Agile Drafts & Chat Assistant (QLoRA Fine-Tuned 3B LLM)"]
+    M1 --> E1M["Eval: MAE, RMSE, R2 Score"]
+    M2 --> E2M["Eval: F1, Precision, Recall, ROC-AUC"]
+    M3 --> E3M["Eval: Train/Val Loss, JSON Compliance"]
+  end
+  subgraph SERVE["3. Production Inference in AI Service"]
+    M1 -.->|"model_est.pkl"| F1["Feature 1: task_estimates & sprint_fit_checks"]
+    M2 -.->|"model_risk.pkl + SHAP"| F2["Feature 2: ai_suggestions + reasoning_steps"]
+    M3 -.->|"LoRA Adapters"| F356["Features 3, 5, 6: ai_drafts & chat_sessions"]
+  end
+</pre></details>
+
+<h3>Model Specifications &amp; Current Serving Status</h3>
+<div class="note" style="background: #f8fafc; border-left: 4px solid #0f5c5c; padding: 12px; margin-bottom: 16px;">
+  <strong>System Verification &amp; Serving Status:</strong> Every response and telemetry record explicitly reports <code>method</code> and <code>model_version</code>.
+  Models 1 and 2 active versions default to <code>"none"</code> and serve deterministic <code>rule_baseline</code> fallbacks. Synthetic baseline artifacts in <code>models/artifacts/</code> are blocked from serving by default (<code>ENABLE_SYNTHETIC_MODELS=False</code>). Model 3 serves deterministic template output (with Ollama/Cloud provider adapters), strict Pydantic output validation, and entity grounding checks. No telemetry is fabricated.
+</div>
+<table>
+<tr><th>Model</th><th>Target Features</th><th>Input Features &amp; Architecture</th><th>Training Data &amp; Verification Evidence</th><th>Current Serving Status</th></tr>
+<tr>
+  <td><strong>Model 1: Task Effort Estimator</strong><br>(Quantile Regression)</td>
+  <td>Feature 1<br>(<code>task_estimates</code>)</td>
+  <td><strong>XGBoost Quantile Regressor</strong> with canonical feature contract: <code>story_points</code>, <code>dependency_count</code>, <code>historical_median_hours</code>, <code>assignee_user_ratio</code>.<br><strong>Outputs:</strong> <code>low_hours</code> (P25), <code>mid_hours</code> (P50), <code>high_hours</code> (P75), <code>confidence</code>, <code>method</code>, <code>model_version</code>.</td>
+  <td><strong>Training Data:</strong> Parametric synthetic generator (leakage documented in <code>review_evidence_pack.md</code>). Real-world TAWOS benchmark in progress in <code>scripts/benchmark_tawos.py</code>.<br><strong>Verification Artifact:</strong> <code>models/artifacts/model_est/v1_synthetic/metadata.json</code> (SHA256 verified).</td>
+  <td><span style="color: #0f5c5c; font-weight: bold;">Serving rule_baseline Fallback</span><br>Default active version is <code>"none"</code>. Loads deterministic empirical quantile bands &times; dynamic developer ratio (tagged as <code>method="rule_baseline"</code>). Synthetic models require explicit <code>ENABLE_SYNTHETIC_MODELS=True</code>.</td>
+</tr>
+<tr>
+  <td><strong>Model 2: Early Risk &amp; Slippage Predictor</strong><br>(Classification + XAI)</td>
+  <td>Feature 2<br>(<code>ai_suggestions</code>)</td>
+  <td><strong>LightGBM Binary Classifier</strong> paired with <strong>SHAP TreeExplainer</strong>.<br><strong>Inputs:</strong> <code>stalled_days</code>, <code>dependency_depth</code>, <code>active_blockers</code>, <code>assignee_load_ratio</code>, <code>logged_vs_estimated_ratio</code>, <code>story_points</code>.<br><strong>Outputs:</strong> Slip probability, severity, <code>reasoning_steps</code> with SHAP or rule evidence.</td>
+  <td><strong>Training Data:</strong> Synthetic tasks CSV (leakage documented in <code>review_evidence_pack.md</code>). Real-world TAWOS evaluation underway.<br><strong>Verification Artifact:</strong> <code>models/artifacts/model_risk/v1_synthetic/metadata.json</code> (SHA256 verified).</td>
+  <td><span style="color: #0f5c5c; font-weight: bold;">Serving rule_baseline Fallback</span><br>Default active version is <code>"none"</code>. Evaluates deterministic rule triggers (active blockers, stalled days, workload overload) with step-by-step evidence (tagged as <code>method="rule_baseline"</code>). Synthetic models require explicit <code>ENABLE_SYNTHETIC_MODELS=True</code>.</td>
+</tr>
+<tr>
+  <td><strong>Model 3: Agile Summarizer &amp; Assistant</strong><br>(Structured Drafts &amp; Chat)</td>
+  <td>Features 3, 5, 6<br>(<code>ai_drafts</code>, <code>chat_sessions</code>)</td>
+  <td><strong>Deterministic Template Engine</strong> + <strong>Ollama / Cloud Provider Adapters</strong> (configured via <code>LLM_PROVIDER</code>).<br><strong>Inputs:</strong> Untrusted data blocks inside versioned prompt templates (<code>prompts/<kind>/v1.md</code>).<br><strong>Outputs:</strong> Strict Pydantic JSON schemas (<code>StandupDraftContent</code>, <code>RetroDraftContent</code>, etc.) with 1&times; retry on validation failure.</td>
+  <td><strong>Training Status:</strong> No custom LoRA adapter currently loaded (training notebook cells unexecuted; verified in <code>review_evidence_pack.md</code>).<br><strong>Verification Artifact:</strong> Versioned templates in <code>prompts/</code> and <code>app/services/llm_provider.py</code>.</td>
+  <td><span style="color: #0f5c5c; font-weight: bold;">Serving Deterministic Templates / Ollama Adapter</span><br>Tagged honestly as <code>method="template"</code> or <code>"llm"</code> or <code>"llm_template_fallback"</code>. Measures real latency and real provider tokens (or null). Runs post-generation entity grounding check against input snapshot.</td>
+</tr>
+</table>
+
+<h3>Dataset Strategy &amp; Validation Framing</h3>
+<ul>
+<li><strong>Phase 1 &amp; 2 (Current Prototype):</strong> Pipeline validation using a parametric synthetic generator in <code>scripts/prepare_ml_datasets.py</code> to verify end-to-end event schemas, MongoDB persistence, and FastAPI endpoints.</li>
+<li><strong>Phase 3 (Empirical Benchmark):</strong> Empirical evaluation using the open-source <strong>TAWOS</strong> Jira benchmark dataset (Tawosi et al.).
+  <ul>
+    <li><strong>Model 1:</strong> Predict real-world <code>Cycle Time</code> (or Story Points) against a naive median baseline.</li>
+    <li><strong>Model 2:</strong> Predict mid-sprint carry-over (<code>is_carried_over</code>) evaluated strictly on pre-midpoint changelog snapshots to eliminate target leakage.</li>
+  </ul>
+</li>
+<li><strong>Feature Ablations:</strong> Text ablation comparing Tabular baseline vs. <code>TF-IDF (32)</code> vs. <code>all-MiniLM-L6-v2 + PCA</code>.</li>
+</ul>
+
+<h2>3. Database Schema (<code>MongoDB-AI</code>)</h2>
+<p>The database is divided into two logical layers: <strong>Core AI Collections</strong> (storing model outputs, decisions, and run telemetry) and <strong>Kafka Read Models</strong> (local snapshots that act as the feature store for Models 1, 2, and 3).</p>
+
+<div id="erd-slot"></div>
+<details><summary>Mermaid code: schema</summary>
+<pre class="src" data-slot="erd-slot">erDiagram
+  ai_suggestions {
+    objectid _id PK
+    uuid project_id
+    uuid sprint_id
+    uuid task_id "nullable"
+    uuid concerns_user_id "nullable"
+    string type "sprint_fix or risk_warning"
+    string action "move, split, reassign"
+    string audience_roles "PM, TL (never Admin)"
+    string severity "risk only"
+    float confidence
+    string status "pending, accepted, rejected, dismissed, expired, superseded"
+    json proposal
+    json change_preview "before and after"
+    json data_sources
+    objectid run_id
+    string dedupe_key "unique while pending"
+    uuid decided_by
+    string decision_reason "required on reject and dismiss"
+    datetime decided_at
+    string apply_status "none, requested, applied, failed"
+    datetime applied_at
+    datetime expires_at
+    datetime created_at
+  }
+  ai_suggestion_comments {
+    uuid author_id
+    string body
+    datetime created_at
+  }
+  reasoning_steps {
+    int order
+    string description
+    json evidence "SHAP values and rule triggers"
+  }
+  task_estimates {
+    objectid _id PK
+    uuid task_id
+    uuid sprint_id
+    uuid project_id
+    uuid assignee_id
+    json baseline "median_hours, user_ratio, sample_size"
+    float low_hours
+    float high_hours
+    string confidence
+    string reason
+    json dev_override "hours, at"
+    float actual_hours "filled at sprint close"
+    string status "active or superseded"
+    objectid run_id
+    datetime created_at
+  }
+  sprint_fit_checks {
+    objectid _id PK
+    uuid sprint_id
+    uuid project_id
+    json per_user "capacity_h, load_low, load_high"
+    string verdict "fits, tight, over"
+    json suggestion_ids
+    objectid run_id
+    datetime created_at
+  }
+  ai_drafts {
+    objectid _id PK
+    string kind "standup, retro, release_summary, release_notes, rollback_plan, block_explanation"
+    uuid owner_user_id
+    uuid project_id
+    json ref "task_ids, sprint_id, release_request_id"
+    json content
+    json data_sources
+    string status "generated, edited, submitted, discarded"
+    objectid run_id
+    datetime created_at
+  }
+  chat_sessions {
+    objectid _id PK
+    uuid user_id
+    uuid project_id
+    datetime last_active_at "TTL index"
+  }
+  chat_messages {
+    string role
+    string content
+    json sources
+    datetime created_at
+  }
+  ai_runs {
+    objectid _id PK
+    string feature
+    string trigger "schedule, user, event"
+    uuid user_id
+    string model "model_est_v1, model_risk_v1, qwen_agile_lora"
+    string prompt_version
+    int tokens_in
+    int tokens_out
+    int latency_ms
+    string status
+    string error
+    datetime created_at
+  }
+  ai_profiles {
+    uuid user_id PK
+    json estimation "ratio, sample_size"
+    json skills "optional"
+    datetime updated_at
+  }
+  ai_suggestions ||--o{ ai_suggestion_comments : embeds
+  ai_suggestions ||--o{ reasoning_steps : embeds
+  chat_sessions ||--o{ chat_messages : embeds
+  sprint_fit_checks ||--o{ ai_suggestions : proposes
+  ai_runs ||--o{ ai_suggestions : produced
+  ai_runs ||--o{ task_estimates : produced
+  ai_runs ||--o{ ai_drafts : produced
+</pre></details>
+
+<h3>Read Model Collections (Synced via Kafka or Seed Script)</h3>
+<ul>
+<li><strong>Snapshot Collections:</strong> <code>task_snapshots</code>, <code>time_entries</code>, <code>sprint_snapshots</code>, <code>capacity</code>, <code>standup_blockers</code>, <code>pull_requests</code>, and <code>release_requests</code>.</li>
+<li><strong>Idempotency Collection:</strong> <code>processed_events</code> with a unique index on <code>event_id</code> so redelivered Kafka messages are safely ignored.</li>
+<li><strong>Structural Privacy Guardrail:</strong> The Kafka consumer for standups explicitly strips any user mood fields before writing to <code>standup_blockers</code>, ensuring mood data never enters the database or reaches any model.</li>
+<li><strong>Profile Simplification:</strong> <code>ai_profiles</code> stores each developer's historical estimate-to-actual ratio (<code>ratio</code>, <code>sample_size</code>) required by Model 1.</li>
+</ul>
+
+<h3>Required Indexes</h3>
+<ul>
+<li><code>ai_suggestions</code>: <code>{project_id, status, created_at}</code>, <code>{task_id, type, status}</code>, and a unique partial index on <code>dedupe_key</code> where <code>status == "pending"</code>.</li>
+<li><code>task_estimates</code>: <code>{task_id, created_at}</code> and <code>{sprint_id, status}</code>.</li>
+<li><code>chat_sessions</code>: TTL index on <code>last_active_at</code>.</li>
+</ul>
+
+<h2>4. System Integration, Event Flow &amp; Standalone Mode</h2>
+<p>In production, the AI Service consumes domain events from Kafka to keep its Read Models updated, publishes suggestion lifecycle events back to Kafka, and queries Core Agile live for Feature 6 (Chat). During development, it runs in <strong>Standalone Mode</strong> so Nader and Sama can build and test everything independently before final backend integration.</p>
+
+<div id="flow-slot"></div>
+<details><summary>Mermaid code: event flow</summary>
+<pre class="src" data-slot="flow-slot">flowchart LR
+  subgraph IN["Consumes from Kafka (or Seed Script)"]
+    E1["Task & time events"]
+    E2["Sprint & standup events (blockers only)"]
+    E3["PR & release events"]
+    E4["Profile updated & capacity"]
+  end
+  subgraph AI["AI Service (FastAPI)"]
+    RM["Read Models (MongoDB-AI)"] --> FP["ML & LLM Pipelines (Features 1, 2, 3, 5)"] --> SI["Suggestions Inbox & Drafts"]
+    CH["Feature 6 Chat Tools (Forwards User JWT)"]
+  end
+  E1 --> RM
+  E2 --> RM
+  E3 --> RM
+  E4 --> RM
+  SI --> P1["AiSuggestionCreated -> Notification"]
+  SI --> P2["AiSuggestionDecided -> Audit"]
+  SI --> P3["AiSuggestionAccepted -> Core Agile applies fix"]
+  CH --> CORE["Core Agile API (Live HTTP or Mock Read Models)"]
+</pre></details>
+
+<h3>How Standalone Development Mode Works</h3>
+<ul>
+<li><strong>4-Sprint Seed Script:</strong> Populates all Read Model collections in <code>MongoDB-AI</code> with realistic history across 4 sprints (tasks, logged hours, slipped tasks, blockers without mood, PRs, release requests, and user capacities). Features 1, 2, 3, and 5 run at 100% capability on this seeded data.</li>
+<li><strong>Dual-Mode Core Agile Client (For Feature 6 Chat):</strong> Controlled via <code>CORE_AGILE_MODE=mock|live</code>. In <code>mock</code> mode, chat tools read directly from the local MongoDB Read Models filtered by the caller's JWT claims (<code>user_id</code>, <code>project_id</code>, <code>role</code>). When integrating with the backend team, switching to <code>live</code> routes requests to the Core Agile HTTP endpoints with the user's JWT.</li>
+<li><strong>Simulated Event Producer:</strong> When a PM/TL accepts a suggestion in standalone mode, the service sets <code>apply_status = "requested"</code>, logs the outgoing <code>AiSuggestionAccepted</code> event payload, and optionally applies the previewed change to the local snapshot for live demo verification.</li>
+</ul>
+
+<h2>5. Feature Pipelines &amp; API Surface</h2>
+
+<h3>End-to-End Pipeline Logic</h3>
+<ul>
+<li><strong>Feature 1 (Sprint Estimate &amp; Fit Check):</strong> Calculates statistical baseline (median hours of similar tasks &times; assignee ratio from <code>ai_profiles</code>) &rarr; runs <strong>Model 1</strong> to predict <code>low_hours</code>, <code>high_hours</code>, and <code>confidence</code> &rarr; saves to <code>task_estimates</code>. For fit check, aggregates predicted hours per user against <code>capacity</code> &rarr; saves verdict (<code>fits</code>, <code>tight</code>, <code>over</code>) in <code>sprint_fit_checks</code> &rarr; if <code>tight</code> or <code>over</code>, generates <code>move</code>, <code>split</code>, or <code>reassign</code> proposals in <code>ai_suggestions</code>.</li>
+<li><strong>Feature 2 (Early Risk Warning):</strong> Daily scheduled job extracts task features from Read Models (stalled days, dependency depth, repeated blockers, assignee overload) &rarr; runs <strong>Model 2 + SHAP</strong> &rarr; translates top SHAP values into structured <code>reasoning_steps</code> and <code>evidence</code> &rarr; inserts into <code>ai_suggestions</code> using <code>dedupe_key</code> to prevent duplicate pending alerts.</li>
+<li><strong>Feature 3 (Release Request Pre-Fill &amp; Block Explainer):</strong> Reads linked tasks and <code>pull_requests</code> for a release &rarr; runs <strong>Model 3</strong> to generate <code>release_summary</code>, <code>release_notes</code>, and <code>rollback_plan</code> drafts in <code>ai_drafts</code>. If blocked, analyzes incomplete tasks/unmerged PRs to produce a <code>block_explanation</code> draft.</li>
+<li><strong>Feature 5 (Standup &amp; Retro Drafts):</strong> For standup, gathers the user's recent task updates, logged hours, and blockers &rarr; runs <strong>Model 3</strong> to create a personal <code>standup</code> draft. For retro, aggregates sprint slippage, late-added tasks, and estimated vs. actual hours &rarr; generates a sprint <code>retro</code> draft in <code>ai_drafts</code>.</li>
+<li><strong>Feature 6 (Ask the Project Chat):</strong> Receives user question &rarr; invokes read-only tools (<code>get_my_tasks</code>, <code>get_sprint_status</code>, <code>get_task_blockers</code>, <code>get_release_status</code>) scoped to the user's JWT permissions &rarr; runs <strong>Model 3</strong> to synthesize an answer with explicit <code>sources</code> &rarr; saves turn in <code>chat_sessions</code>.</li>
+</ul>
+
+<h3>REST API Endpoints</h3>
+<table>
+<tr><th>Area</th><th>Endpoints</th><th>Access &amp; Validation Rules</th></tr>
+<tr>
+  <td><strong>Suggestions Inbox</strong></td>
+  <td><code>GET /suggestions</code>, <code>GET /suggestions/{id}</code>, <code>POST /suggestions/{id}/accept</code>, <code>POST .../reject</code>, <code>POST .../dismiss</code>, <code>POST .../comments</code></td>
+  <td>PM and TL only (Admin blocked). <code>decision_reason</code> is strictly required on <code>reject</code> and <code>dismiss</code>.</td>
+</tr>
+<tr>
+  <td><strong>Sprint Intelligence</strong></td>
+  <td><code>POST /sprints/{id}/estimate</code>, <code>GET /sprints/{id}/fit-check</code></td>
+  <td>Triggers Model 1 estimation and capacity comparison for all tasks in the sprint.</td>
+</tr>
+<tr>
+  <td><strong>Release Assistant</strong></td>
+  <td><code>POST /release-requests/{id}/draft</code>, <code>POST /release-requests/{id}/explain-block</code></td>
+  <td>Generates editable release documentation and blocker diagnostics in <code>ai_drafts</code>.</td>
+</tr>
+<tr>
+  <td><strong>Personal &amp; Team Drafts</strong></td>
+  <td><code>POST /standup/draft</code>, <code>POST /sprints/{id}/retro/draft</code></td>
+  <td>Developers generate only their own standup drafts; PM/TL generates sprint retro drafts.</td>
+</tr>
+<tr>
+  <td><strong>Project Chat</strong></td>
+  <td><code>POST /chat</code></td>
+  <td>Read-only tool-assisted Q&amp;A. Enforces caller's JWT role visibility; returns <code>sources</code> array.</td>
+</tr>
+</table>
+
+<h2>6. Key Decisions &amp; Execution Roadmap (Nader &amp; Sama)</h2>
+
+<h3>Core Technical Decisions</h3>
+<table>
+<tr><th>Decision Area</th><th>Agreed Approach</th></tr>
+<tr><td><strong>Service Tech Stack</strong></td><td><strong>Python + FastAPI + Motor (Async MongoDB) + Pydantic</strong> for native hosting of trained ML/LLM artifacts (<code>xgboost</code>, <code>lightgbm</code>, <code>shap</code>, <code>sentence-transformers</code>, <code>peft/transformers</code>) and strict JSON schema validation.</td></tr>
+<tr><td><strong>Data Access Pattern</strong></td><td>Local Kafka Read Models for Features 1, 2, 3, and 5. Dual-mode client (Mock Read Models during standalone dev, Live Core Agile HTTP calls on integration) for Feature 6.</td></tr>
+<tr><td><strong>Applying Accepted Fixes</strong></td><td>AI Service emits <code>AiSuggestionAccepted</code> to Kafka and sets <code>apply_status = "requested"</code>; Core Agile executes the change and confirms completion.</td></tr>
+<tr><td><strong>GitHub / PR Integration</strong></td><td>Mocked via the <code>pull_requests</code> Read Model snapshot; no direct external GitHub API dependency in the AI Service.</td></tr>
+</table>
+
+<h3>Phased Work Division: Nader &amp; Sama</h3>
+<table>
+<tr><th>Phase</th><th>Nader's Deliverables</th><th>Sama's Deliverables</th></tr>
+<tr>
+  <td><strong>Phase 1: Foundation, Seed Data &amp; Datasets</strong></td>
+  <td>
+    <ul>
+      <li>FastAPI project skeleton, <code>MongoDB-AI</code> connection, indexes, and JWT/Role middleware (blocking <code>Admin</code>).</li>
+      <li>Dataset preparation script combining public Agile data with synthetic schema-aligned features for Models 1 &amp; 2.</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>4-Sprint MongoDB Seed Script populating all Read Model collections (`task_snapshots`, `time_entries`, `standup_blockers`, `pull_requests`, `release_requests`, `capacity`).</li>
+      <li>Instruction-tuning JSON dataset preparation for Model 3 (Standup, Retro, Release drafts) and <code>ai_runs</code> logger.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td><strong>Phase 2: Model Training &amp; Evaluation Notebooks</strong></td>
+  <td>
+    <ul>
+      <li><strong>Notebook 1 (Feature 1):</strong> Train &amp; evaluate Effort Regressor (`TF-IDF` + `XGBoost`), plot MAE/RMSE/R&sup2;, and export <code>model_est.pkl</code>.</li>
+      <li><strong>Notebook 2 (Feature 2):</strong> Train &amp; evaluate Risk Classifier (`LightGBM` + `SHAP`), plot ROC-AUC &amp; Confusion Matrix, and export <code>model_risk.pkl</code>.</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li><strong>Notebook 3 (Features 3, 5, 6):</strong> Fine-tune 3B LLM with 4-bit QLoRA on Colab/Kaggle, plot Train/Validation Loss curves, evaluate JSON compliance, and export LoRA adapters + inference client.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td><strong>Phase 3: Feature Pipelines, APIs &amp; Kafka Sync</strong></td>
+  <td>
+    <ul>
+      <li><strong>Suggestions Inbox API:</strong> Full CRUD &amp; state transitions (`accept`, `reject`, `dismiss` with reason validation, `comments`).</li>
+      <li><strong>Feature 1 Pipeline &amp; API:</strong> Baseline calculation, Model 1 inference, sprint fit check, and `move`/`split`/`reassign` proposal generator.</li>
+      <li><strong>Feature 2 Pipeline:</strong> Daily risk job, SHAP-to-<code>reasoning_steps</code> mapper, and <code>dedupe_key</code> enforcement.</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li><strong>Feature 3 Pipeline &amp; API:</strong> Release pre-fill draft generator and blocked-release explainer endpoints.</li>
+      <li><strong>Feature 5 Pipeline &amp; API:</strong> Personal standup draft and sprint retrospective draft endpoints writing to <code>ai_drafts</code>.</li>
+      <li><strong>Kafka Consumer Workers:</strong> Event handlers for syncing Read Models with <code>processed_events</code> deduplication and mood stripping.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td><strong>Phase 4: Project Chat, Guardrail Tests &amp; Handover</strong><br><em>(Joint Effort)</em></td>
+  <td colspan="2">
+    <ul>
+      <li>Build <strong>Feature 6 (<code>POST /chat</code>)</strong> with Dual-Mode tool calling (<code>get_my_tasks</code>, <code>get_sprint_status</code>, <code>get_task_blockers</code>, <code>get_release_status</code>) and source citations.</li>
+      <li>Write automated verification tests proving: (1) user mood never enters storage or prompts, (2) no endpoint ranks developers, and (3) role visibility holds strictly (Admin receives <code>403 Forbidden</code>, Developers only access their own personal drafts).</li>
+      <li>Frontend coordination: Add the Retrospective draft view to the PM Sprint screen.</li>
+    </ul>
+  </td>
+</tr>
+</table>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+(async function(){
+  if(!window.mermaid) return;
+  var dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({startOnLoad:false,theme:dark?'dark':'neutral',securityLevel:'loose',er:{useMaxWidth:false}});
+  var srcs=document.querySelectorAll('pre.src'),i=0;
+  for(const p of srcs){
+    try{
+      const r=await mermaid.render('m'+(i++),p.textContent);
+      const d=document.getElementById(p.dataset.slot);
+      d.className='dia';
+      d.innerHTML=r.svg;
+    }catch(e){document.getElementById(p.dataset.slot).textContent='Diagram failed to render. Use the Mermaid code below.';}
+  }
+})();
+</script>
+</body>
+</html>

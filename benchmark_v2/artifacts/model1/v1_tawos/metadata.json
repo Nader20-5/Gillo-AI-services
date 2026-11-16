@@ -1,0 +1,39 @@
+{
+  "name": "model_est_benchmark",
+  "version": "v1_tawos",
+  "trained_on": "tawos_clean",
+  "trained_at": "2026-10-21T18:47:50Z",
+  "model_architecture": "LightGBM (TF-IDF + Proj Feature, objective='l1')",
+  "loss_function": "L1 loss (Mean Absolute Error, objective='regression_l1')",
+  "model_file": "model_est_benchmark.pkl",
+  "vectorizer_file": "tfidf_vectorizer.pkl",
+  "encoder_file": "ohe_encoder.pkl",
+  "feature_list": [
+    "title_and_description_text_tfidf (2500 ngrams)",
+    "type_onehot",
+    "priority_onehot",
+    "train_set_project_median_sp"
+  ],
+  "library_versions": {
+    "scikit-learn": "1.7.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.2.6",
+    "sentence_transformers": "6.2.0"
+  },
+  "sha256": "baa93059c6beabc192b02c31333ff64458c33f4da120a601684c3a535ae0d8f9",
+  "metrics": {
+    "model_name": "LightGBM (TF-IDF + Proj Feature, objective='l1')",
+    "MAE": 2.4378,
+    "MdAE": 0.9997,
+    "RMSE": 6.2559,
+    "Standardized_Accuracy": 0.486,
+    "Snapped_MAE": 2.4173
+  },
+  "baseline_comparison": {
+    "strongest_baseline": "Baseline: Per-Type Train Median",
+    "baseline_MAE": 2.668,
+    "model_MAE": 2.4378,
+    "beats_strongest_baseline": true,
+    "relative_improvement_pct": 8.63
+  }
+}

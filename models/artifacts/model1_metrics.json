@@ -1,0 +1,9 @@
+{
+  "model": "XGBoost Quantile Regressor",
+  "MAE": 5.173,
+  "RMSE": 7.733,
+  "R2_Score": 0.8356,
+  "P25_P75_Coverage_Pct": 41.2,
+  "train_samples": 2000,
+  "test_samples": 500
+}

@@ -1,0 +1,24 @@
+{
+  "total_changelog_rows_scanned": 9253419,
+  "total_sprint_changelog_rows": 174915,
+  "current_dataset_issues": 20747,
+  "full_universe_issues": 37909,
+  "missing_issues_count": 17171,
+  "missing_issues_pct_of_full": 45.3,
+  "missing_final_status_top5": {
+    "Closed": 9460,
+    "Done": 3656,
+    "Resolved": 1681,
+    "Complete": 956,
+    "Open": 436
+  },
+  "missing_final_resolution_top5": {
+    "Fixed": 8470,
+    "Done": 3738,
+    "Unresolved": 1342,
+    "Complete": 738,
+    "Duplicate": 478
+  },
+  "missing_backlog_null_sprint_count": 5654,
+  "missing_backlog_null_sprint_pct": 32.93
+}

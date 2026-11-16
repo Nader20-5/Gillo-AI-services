@@ -1,0 +1,2 @@
+﻿D:\Gillo AI Service\reports\security\SECURITY_AUDIT.md:138
+D:\Gillo AI Service\.env:19

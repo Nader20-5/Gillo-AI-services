@@ -1,0 +1,52 @@
+{
+  "sprint_row_patterns_all": {
+    "total_rows": 77327,
+    "multi_id_to_value": 28503,
+    "multi_id_to_value_pct": 36.86,
+    "carry_over_from_plus_one_new": 24385,
+    "carry_over_pct_of_multi": 85.55,
+    "id_disappeared_removed": 21543,
+    "id_disappeared_pct": 27.86
+  },
+  "sprint_row_patterns_sample_200": {
+    "total_rows": 200,
+    "multi_id_to_value": 84,
+    "multi_id_to_value_pct": 42.0,
+    "carry_over_from_plus_one_new": 72,
+    "carry_over_pct_of_multi": 85.71,
+    "id_disappeared_removed": 55,
+    "id_disappeared_pct": 27.5
+  },
+  "sprint_id_mapping": {
+    "sprint_csv_total_rows": 4594,
+    "duplicates_project_jira_id": 0,
+    "is_project_jira_id_unique": true,
+    "jira_ids_in_multiple_projects": 1002,
+    "total_changelog_sprint_id_references": 258222,
+    "unmapped_changelog_references": 9908,
+    "unmapped_changelog_references_pct": 3.84,
+    "unique_unmapped_project_jira_pairs": 855
+  },
+  "multi_sprint_recomputed": {
+    "denominator_all_closed_sprint_issues": 41475,
+    "multi_sprint_issues_count": 16101,
+    "multi_sprint_pct_all_closed_issues": 38.82,
+    "denominator_issues_with_sprint_changelog": 32540,
+    "multi_sprint_pct_issues_with_changelog": 49.48
+  },
+  "closed_sprints_complete_end_diff": {
+    "total_closed_sprints": 4507,
+    "closed_sprints_le_3_days": 3427,
+    "closed_sprints_le_3_days_pct": 76.04,
+    "closed_sprints_gt_3_days": 1080,
+    "closed_sprints_gt_3_days_pct": 23.96
+  },
+  "status_mapping": {
+    "total_status_rows": 171183,
+    "mapped_both_ends_count": 171183,
+    "coverage_pct": 100.0,
+    "meets_99_5_pct_threshold": true,
+    "unmapped_status_names_count": 0,
+    "unmapped_status_names": []
+  }
+}

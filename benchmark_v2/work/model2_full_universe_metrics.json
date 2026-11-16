@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "pipeline_name": "model2_full_universe_benchmark",
+    "generated_at": "2026-11-13T22:37:35.188607",
+    "canonical_test_sprints_count": 148,
+    "canonical_sprint_rule": "Sprints with >= 10 open tasks, >= 1 positive (carried-over), and >= 1 negative (completed) at f=0.5"
+  },
+  "side_by_side_comparison": {
+    "base_rates": {
+      "old_universe": {
+        "train": 0.6456,
+        "val_f50": 0.7599,
+        "test_f50": 0.7475,
+        "heldout_f50": 0.7015
+      },
+      "new_universe": {
+        "train": 0.6597,
+        "val_f50": 0.749,
+        "test_f50": 0.7418,
+        "heldout_f50": 0.6973
+      }
+    },
+    "models": {
+      "LightGBM Full Model": {
+        "old_universe": {
+          "roc_auc": 0.7715,
+          "pr_auc": 0.8987,
+          "within_sprint_auc": 0.741,
+          "macro_proj_auc": 0.6853,
+          "precision@3": 0.9074,
+          "precision@5": 0.8841,
+          "precision@20_pct": 0.8932
+        },
+        "new_universe": {
+          "roc_auc": 0.7488,
+          "pr_auc": 0.8878,
+          "brier_score": 0.1648,
+          "macro_proj_auc": 0.6864,
+          "within_sprint_auc": 0.7297,
+          "precision@3": 0.8941,
+          "precision@5": 0.873,
+          "precision@20_pct": 0.8783
+        }
+      },
+      "Taskove-Compatible Model": {
+        "old_universe": {
+          "roc_auc": 0.7414,
+          "pr_auc": 0.8916,
+          "within_sprint_auc": 0.7001,
+          "macro_proj_auc": 0.6771,
+          "precision@3": 0.881,
+          "precision@5": 0.8429,
+          "precision@20_pct": 0.865
+        },
+        "new_universe": {
+          "roc_auc": 0.7287,
+          "pr_auc": 0.8818,
+          "brier_score": 0.169,
+          "macro_proj_auc": 0.6787,
+          "within_sprint_auc": 0.7121,
+          "precision@3": 0.8671,
+          "precision@5": 0.8541,
+          "precision@20_pct": 0.8613
+        }
+      },
+      "Scaled Balanced Logistic Regression": {
+        "old_universe": {
+          "roc_auc": 0.7243,
+          "pr_auc": 0.8801,
+          "within_sprint_auc": 0.7102,
+          "macro_proj_auc": 0.6514,
+          "precision@3": 0.875,
+          "precision@5": 0.841,
+          "precision@20_pct": 0.862
+        },
+        "new_universe": {
+          "roc_auc": 0.7082,
+          "pr_auc": 0.8698,
+          "brier_score": 0.199,
+          "macro_proj_auc": 0.6724,
+          "within_sprint_auc": 0.7227,
+          "precision@3": 0.9122,
+          "precision@5": 0.8824,
+          "precision@20_pct": 0.9042
+        }
+      },
+      "Rule: carry_count > 0": {
+        "old_universe": {
+          "roc_auc": 0.6149,
+          "pr_auc": 0.8691,
+          "within_sprint_auc": 0.612,
+          "macro_proj_auc": 0.584,
+          "precision@3": 0.835,
+          "precision@5": 0.821,
+          "precision@20_pct": 0.832
+        },
+        "new_universe": {
+          "roc_auc": 0.6013,
+          "pr_auc": 0.8606,
+          "macro_proj_auc": 0.5373,
+          "within_sprint_auc": 0.5497,
+          "precision@3": 0.75,
+          "precision@5": 0.7419,
+          "precision@20_pct": 0.7389
+        }
+      },
+      "Rule: status_category == todo": {
+        "old_universe": {
+          "roc_auc": 0.6001,
+          "pr_auc": 0.8526,
+          "within_sprint_auc": 0.598,
+          "macro_proj_auc": 0.572,
+          "precision@3": 0.821,
+          "precision@5": 0.804,
+          "precision@20_pct": 0.819
+        },
+        "new_universe": {
+          "roc_auc": 0.5812,
+          "pr_auc": 0.8376,
+          "macro_proj_auc": 0.5973,
+          "within_sprint_auc": 0.5982,
+          "precision@3": 0.8086,
+          "precision@5": 0.7905,
+          "precision@20_pct": 0.7984
+        }
+      }
+    }
+  },
+  "validation_threshold_policy_two_halves": {
+    "rule": "Fit isotonic calibrator on Val Half A; find threshold on Val Half B with max recall subject to flag_rate <= 30%",
+    "chosen_threshold": 0.93,
+    "val_half_b_flag_rate_pct": 20.78,
+    "val_half_b_recall": 0.2623,
+    "test_flag_rate_pct": 16.08,
+    "test_precision": 0.9518,
+    "test_recall": 0.2063
+  },
+  "calibration_reliability_tables": {
+    "val_fitted_brier": 0.1648,
+    "train_fitted_brier": 0.1645,
+    "val_cal_table": [
+      {
+        "bin_index": 1,
+        "bin_range": "[0.0, 0.1)",
+        "count": 29,
+        "mean_predicted": 0.039,
+        "observed_rate": 0.0345,
+        "gap": 0.0045
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "[0.1, 0.2)",
+        "count": 90,
+        "mean_predicted": 0.1131,
+        "observed_rate": 0.3444,
+        "gap": -0.2313
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "[0.2, 0.3)",
+        "count": 117,
+        "mean_predicted": 0.2654,
+        "observed_rate": 0.4274,
+        "gap": -0.1619
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "[0.3, 0.4)",
+        "count": 70,
+        "mean_predicted": 0.3842,
+        "observed_rate": 0.5143,
+        "gap": -0.1301
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "[0.4, 0.5)",
+        "count": 212,
+        "mean_predicted": 0.4007,
+        "observed_rate": 0.467,
+        "gap": -0.0663
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "[0.5, 0.6)",
+        "count": 938,
+        "mean_predicted": 0.5293,
+        "observed_rate": 0.5736,
+        "gap": -0.0443
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "[0.6, 0.7)",
+        "count": 448,
+        "mean_predicted": 0.676,
+        "observed_rate": 0.7188,
+        "gap": -0.0427
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "[0.7, 0.8)",
+        "count": 704,
+        "mean_predicted": 0.7657,
+        "observed_rate": 0.767,
+        "gap": -0.0013
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "[0.8, 0.9)",
+        "count": 900,
+        "mean_predicted": 0.8432,
+        "observed_rate": 0.8411,
+        "gap": 0.002
+      },
+      {
+        "bin_index": 10,
+        "bin_range": "[0.9, 1.0)",
+        "count": 1256,
+        "mean_predicted": 0.9369,
+        "observed_rate": 0.922,
+        "gap": 0.0149
+      }
+    ],
+    "train_cal_table": [
+      {
+        "bin_index": 1,
+        "bin_range": "[0.0, 0.1)",
+        "count": 14,
+        "mean_predicted": 0.0743,
+        "observed_rate": 0.0,
+        "gap": 0.0743
+      },
+      {
+        "bin_index": 2,
+        "bin_range": "[0.1, 0.2)",
+        "count": 34,
+        "mean_predicted": 0.1515,
+        "observed_rate": 0.1765,
+        "gap": -0.025
+      },
+      {
+        "bin_index": 3,
+        "bin_range": "[0.2, 0.3)",
+        "count": 213,
+        "mean_predicted": 0.2538,
+        "observed_rate": 0.4225,
+        "gap": -0.1688
+      },
+      {
+        "bin_index": 4,
+        "bin_range": "[0.3, 0.4)",
+        "count": 255,
+        "mean_predicted": 0.3641,
+        "observed_rate": 0.4745,
+        "gap": -0.1104
+      },
+      {
+        "bin_index": 5,
+        "bin_range": "[0.4, 0.5)",
+        "count": 232,
+        "mean_predicted": 0.4475,
+        "observed_rate": 0.4698,
+        "gap": -0.0223
+      },
+      {
+        "bin_index": 6,
+        "bin_range": "[0.5, 0.6)",
+        "count": 590,
+        "mean_predicted": 0.536,
+        "observed_rate": 0.5915,
+        "gap": -0.0555
+      },
+      {
+        "bin_index": 7,
+        "bin_range": "[0.6, 0.7)",
+        "count": 682,
+        "mean_predicted": 0.6577,
+        "observed_rate": 0.7023,
+        "gap": -0.0446
+      },
+      {
+        "bin_index": 8,
+        "bin_range": "[0.7, 0.8)",
+        "count": 747,
+        "mean_predicted": 0.7569,
+        "observed_rate": 0.7952,
+        "gap": -0.0383
+      },
+      {
+        "bin_index": 9,
+        "bin_range": "[0.8, 0.9)",
+        "count": 1093,
+        "mean_predicted": 0.8573,
+        "observed_rate": 0.8545,
+        "gap": 0.0028
+      },
+      {
+        "bin_index": 10,
+        "bin_range": "[0.9, 1.0)",
+        "count": 906,
+        "mean_predicted": 0.9391,
+        "observed_rate": 0.9404,
+        "gap": -0.0013
+      }
+    ]
+  },
+  "held_out_projects_evaluation": {
+    "train_date_range": [
+      "2012-02-28",
+      "2018-03-01"
+    ],
+    "held_out_date_range": [
+      "2012-02-28",
+      "2020-10-12"
+    ],
+    "held_out_projects": [
+      11,
+      19,
+      21,
+      28,
+      35
+    ],
+    "table": [
+      {
+        "model": "Rule: status_category == 'todo'",
+        "roc_auc": 0.616,
+        "pr_auc": 0.8305,
+        "within_sprint_auc": 0.625,
+        "macro_proj_auc": 0.6216
+      },
+      {
+        "model": "Rule: carry_count > 0",
+        "roc_auc": 0.6007,
+        "pr_auc": 0.8323,
+        "within_sprint_auc": 0.5766,
+        "macro_proj_auc": 0.555
+      },
+      {
+        "model": "Scaled Balanced LR (All Features)",
+        "roc_auc": 0.7359,
+        "pr_auc": 0.8507,
+        "within_sprint_auc": 0.7314,
+        "macro_proj_auc": 0.7015
+      },
+      {
+        "model": "Taskove-Compatible LightGBM",
+        "roc_auc": 0.7615,
+        "pr_auc": 0.869,
+        "within_sprint_auc": 0.7496,
+        "macro_proj_auc": 0.7352
+      },
+      {
+        "model": "Full LightGBM (No Carry Rate, Simulated New Team)",
+        "roc_auc": 0.7794,
+        "pr_auc": 0.8793,
+        "within_sprint_auc": 0.7594,
+        "macro_proj_auc": 0.7455
+      },
+      {
+        "model": "Full LightGBM (With Carry Rate)",
+        "roc_auc": 0.7847,
+        "pr_auc": 0.8825,
+        "within_sprint_auc": 0.7607,
+        "macro_proj_auc": 0.7467
+      }
+    ]
+  },
+  "taskove_compatible_model": {
+    "model_name": "model2_sprint_carryover_risk_taskove",
+    "version": "v2_taskove_features",
+    "trained_on": "tawos_full_universe",
+    "base_rate": 0.6597,
+    "test_base_rate_f50": 0.7418,
+    "ordered_feature_list": [
+      "f",
+      "sprint_open_tasks",
+      "sprint_open_points",
+      "fraction_points_done",
+      "assignee_open_points",
+      "assignee_open_tasks",
+      "days_in_current_status",
+      "days_since_last_event",
+      "story_points",
+      "has_sp",
+      "added_after_sprint_start",
+      "assignee_present",
+      "links_depends_on",
+      "status_category_is_todo",
+      "type_Bug",
+      "type_Story",
+      "type_Improvement",
+      "type_Task",
+      "type_New Feature",
+      "type_Suggestion",
+      "type_Enhancement Request",
+      "type_Epic",
+      "type_other"
+    ],
+    "feature_count": 23,
+    "best_hyperparameters": {
+      "num_leaves": 31,
+      "learning_rate": 0.03,
+      "min_child_samples": 100
+    },
+    "validation_threshold_policy": {
+      "selection_rule": "Max recall on validation half B subject to flag_rate <= 30%",
+      "chosen_threshold": 0.92,
+      "validation_flag_rate_pct": 24.2,
+      "test_flag_rate_pct": 20.48,
+      "test_precision": 0.9335,
+      "test_recall": 0.2577
+    },
+    "primary_rank_based_policy_canonical": {
+      "sprint_count": 148,
+      "mean_within_sprint_auc": 0.7121,
+      "mean_sprint_base_rate": 0.7235,
+      "top_3": {
+        "precision": 0.8671,
+        "recall": 0.2142,
+        "lift_ratio_of_means": 1.1985,
+        "lift_mean_of_ratios": 1.2579
+      },
+      "top_5": {
+        "precision": 0.8541,
+        "recall": 0.342,
+        "lift_ratio_of_means": 1.1804,
+        "lift_mean_of_ratios": 1.2229
+      },
+      "top_20_pct": {
+        "precision": 0.8613,
+        "recall": 0.275,
+        "lift_ratio_of_means": 1.1904,
+        "lift_mean_of_ratios": 1.2464
+      }
+    },
+    "metrics_test_f50": {
+      "roc_auc": 0.7287,
+      "pr_auc": 0.8818,
+      "brier_score": 0.169,
+      "macro_proj_auc": 0.6787,
+      "within_sprint_auc": 0.7121,
+      "precision@3": 0.8671,
+      "precision@5": 0.8541,
+      "precision@20_pct": 0.8613
+    },
+    "artifacts": {
+      "model2_taskove_lightgbm_sha256": "d460cd79925a7137c96545786a7939d988f2e307f0e5dcc94a36e9730f9d846d",
+      "model2_taskove_calibrator_sha256": "e05883dd3324c5aec551ac83fffac2a5a4fa54cc501f666c6353524c64723ea0",
+      "model2_taskove_transformer_sha256": "faa6c096b19254e2a0a65275c1cf718e51ab9c43b4fbffc0a427a2b86c7138bf"
+    }
+  }
+}

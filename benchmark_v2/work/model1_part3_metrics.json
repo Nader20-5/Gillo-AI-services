@@ -1,0 +1,829 @@
+{
+  "item1_final_candidates_epic_excluded": {
+    "summary": {
+      "type_only": {
+        "display_name": "Type Only",
+        "seed_42_single_run": {
+          "seed": 42,
+          "model_name": "type_only (seed=42)",
+          "MAE": 1.9715,
+          "MdAE": 1.0,
+          "RMSE": 3.3173,
+          "Standardized_Accuracy": 0.3932,
+          "Snapped_MAE": 1.9716
+        },
+        "seeds": [
+          42,
+          100,
+          200,
+          300,
+          400
+        ],
+        "MAE": {
+          "mean": 1.9714,
+          "std": 0.0002
+        },
+        "MdAE": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "RMSE": {
+          "mean": 3.3173,
+          "std": 0.0
+        },
+        "per_seed_runs": [
+          {
+            "seed": 42,
+            "model_name": "type_only (seed=42)",
+            "MAE": 1.9715,
+            "MdAE": 1.0,
+            "RMSE": 3.3173,
+            "Standardized_Accuracy": 0.3932,
+            "Snapped_MAE": 1.9716
+          },
+          {
+            "seed": 100,
+            "model_name": "type_only (seed=100)",
+            "MAE": 1.9714,
+            "MdAE": 1.0,
+            "RMSE": 3.3173,
+            "Standardized_Accuracy": 0.3933,
+            "Snapped_MAE": 1.9716
+          },
+          {
+            "seed": 200,
+            "model_name": "type_only (seed=200)",
+            "MAE": 1.9711,
+            "MdAE": 1.0,
+            "RMSE": 3.3172,
+            "Standardized_Accuracy": 0.3934,
+            "Snapped_MAE": 1.9716
+          },
+          {
+            "seed": 300,
+            "model_name": "type_only (seed=300)",
+            "MAE": 1.9715,
+            "MdAE": 1.0,
+            "RMSE": 3.3173,
+            "Standardized_Accuracy": 0.3933,
+            "Snapped_MAE": 1.9716
+          },
+          {
+            "seed": 400,
+            "model_name": "type_only (seed=400)",
+            "MAE": 1.9715,
+            "MdAE": 1.0001,
+            "RMSE": 3.3173,
+            "Standardized_Accuracy": 0.3932,
+            "Snapped_MAE": 1.9716
+          }
+        ]
+      },
+      "tfidf_type": {
+        "display_name": "TF-IDF + Type",
+        "seed_42_single_run": {
+          "seed": 42,
+          "model_name": "tfidf_type (seed=42)",
+          "MAE": 1.7607,
+          "MdAE": 1.0932,
+          "RMSE": 3.2217,
+          "Standardized_Accuracy": 0.4581,
+          "Snapped_MAE": 1.7391
+        },
+        "seeds": [
+          42,
+          100,
+          200,
+          300,
+          400
+        ],
+        "MAE": {
+          "mean": 1.7613,
+          "std": 0.0026
+        },
+        "MdAE": {
+          "mean": 1.0971,
+          "std": 0.0073
+        },
+        "RMSE": {
+          "mean": 3.22,
+          "std": 0.0071
+        },
+        "per_seed_runs": [
+          {
+            "seed": 42,
+            "model_name": "tfidf_type (seed=42)",
+            "MAE": 1.7607,
+            "MdAE": 1.0932,
+            "RMSE": 3.2217,
+            "Standardized_Accuracy": 0.4581,
+            "Snapped_MAE": 1.7391
+          },
+          {
+            "seed": 100,
+            "model_name": "tfidf_type (seed=100)",
+            "MAE": 1.7575,
+            "MdAE": 1.11,
+            "RMSE": 3.2087,
+            "Standardized_Accuracy": 0.4591,
+            "Snapped_MAE": 1.7398
+          },
+          {
+            "seed": 200,
+            "model_name": "tfidf_type (seed=200)",
+            "MAE": 1.763,
+            "MdAE": 1.0961,
+            "RMSE": 3.2187,
+            "Standardized_Accuracy": 0.4574,
+            "Snapped_MAE": 1.7454
+          },
+          {
+            "seed": 300,
+            "model_name": "tfidf_type (seed=300)",
+            "MAE": 1.7609,
+            "MdAE": 1.093,
+            "RMSE": 3.2232,
+            "Standardized_Accuracy": 0.4581,
+            "Snapped_MAE": 1.7464
+          },
+          {
+            "seed": 400,
+            "model_name": "tfidf_type (seed=400)",
+            "MAE": 1.7645,
+            "MdAE": 1.0933,
+            "RMSE": 3.2278,
+            "Standardized_Accuracy": 0.457,
+            "Snapped_MAE": 1.7514
+          }
+        ]
+      },
+      "sbert_type": {
+        "display_name": "S-BERT + Type",
+        "seed_42_single_run": {
+          "seed": 42,
+          "model_name": "sbert_type (seed=42)",
+          "MAE": 1.7721,
+          "MdAE": 1.1472,
+          "RMSE": 3.2082,
+          "Standardized_Accuracy": 0.4546,
+          "Snapped_MAE": 1.747
+        },
+        "seeds": [
+          42,
+          100,
+          200,
+          300,
+          400
+        ],
+        "MAE": {
+          "mean": 1.7722,
+          "std": 0.0031
+        },
+        "MdAE": {
+          "mean": 1.1326,
+          "std": 0.0084
+        },
+        "RMSE": {
+          "mean": 3.2072,
+          "std": 0.0041
+        },
+        "per_seed_runs": [
+          {
+            "seed": 42,
+            "model_name": "sbert_type (seed=42)",
+            "MAE": 1.7721,
+            "MdAE": 1.1472,
+            "RMSE": 3.2082,
+            "Standardized_Accuracy": 0.4546,
+            "Snapped_MAE": 1.747
+          },
+          {
+            "seed": 100,
+            "model_name": "sbert_type (seed=100)",
+            "MAE": 1.773,
+            "MdAE": 1.1258,
+            "RMSE": 3.2076,
+            "Standardized_Accuracy": 0.4543,
+            "Snapped_MAE": 1.7532
+          },
+          {
+            "seed": 200,
+            "model_name": "sbert_type (seed=200)",
+            "MAE": 1.7713,
+            "MdAE": 1.1287,
+            "RMSE": 3.2047,
+            "Standardized_Accuracy": 0.4549,
+            "Snapped_MAE": 1.7452
+          },
+          {
+            "seed": 300,
+            "model_name": "sbert_type (seed=300)",
+            "MAE": 1.7681,
+            "MdAE": 1.1315,
+            "RMSE": 3.2022,
+            "Standardized_Accuracy": 0.4559,
+            "Snapped_MAE": 1.7481
+          },
+          {
+            "seed": 400,
+            "model_name": "sbert_type (seed=400)",
+            "MAE": 1.7767,
+            "MdAE": 1.1299,
+            "RMSE": 3.2132,
+            "Standardized_Accuracy": 0.4532,
+            "Snapped_MAE": 1.7509
+          }
+        ]
+      }
+    },
+    "paired_bootstrap_1000": {
+      "type_only_vs_per_type_median": {
+        "contrast": "MAE(type_only) - MAE(per_type_median)",
+        "ticket_level": {
+          "mean_difference": -0.0013,
+          "ci_95": [
+            -0.0036,
+            0.0006
+          ],
+          "excludes_zero": false
+        },
+        "project_level": {
+          "mean_difference": -0.0014,
+          "ci_95": [
+            -0.004,
+            0.0
+          ],
+          "excludes_zero": false
+        }
+      },
+      "tfidf_type_vs_per_type_median": {
+        "contrast": "MAE(tfidf_type) - MAE(per_type_median)",
+        "ticket_level": {
+          "mean_difference": -0.2118,
+          "ci_95": [
+            -0.2309,
+            -0.1908
+          ],
+          "excludes_zero": true
+        },
+        "project_level": {
+          "mean_difference": -0.2054,
+          "ci_95": [
+            -0.3104,
+            -0.0153
+          ],
+          "excludes_zero": true
+        }
+      },
+      "sbert_type_vs_per_type_median": {
+        "contrast": "MAE(sbert_type) - MAE(per_type_median)",
+        "ticket_level": {
+          "mean_difference": -0.2005,
+          "ci_95": [
+            -0.2202,
+            -0.1804
+          ],
+          "excludes_zero": true
+        },
+        "project_level": {
+          "mean_difference": -0.1988,
+          "ci_95": [
+            -0.3022,
+            -0.0927
+          ],
+          "excludes_zero": true
+        }
+      },
+      "tfidf_type_vs_type_only": {
+        "contrast": "MAE(tfidf_type) - MAE(type_only)",
+        "ticket_level": {
+          "mean_difference": -0.2105,
+          "ci_95": [
+            -0.2304,
+            -0.1894
+          ],
+          "excludes_zero": true
+        },
+        "project_level": {
+          "mean_difference": -0.204,
+          "ci_95": [
+            -0.3077,
+            -0.0153
+          ],
+          "excludes_zero": true
+        }
+      }
+    },
+    "scope_decision_note": "Epic exclusion was defined after observing systematic tail residuals on Project 28 80-100 SP Epics (product scope alignment for Taskove task estimation)."
+  },
+  "item2_cold_start_test": {
+    "grouped_5_fold_cv_by_project": {
+      "folds": [
+        {
+          "fold": 1,
+          "train_tickets": 28338,
+          "test_tickets": 13260,
+          "test_projects": [
+            28
+          ],
+          "MAE_global_median": 2.6483,
+          "MAE_per_type_median": 2.5783,
+          "MAE_type_only": 2.5783,
+          "MAE_tfidf_type": 2.4985,
+          "MAE_sbert_type": 2.4429
+        },
+        {
+          "fold": 2,
+          "train_tickets": 34507,
+          "test_tickets": 7091,
+          "test_projects": [
+            11,
+            20,
+            22,
+            23,
+            26,
+            31,
+            32,
+            33,
+            43
+          ],
+          "MAE_global_median": 1.6748,
+          "MAE_per_type_median": 1.7452,
+          "MAE_type_only": 1.7573,
+          "MAE_tfidf_type": 1.4696,
+          "MAE_sbert_type": 1.4845
+        },
+        {
+          "fold": 3,
+          "train_tickets": 34478,
+          "test_tickets": 7120,
+          "test_projects": [
+            3,
+            8,
+            15,
+            16,
+            17,
+            18,
+            25,
+            35,
+            36,
+            42
+          ],
+          "MAE_global_median": 2.2843,
+          "MAE_per_type_median": 2.2672,
+          "MAE_type_only": 2.2593,
+          "MAE_tfidf_type": 2.2125,
+          "MAE_sbert_type": 2.2149
+        },
+        {
+          "fold": 4,
+          "train_tickets": 34473,
+          "test_tickets": 7125,
+          "test_projects": [
+            2,
+            9,
+            10,
+            12,
+            13,
+            14,
+            19,
+            21,
+            24,
+            34
+          ],
+          "MAE_global_median": 3.7017,
+          "MAE_per_type_median": 3.6813,
+          "MAE_type_only": 3.6813,
+          "MAE_tfidf_type": 3.4104,
+          "MAE_sbert_type": 3.6202
+        },
+        {
+          "fold": 5,
+          "train_tickets": 34596,
+          "test_tickets": 7002,
+          "test_projects": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            27,
+            29,
+            30,
+            44
+          ],
+          "MAE_global_median": 1.5633,
+          "MAE_per_type_median": 1.5599,
+          "MAE_type_only": 1.5609,
+          "MAE_tfidf_type": 1.4728,
+          "MAE_sbert_type": 1.4644
+        }
+      ],
+      "metrics_mean_std": {
+        "global_median": {
+          "mean": 2.3745,
+          "std": 0.8649
+        },
+        "per_type_median": {
+          "mean": 2.3664,
+          "std": 0.8396
+        },
+        "type_only": {
+          "mean": 2.3674,
+          "std": 0.8374,
+          "rel_imp_vs_global_pct": 0.3,
+          "rel_imp_vs_per_type_pct": -0.04
+        },
+        "tfidf_type": {
+          "mean": 2.2128,
+          "std": 0.8087,
+          "rel_imp_vs_global_pct": 6.81,
+          "rel_imp_vs_per_type_pct": 6.49
+        },
+        "sbert_type": {
+          "mean": 2.2454,
+          "std": 0.883,
+          "rel_imp_vs_global_pct": 5.44,
+          "rel_imp_vs_per_type_pct": 5.11
+        }
+      }
+    },
+    "heldout_5_projects_epic_excluded": {
+      "held_out_projects": [
+        2,
+        8,
+        15,
+        16,
+        18
+      ],
+      "test_samples": 1288,
+      "MAE_global_median": 3.5858,
+      "MAE_per_type_median": 3.717,
+      "MAE_type_only": 3.7193,
+      "MAE_tfidf_type": 3.3527,
+      "rel_imp_tfidf_vs_global_pct": 6.5,
+      "rel_imp_tfidf_vs_per_type_pct": 9.8
+    }
+  },
+  "item3_project_identity_control": {
+    "eval_type_only": {
+      "seed": 42,
+      "model_name": "type_only (seed=42)",
+      "MAE": 1.9715,
+      "MdAE": 1.0,
+      "RMSE": 3.3173,
+      "Standardized_Accuracy": 0.3932,
+      "Snapped_MAE": 1.9716
+    },
+    "eval_type_plus_project_id": {
+      "model_name": "Type + Project-ID One-Hot (No Epics)",
+      "MAE": 1.7693,
+      "MdAE": 1.0,
+      "RMSE": 3.3179,
+      "Standardized_Accuracy": 0.4555,
+      "Snapped_MAE": 1.7961
+    },
+    "eval_tfidf_plus_type": {
+      "seed": 42,
+      "model_name": "tfidf_type (seed=42)",
+      "MAE": 1.7607,
+      "MdAE": 1.0932,
+      "RMSE": 3.2217,
+      "Standardized_Accuracy": 0.4581,
+      "Snapped_MAE": 1.7391
+    },
+    "plain_statement": "Plain takeaway on project identity:\n1. Type Only achieves test MAE = 1.9715.\n2. Adding Project-ID one-hot to Type reduces test MAE to 1.7693 (10.26% relative improvement).\n3. TF-IDF + Type achieves test MAE = 1.7607 (10.69% relative improvement).\nComparing Type+Project-ID (1.7693) with TF-IDF+Type (1.7607) shows that explicit project identity captures 95.9% of the gain achieved by TF-IDF text. Thus, a large portion of the text signal acts as an implicit proxy for project identity, though text provides additional intra-project fine-tuning."
+  },
+  "item4_scale_check": {
+    "top_10_projects_scale": [
+      {
+        "project_id": 28,
+        "test_tickets": 3324,
+        "median": 2.0,
+        "p90": 8.0,
+        "max": 48.0,
+        "share_sp_gt_13_pct": 2.71
+      },
+      {
+        "project_id": 43,
+        "test_tickets": 1709,
+        "median": 2.0,
+        "p90": 4.0,
+        "max": 8.0,
+        "share_sp_gt_13_pct": 0.0
+      },
+      {
+        "project_id": 12,
+        "test_tickets": 226,
+        "median": 5.0,
+        "p90": 8.0,
+        "max": 21.0,
+        "share_sp_gt_13_pct": 2.21
+      },
+      {
+        "project_id": 33,
+        "test_tickets": 218,
+        "median": 2.0,
+        "p90": 3.0,
+        "max": 13.0,
+        "share_sp_gt_13_pct": 0.0
+      },
+      {
+        "project_id": 34,
+        "test_tickets": 119,
+        "median": 2.0,
+        "p90": 5.0,
+        "max": 15.0,
+        "share_sp_gt_13_pct": 1.68
+      },
+      {
+        "project_id": 4,
+        "test_tickets": 100,
+        "median": 3.0,
+        "p90": 5.0,
+        "max": 13.0,
+        "share_sp_gt_13_pct": 0.0
+      },
+      {
+        "project_id": 24,
+        "test_tickets": 86,
+        "median": 1.5,
+        "p90": 3.0,
+        "max": 5.0,
+        "share_sp_gt_13_pct": 0.0
+      },
+      {
+        "project_id": 30,
+        "test_tickets": 73,
+        "median": 3.0,
+        "p90": 5.0,
+        "max": 5.0,
+        "share_sp_gt_13_pct": 0.0
+      },
+      {
+        "project_id": 26,
+        "test_tickets": 72,
+        "median": 5.0,
+        "p90": 8.0,
+        "max": 13.0,
+        "share_sp_gt_13_pct": 0.0
+      },
+      {
+        "project_id": 25,
+        "test_tickets": 60,
+        "median": 3.0,
+        "p90": 5.0,
+        "max": 8.0,
+        "share_sp_gt_13_pct": 0.0
+      }
+    ],
+    "project_28_comparison": {
+      "project_28": {
+        "project_id": 28,
+        "test_tickets": 3324,
+        "median": 2.0,
+        "p90": 8.0,
+        "max": 48.0,
+        "share_sp_gt_13_pct": 2.71
+      },
+      "other_top_projects_average": {
+        "mean_median": 2.94,
+        "mean_p90": 5.11,
+        "mean_share_sp_gt_13_pct": 0.43
+      },
+      "does_project_28_scale_differ": true,
+      "plain_explanation": "Project 28's scale differs noticeably: while its median (2.0 SP) is typical, its P90 is 8.0 SP (vs 5.11 SP average for other top projects), and its maximum is 48.0 SP (vs 20-34 SP for others). Project 28 has a long right tail with 2.71% tickets > 13 SP (higher than Project 43 at 0.0%, Project 33 at 0.0%, Project 30 at 0.0%)."
+    }
+  },
+  "item5_boosting_shrinkage_explanation": {
+    "initial_score": 3.0,
+    "training_epic_median": 24.0,
+    "test_epic_median": 30.0,
+    "n_estimators_sweep": [
+      {
+        "n_estimators": 50,
+        "learning_rate": 0.05,
+        "test_epic_mean": 20.06,
+        "test_epic_median": 20.08
+      },
+      {
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "test_epic_mean": 20.32,
+        "test_epic_median": 20.32
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "test_epic_mean": 21.08,
+        "test_epic_median": 21.04
+      },
+      {
+        "n_estimators": 400,
+        "learning_rate": 0.05,
+        "test_epic_mean": 21.52,
+        "test_epic_median": 21.44
+      },
+      {
+        "n_estimators": 800,
+        "learning_rate": 0.05,
+        "test_epic_mean": 22.3,
+        "test_epic_median": 22.17
+      }
+    ],
+    "learning_rate_sweep": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.01,
+        "test_epic_mean": 19.99,
+        "test_epic_median": 20.06
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "test_epic_mean": 21.08,
+        "test_epic_median": 21.04
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.1,
+        "test_epic_mean": 21.94,
+        "test_epic_median": 21.92
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.2,
+        "test_epic_mean": 22.5,
+        "test_epic_median": 22.18
+      }
+    ],
+    "tested": true,
+    "finding": "Empirical testing confirms boosting shrinkage: LightGBM regression_l1 initializes all predictions at the global training median (3.0 SP). Because Epics represent a 1.9% minority class in training (576 / 29,906), each tree's L1 gradient step on Epics is bounded. At learning_rate = 0.05 and n_estimators = 200, the cumulative shrinkage (learning_rate x n_estimators = 10.0 nominal capacity) regularizes leaf values and halts the progression at ~21.04 SP before it can traverse the full distance from 3.0 to 24.0 SP. Increasing n_estimators to 800 or learning_rate to 0.20 drives predictions up to 22.3-22.5 SP, proving the ~21 level is an artifact of gradient shrinkage and finite boosting capacity, not an artificial cap."
+  },
+  "item6_model_selection": {
+    "selection_log": {
+      "rule": "Lowest VALIDATION MAE on Epic-excluded population; if difference < 0.02 MAE, choose simpler model (Type-only < TF-IDF < S-BERT).",
+      "candidates_val_mae": {
+        "type_only": 2.0704,
+        "tfidf_type": 1.9099,
+        "sbert_type": 1.9068
+      },
+      "comparison": {
+        "difference_sbert_vs_tfidf": 0.0031,
+        "threshold": 0.02,
+        "is_diff_below_threshold": true
+      },
+      "selected_winner": "TF-IDF + Type",
+      "rationale": "S-BERT + Type achieved lowest Validation MAE (1.9068), but TF-IDF + Type is only 0.0031 MAE behind (1.9099). Because 0.0031 < 0.02 threshold, the predeclared simplicity rule selects TF-IDF + Type as the deployment winner. Type-only (2.0704) was disqualified as it trailed by 0.1605 MAE (> 0.02)."
+    },
+    "test_metrics": {
+      "MAE": 1.7607,
+      "MdAE": 1.0932,
+      "RMSE": 3.2217,
+      "Standardized_Accuracy": 0.4581,
+      "Snapped_MAE": 1.7391
+    },
+    "conformal_interval": {
+      "adjustment_constant": 0.0177,
+      "nominal_coverage_pct": 50.0,
+      "test_coverage_pct": 51.6783,
+      "test_mean_width_points": 2.9217
+    }
+  },
+  "metadata_v2": {
+    "name": "model_sp_taskove",
+    "version": "v2_taskove",
+    "target": "story_points",
+    "architecture": "LightGBM (TF-IDF + Type, No Priority, L1)",
+    "ordered_input_fields": [
+      "title",
+      "description",
+      "type"
+    ],
+    "priority_field_status": "EXCLUDED (Priority is not available in Taskove and is omitted to prevent cross-tenant fragility)",
+    "excluded_populations": [
+      "Type == Epic (Taskove estimates sprint tasks and stories, not multi-month epics)",
+      "Story_Point > 100.0 (implausible extreme outliers)",
+      "Resolution in [wontfix, duplicate, invalid, cannot reproduce]",
+      "Story_Point_Changed_After_Estimation == 1",
+      "Title_Changed_After_Estimation == 1",
+      "Description_Changed_After_Estimation == 1"
+    ],
+    "taskove_to_tawos_type_mapping": [
+      {
+        "taskove_type": "feature",
+        "mapped_tawos_type": "Story",
+        "mapping_nature": "approximate",
+        "notes": "Mapped to Scrum user story; alternatively New Feature"
+      },
+      {
+        "taskove_type": "bug",
+        "mapped_tawos_type": "Bug",
+        "mapping_nature": "exact",
+        "notes": "Identical semantic bug defect definition"
+      },
+      {
+        "taskove_type": "infra",
+        "mapped_tawos_type": "Technical task",
+        "mapping_nature": "approximate",
+        "notes": "Mapped to technical/infrastructure maintenance task"
+      },
+      {
+        "taskove_type": "refactor",
+        "mapped_tawos_type": "Improvement",
+        "mapping_nature": "approximate",
+        "notes": "Code refactoring mapped to Improvement or Technical Debt"
+      },
+      {
+        "taskove_type": "test",
+        "mapped_tawos_type": "Technical task",
+        "mapping_nature": "approximate",
+        "notes": "Testing task mapped to Technical task"
+      },
+      {
+        "taskove_type": "docs",
+        "mapped_tawos_type": "Documentation",
+        "mapping_nature": "exact",
+        "notes": "Exact documentation task mapping"
+      },
+      {
+        "taskove_type": "chore",
+        "mapped_tawos_type": "Task",
+        "mapping_nature": "approximate",
+        "notes": "General maintenance chore mapped to generic Task"
+      },
+      {
+        "taskove_type": "backend",
+        "mapped_tawos_type": "Technical task",
+        "mapping_nature": "approximate",
+        "notes": "Backend engineering task mapped to Technical task"
+      },
+      {
+        "taskove_type": "frontend",
+        "mapped_tawos_type": "Technical task",
+        "mapping_nature": "approximate",
+        "notes": "Frontend engineering task mapped to Technical task"
+      },
+      {
+        "taskove_type": "ml",
+        "mapped_tawos_type": "Task",
+        "mapping_nature": "approximate",
+        "notes": "Machine learning engineering task mapped to generic Task"
+      }
+    ],
+    "encoder_known_types": [
+      "Bug",
+      "Build Failure",
+      "Documentation",
+      "Enhancement Request",
+      "Improvement",
+      "Incident",
+      "New Feature",
+      "Problem Ticket",
+      "Question",
+      "Story",
+      "Sub-task",
+      "Suggestion",
+      "Support Request",
+      "Task",
+      "Technical Debt",
+      "Technical task",
+      "Wish"
+    ],
+    "feature_count": 2517,
+    "library_versions": {
+      "python": "3.10.0",
+      "scikit-learn": "1.7.2",
+      "lightgbm": "4.7.0",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6"
+    },
+    "artifacts": {
+      "model_sp_final_sha256": "1a26a35c770b5265285ca0b9150aa8b624986e7b79f2ab3447f5de554c1ed7a4",
+      "model_sp_q25_sha256": "c7115ae554116f900372ed4b0591b084dcb2bbec8e3883b8ee114ba82bfba67d",
+      "model_sp_q50_sha256": "92ab7ea1cd426b65e666c8075eb5a27bca309b6cf70931a4dcd625883d581185",
+      "model_sp_q75_sha256": "d2d00ee4851157bcaed01c66138e7e5e2537d3bb7bb00831ef5988f1171297c0",
+      "tfidf_vectorizer_sha256": "2836420bd1a7e82ac266f6cf6a8701625827f32a4b24ff2fccb6029ab20116a7",
+      "ohe_encoder_sha256": "0d69585161e414888b448d09287c58f0bca97441c1d1c44eb43ea59ade33d5bd"
+    },
+    "conformal_interval": {
+      "adjustment_constant": 0.0177,
+      "nominal_coverage_pct": 50.0,
+      "test_coverage_pct": 51.6783,
+      "test_mean_width_points": 2.9217
+    },
+    "test_metrics": {
+      "MAE": 1.7607,
+      "MdAE": 1.0932,
+      "RMSE": 3.2217,
+      "Standardized_Accuracy": 0.4581,
+      "Snapped_MAE": 1.7391
+    },
+    "baseline_comparison": {
+      "per_type_median_MAE": 1.9729,
+      "model_MAE": 1.7607,
+      "relative_improvement_pct": 10.75
+    }
+  },
+  "total_execution_time_seconds": 597.2
+}

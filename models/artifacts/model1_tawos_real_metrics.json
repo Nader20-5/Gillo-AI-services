@@ -1,0 +1,25 @@
+{
+  "dataset": "TAWOS Real Jira Benchmark",
+  "target": "Cycle Time (Hours)",
+  "train_samples": 29021,
+  "test_samples": 9210,
+  "split_method": "Strict Temporal Split (by Sprint_Start Date)",
+  "Baseline_Overall_Median": {
+    "MAE_hours": 252.14,
+    "MedAE_hours": 214.52
+  },
+  "Baseline_Type_Median": {
+    "MAE_hours": 248.77,
+    "MedAE_hours": 238.67
+  },
+  "Model1_XGBoost_Quantile": {
+    "MAE_hours": 140.11,
+    "MedAE_hours": 72.57,
+    "RMSE_hours": 221.8,
+    "R2_Score": 0.3591,
+    "Pinball_0.25": 51.35,
+    "Pinball_0.50": 70.05,
+    "Pinball_0.75": 63.84,
+    "P25_P75_Coverage_Pct": 86.3
+  }
+}

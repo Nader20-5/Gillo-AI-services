@@ -1,0 +1,172 @@
+{
+  "funnel": {
+    "total_sprints_in_sprint_csv": 4594,
+    "dropped_not_closed": 87,
+    "dropped_duration_outside_5_35_days": 163,
+    "dropped_late_complete_gt_3_days": 1013,
+    "eligible_sprints": 3331,
+    "train_sprints": 2332,
+    "val_sprints": 471,
+    "test_sprints": 481,
+    "straddling_sprints_dropped": 47,
+    "total_task_snapshot_rows": 84879,
+    "already_done_instances_excluded": 41575,
+    "share_rows_invalid_duplicate_resolution": 0.040434029618633585
+  },
+  "split_stats": {
+    "train": {
+      "rows": 53543,
+      "sprints": 1840,
+      "projects": 34,
+      "base_rate": 0.6456306146461722,
+      "largest_project_id": 28,
+      "largest_project_share": 0.18317987411986628
+    },
+    "val": {
+      "rows": 16705,
+      "sprints": 399,
+      "projects": 21,
+      "base_rate": 0.7683926967973661,
+      "largest_project_id": 12,
+      "largest_project_share": 0.2813528883567794
+    },
+    "test": {
+      "rows": 12933,
+      "sprints": 384,
+      "projects": 21,
+      "base_rate": 0.7608443516585479,
+      "largest_project_id": 28,
+      "largest_project_share": 0.41011366272326605
+    },
+    "straddle": {
+      "rows": 1698,
+      "sprints": 43,
+      "projects": 20,
+      "base_rate": 0.8062426383981154,
+      "largest_project_id": 28,
+      "largest_project_share": 0.39399293286219084
+    }
+  },
+  "test_issue_overlap": {
+    "total_test_issues": 2778,
+    "test_issues_also_in_train": 13,
+    "test_issues_overlap_pct": 0.004679625629949604
+  },
+  "fraction_base_rates": {
+    "0.25": {
+      "total_rows": 29839,
+      "base_rate": 0.6158048191963538,
+      "train_base_rate": 0.5623631244133903,
+      "val_base_rate": 0.7111465532518164,
+      "test_base_rate": 0.7066366704161979
+    },
+    "0.5": {
+      "total_rows": 28731,
+      "base_rate": 0.6810065782604156,
+      "train_base_rate": 0.6359011226013382,
+      "val_base_rate": 0.7599157599157599,
+      "test_base_rate": 0.7475439798949052
+    },
+    "0.75": {
+      "total_rows": 26309,
+      "base_rate": 0.7857767303964422,
+      "train_base_rate": 0.7545141874462596,
+      "val_base_rate": 0.8376211782252051,
+      "test_base_rate": 0.8336171247871564
+    }
+  },
+  "project_base_rates": {
+    "28": {
+      "total_rows": 19869,
+      "sprints": 233,
+      "base_rate": 0.7342090694046002
+    },
+    "12": {
+      "total_rows": 15301,
+      "sprints": 233,
+      "base_rate": 0.8198810535259133
+    },
+    "4": {
+      "total_rows": 7674,
+      "sprints": 177,
+      "base_rate": 0.7645295804013552
+    },
+    "36": {
+      "total_rows": 5215,
+      "sprints": 212,
+      "base_rate": 0.4439117929050815
+    },
+    "25": {
+      "total_rows": 3484,
+      "sprints": 70,
+      "base_rate": 0.6125143513203215
+    },
+    "30": {
+      "total_rows": 2860,
+      "sprints": 77,
+      "base_rate": 0.7594405594405594
+    },
+    "13": {
+      "total_rows": 2544,
+      "sprints": 122,
+      "base_rate": 0.684748427672956
+    },
+    "1": {
+      "total_rows": 2515,
+      "sprints": 53,
+      "base_rate": 0.34473161033797217
+    },
+    "26": {
+      "total_rows": 2458,
+      "sprints": 64,
+      "base_rate": 0.5402766476810414
+    },
+    "24": {
+      "total_rows": 2284,
+      "sprints": 64,
+      "base_rate": 0.8717162872154116
+    },
+    "11": {
+      "total_rows": 2277,
+      "sprints": 129,
+      "base_rate": 0.6829161176987264
+    },
+    "22": {
+      "total_rows": 2253,
+      "sprints": 297,
+      "base_rate": 0.7922769640479361
+    },
+    "34": {
+      "total_rows": 1882,
+      "sprints": 68,
+      "base_rate": 0.6737513283740701
+    },
+    "27": {
+      "total_rows": 1705,
+      "sprints": 15,
+      "base_rate": 0.5912023460410557
+    },
+    "3": {
+      "total_rows": 1499,
+      "sprints": 114,
+      "base_rate": 0.44229486324216144
+    }
+  },
+  "heldout_stats": {
+    "heldout_pids": [
+      11,
+      19,
+      21,
+      28,
+      35
+    ],
+    "rows": 25311,
+    "sprints": 600,
+    "base_rate": 0.7130101536881198
+  },
+  "cutoffs": {
+    "D1": "2018-03-01 07:59:00",
+    "D2": "2019-04-04 16:29:30"
+  },
+  "duration_seconds": 75.74
+}
