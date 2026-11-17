@@ -1,0 +1,1 @@
+CLEAN: Zero AST imports of legacy synthetic scripts or directories found in app/ and tests/.

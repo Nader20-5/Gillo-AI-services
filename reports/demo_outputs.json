@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "captured_at": "2026-11-14T12:12:57.666974+00:00",
+    "captured_at": "2026-11-16T17:50:33.976358+00:00",
     "reference_now": "2026-11-14T12:00:00+00:00",
     "target_sprints": [
       "sprint-04",
@@ -27,7 +27,6 @@
             "original_story_points": 5.0,
             "baseline": {
               "median_hours": 32.8,
-              "user_ratio": 1.3,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -52,8 +51,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.046650Z",
-            "id": "6af8504ba19fa79ca919589f"
+            "created_at": "2026-11-16T17:50:35.481351Z",
+            "id": "6afb426ba1161a6ae6dad280"
           },
           {
             "task_id": "task-s4-02",
@@ -64,7 +63,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 17.2,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 2.0,
@@ -89,8 +87,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.066157Z",
-            "id": "6af8504ba19fa79ca91958a0"
+            "created_at": "2026-11-16T17:50:35.504725Z",
+            "id": "6afb426ba1161a6ae6dad281"
           },
           {
             "task_id": "task-s4-03",
@@ -101,7 +99,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 20.0,
-              "user_ratio": 1.33,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -126,8 +123,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.090707Z",
-            "id": "6af8504ba19fa79ca91958a1"
+            "created_at": "2026-11-16T17:50:35.623832Z",
+            "id": "6afb426ba1161a6ae6dad282"
           },
           {
             "task_id": "task-s4-04",
@@ -138,7 +135,6 @@
             "original_story_points": 5.0,
             "baseline": {
               "median_hours": 29.0,
-              "user_ratio": 1.16,
               "sample_size": 2
             },
             "story_points": 5.0,
@@ -163,8 +159,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.113320Z",
-            "id": "6af8504ba19fa79ca91958a2"
+            "created_at": "2026-11-16T17:50:35.652026Z",
+            "id": "6afb426ba1161a6ae6dad283"
           },
           {
             "task_id": "task-s4-05",
@@ -175,7 +171,6 @@
             "original_story_points": null,
             "baseline": {
               "median_hours": 6.5,
-              "user_ratio": 1.3,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -200,8 +195,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.134648Z",
-            "id": "6af8504ba19fa79ca91958a3"
+            "created_at": "2026-11-16T17:50:35.679631Z",
+            "id": "6afb426ba1161a6ae6dad284"
           },
           {
             "task_id": "task-s4-06",
@@ -212,7 +207,6 @@
             "original_story_points": 5.0,
             "baseline": {
               "median_hours": 28.7,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 5.0,
@@ -237,8 +231,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.153287Z",
-            "id": "6af8504ba19fa79ca91958a4"
+            "created_at": "2026-11-16T17:50:35.702034Z",
+            "id": "6afb426ba1161a6ae6dad285"
           },
           {
             "task_id": "task-s4-07",
@@ -249,7 +243,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 16.0,
-              "user_ratio": 1.6,
               "sample_size": 2
             },
             "story_points": 2.0,
@@ -274,8 +267,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.174792Z",
-            "id": "6af8504ba19fa79ca91958a5"
+            "created_at": "2026-11-16T17:50:35.727510Z",
+            "id": "6afb426ba1161a6ae6dad286"
           },
           {
             "task_id": "task-s4-08",
@@ -286,7 +279,6 @@
             "original_story_points": 8.0,
             "baseline": {
               "median_hours": 52.0,
-              "user_ratio": 1.3,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -311,8 +303,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.202151Z",
-            "id": "6af8504ba19fa79ca91958a6"
+            "created_at": "2026-11-16T17:50:35.763948Z",
+            "id": "6afb426ba1161a6ae6dad287"
           },
           {
             "task_id": "task-s4-09",
@@ -323,7 +315,6 @@
             "original_story_points": null,
             "baseline": {
               "median_hours": 5.8,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 3.0,
@@ -348,8 +339,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.218858Z",
-            "id": "6af8504ba19fa79ca91958a7"
+            "created_at": "2026-11-16T17:50:35.784050Z",
+            "id": "6afb426ba1161a6ae6dad288"
           },
           {
             "task_id": "task-s4-10",
@@ -360,7 +351,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 17.4,
-              "user_ratio": 1.16,
               "sample_size": 2
             },
             "story_points": 2.0,
@@ -385,8 +375,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.237458Z",
-            "id": "6af8504ba19fa79ca91958a8"
+            "created_at": "2026-11-16T17:50:35.810823Z",
+            "id": "6afb426ba1161a6ae6dad289"
           },
           {
             "task_id": "task-s4-11",
@@ -397,7 +387,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 13.3,
-              "user_ratio": 1.33,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -422,8 +411,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.263118Z",
-            "id": "6af8504ba19fa79ca91958a9"
+            "created_at": "2026-11-16T17:50:35.843592Z",
+            "id": "6afb426ba1161a6ae6dad28a"
           },
           {
             "task_id": "task-s4-12",
@@ -434,7 +423,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 32.8,
-              "user_ratio": 1.3,
               "sample_size": 6
             },
             "story_points": 5.0,
@@ -459,8 +447,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.289124Z",
-            "id": "6af8504ba19fa79ca91958aa"
+            "created_at": "2026-11-16T17:50:35.873360Z",
+            "id": "6afb426ba1161a6ae6dad28b"
           },
           {
             "task_id": "task-s4-13",
@@ -471,7 +459,6 @@
             "original_story_points": null,
             "baseline": {
               "median_hours": 5.8,
-              "user_ratio": 1.16,
               "sample_size": 2
             },
             "story_points": 2.0,
@@ -496,8 +483,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.293124Z",
-            "id": "6af8504ba19fa79ca91958ab"
+            "created_at": "2026-11-16T17:50:35.883537Z",
+            "id": "6afb426ba1161a6ae6dad28c"
           },
           {
             "task_id": "task-s4-14",
@@ -508,7 +495,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 32.8,
-              "user_ratio": 1.3,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -533,8 +519,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.319468Z",
-            "id": "6af8504ba19fa79ca91958ac"
+            "created_at": "2026-11-16T17:50:35.912582Z",
+            "id": "6afb426ba1161a6ae6dad28d"
           },
           {
             "task_id": "task-s4-15",
@@ -545,7 +531,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 13.3,
-              "user_ratio": 1.33,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -570,8 +555,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.345854Z",
-            "id": "6af8504ba19fa79ca91958ad"
+            "created_at": "2026-11-16T17:50:35.947895Z",
+            "id": "6afb426ba1161a6ae6dad28e"
           },
           {
             "task_id": "task-s4-16",
@@ -582,7 +567,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 8.0,
-              "user_ratio": 1.6,
               "sample_size": 2
             },
             "story_points": 3.0,
@@ -607,8 +591,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.367812Z",
-            "id": "6af8504ba19fa79ca91958ae"
+            "created_at": "2026-11-16T17:50:35.970088Z",
+            "id": "6afb426ba1161a6ae6dad28f"
           }
         ]
       },
@@ -621,7 +605,7 @@
         "fallback_reason": null,
         "explanation_note": "These factors show what the model weighed on similar past sprints; they are hints, not confirmed causes.",
         "sprint_context": {
-          "elapsed_fraction": 0.501,
+          "elapsed_fraction": 0.66,
           "open_tasks": 13,
           "open_points": 37.0,
           "fraction_points_done": 0.14
@@ -670,19 +654,19 @@
                   "k_threshold": 3,
                   "top_contributing_factors": [
                     {
+                      "feature": "days_in_current_status",
+                      "direction": "raises",
+                      "plain_text": "In current status for 20 days"
+                    },
+                    {
                       "feature": "status_category_is_todo",
                       "direction": "raises",
                       "plain_text": "Not started yet"
                     },
                     {
-                      "feature": "days_in_current_status",
-                      "direction": "raises",
-                      "plain_text": "In current status for 18 days"
-                    },
-                    {
                       "feature": "days_since_last_event",
                       "direction": "raises",
-                      "plain_text": "No activity for 7 days"
+                      "plain_text": "No activity for 9 days"
                     }
                   ]
                 }
@@ -693,9 +677,9 @@
               "sprint_id": "sprint-04"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:12:59.442241Z",
+            "created_at": "2026-11-16T17:50:36.065138Z",
             "comments": [],
-            "id": "6af8504ba19fa79ca91958c0"
+            "id": "6afb426ca1161a6ae6dad2a1"
           },
           {
             "project_id": "proj-gillo-core",
@@ -746,7 +730,7 @@
                     {
                       "feature": "days_since_last_event",
                       "direction": "raises",
-                      "plain_text": "No activity for 3 days"
+                      "plain_text": "No activity for 5 days"
                     },
                     {
                       "feature": "added_after_sprint_start",
@@ -762,15 +746,15 @@
               "sprint_id": "sprint-04"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:12:59.443235Z",
+            "created_at": "2026-11-16T17:50:36.069177Z",
             "comments": [],
-            "id": "6af8504ba19fa79ca91958c1"
+            "id": "6afb426ca1161a6ae6dad2a2"
           },
           {
             "project_id": "proj-gillo-core",
             "sprint_id": "sprint-04",
-            "task_id": "task-s4-11",
-            "concerns_user_id": "usr-nader",
+            "task_id": "task-s4-09",
+            "concerns_user_id": "usr-kareem",
             "type": "risk_warning",
             "action": null,
             "audience_roles": [
@@ -785,14 +769,14 @@
             "model_version": "v2_taskove_features",
             "generated_by": "system",
             "warning": null,
-            "dedupe_key": "risk:sprint-04:task-s4-11",
+            "dedupe_key": "risk:sprint-04:task-s4-09",
             "proposal": {
-              "message": "Task 'Setup Redis cache for project developer profile read models' ranked #3 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open sprint tasks (top-3 focus). Review scope or blockers during standup."
+              "message": "Task 'Automated regression test suite for role-based access control matrix' ranked #3 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open sprint tasks (top-3 focus). Review scope or blockers during standup."
             },
             "change_preview": {
               "before": {
                 "status": "todo",
-                "assignee_id": "usr-nader"
+                "assignee_id": "usr-kareem"
               },
               "after": {
                 "status": "reassigned_or_mitigated"
@@ -813,27 +797,27 @@
                       "plain_text": "Not started yet"
                     },
                     {
-                      "feature": "days_in_current_status",
-                      "direction": "raises",
-                      "plain_text": "In current status for 9 days"
-                    },
-                    {
                       "feature": "days_since_last_event",
                       "direction": "raises",
-                      "plain_text": "No activity for 4 days"
+                      "plain_text": "No activity for 3 days"
+                    },
+                    {
+                      "feature": "added_after_sprint_start",
+                      "direction": "raises",
+                      "plain_text": "Added after sprint start"
                     }
                   ]
                 }
               }
             ],
             "data_sources": {
-              "task_id": "task-s4-11",
+              "task_id": "task-s4-09",
               "sprint_id": "sprint-04"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:12:59.443235Z",
+            "created_at": "2026-11-16T17:50:36.069177Z",
             "comments": [],
-            "id": "6af8504ba19fa79ca91958c2"
+            "id": "6afb426ca1161a6ae6dad2a3"
           }
         ],
         "scored_tasks": [
@@ -847,19 +831,19 @@
             "model_version": "v2_taskove_features",
             "top_contributing_factors": [
               {
+                "feature": "days_in_current_status",
+                "direction": "raises",
+                "plain_text": "In current status for 20 days"
+              },
+              {
                 "feature": "status_category_is_todo",
                 "direction": "raises",
                 "plain_text": "Not started yet"
               },
               {
-                "feature": "days_in_current_status",
-                "direction": "raises",
-                "plain_text": "In current status for 18 days"
-              },
-              {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 7 days"
+                "plain_text": "No activity for 9 days"
               }
             ],
             "factor_note": null,
@@ -883,7 +867,7 @@
               {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 3 days"
+                "plain_text": "No activity for 5 days"
               },
               {
                 "feature": "added_after_sprint_start",
@@ -896,9 +880,9 @@
             "reason": "Task ranked #2 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-11",
-            "title": "Setup Redis cache for project developer profile read models",
-            "assignee_id": "usr-nader",
+            "task_id": "task-s4-09",
+            "title": "Automated regression test suite for role-based access control matrix",
+            "assignee_id": "usr-kareem",
             "risk_rank": 3,
             "risk_tier": "high",
             "method": "lightgbm_taskove_v2",
@@ -910,14 +894,14 @@
                 "plain_text": "Not started yet"
               },
               {
-                "feature": "days_in_current_status",
-                "direction": "raises",
-                "plain_text": "In current status for 9 days"
-              },
-              {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 4 days"
+                "plain_text": "No activity for 3 days"
+              },
+              {
+                "feature": "added_after_sprint_start",
+                "direction": "raises",
+                "plain_text": "Added after sprint start"
               }
             ],
             "factor_note": null,
@@ -925,9 +909,9 @@
             "reason": "Task ranked #3 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-07",
-            "title": "Write deployment runbook and disaster recovery guide for MongoDB replica set",
-            "assignee_id": "usr-alex",
+            "task_id": "task-s4-11",
+            "title": "Setup Redis cache for project developer profile read models",
+            "assignee_id": "usr-nader",
             "risk_rank": 4,
             "risk_tier": "medium",
             "method": "lightgbm_taskove_v2",
@@ -941,7 +925,7 @@
               {
                 "feature": "days_in_current_status",
                 "direction": "raises",
-                "plain_text": "In current status for 12 days"
+                "plain_text": "In current status for 11 days"
               },
               {
                 "feature": "days_since_last_event",
@@ -954,8 +938,8 @@
             "reason": "Task ranked #4 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-10",
-            "title": "Resolve WebSocket disconnect on mobile browsers during background tab switch",
+            "task_id": "task-s4-13",
+            "title": "\u0625\u0635\u0644\u0627\u062d \u062e\u0637\u0623 \u0645\u0635\u0627\u062f\u0642\u0629 \u0627\u0644\u062f\u062e\u0648\u0644 \u0639\u0628\u0631 \u0631\u0645\u0632 \u0627\u0644\u062a\u0648\u0643\u0646 \u0648\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u062a\u0648\u062c\u064a\u0647",
             "assignee_id": "usr-layla",
             "risk_rank": 5,
             "risk_tier": "medium",
@@ -968,14 +952,14 @@
                 "plain_text": "Not started yet"
               },
               {
-                "feature": "days_since_last_event",
+                "feature": "days_in_current_status",
                 "direction": "raises",
-                "plain_text": "No activity for 2 days"
+                "plain_text": "In current status for 7 days"
               },
               {
-                "feature": "added_after_sprint_start",
+                "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "Added after sprint start"
+                "plain_text": "No activity for 4 days"
               }
             ],
             "factor_note": null,
@@ -983,9 +967,9 @@
             "reason": "Task ranked #5 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-13",
-            "title": "\u0625\u0635\u0644\u0627\u062d \u062e\u0637\u0623 \u0645\u0635\u0627\u062f\u0642\u0629 \u0627\u0644\u062f\u062e\u0648\u0644 \u0639\u0628\u0631 \u0631\u0645\u0632 \u0627\u0644\u062a\u0648\u0643\u0646 \u0648\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u062a\u0648\u062c\u064a\u0647",
-            "assignee_id": "usr-layla",
+            "task_id": "task-s4-07",
+            "title": "Write deployment runbook and disaster recovery guide for MongoDB replica set",
+            "assignee_id": "usr-alex",
             "risk_rank": 6,
             "risk_tier": "medium",
             "method": "lightgbm_taskove_v2",
@@ -997,14 +981,14 @@
                 "plain_text": "Not started yet"
               },
               {
-                "feature": "days_since_last_event",
+                "feature": "days_in_current_status",
                 "direction": "raises",
-                "plain_text": "No activity for 2 days"
+                "plain_text": "In current status for 14 days"
               },
               {
-                "feature": "added_after_sprint_start",
+                "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "Added after sprint start"
+                "plain_text": "No activity for 8 days"
               }
             ],
             "factor_note": null,
@@ -1012,9 +996,9 @@
             "reason": "Task ranked #6 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-09",
-            "title": "Automated regression test suite for role-based access control matrix",
-            "assignee_id": "usr-kareem",
+            "task_id": "task-s4-10",
+            "title": "Resolve WebSocket disconnect on mobile browsers during background tab switch",
+            "assignee_id": "usr-layla",
             "risk_rank": 7,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -1025,9 +1009,9 @@
             "reason": "Task ranked #7 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-01",
-            "title": "Implement async MongoDB connection pooling with health check",
-            "assignee_id": "usr-sama",
+            "task_id": "task-s4-02",
+            "title": "Fix token expiry race condition in refresh endpoint",
+            "assignee_id": "usr-kareem",
             "risk_rank": 8,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -1038,8 +1022,8 @@
             "reason": "Task ranked #8 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-02",
-            "title": "Fix token expiry race condition in refresh endpoint",
+            "task_id": "task-s4-06",
+            "title": "Configure automated end-to-end Playwright test suite in GitHub Actions",
             "assignee_id": "usr-kareem",
             "risk_rank": 9,
             "risk_tier": "low",
@@ -1051,9 +1035,9 @@
             "reason": "Task ranked #9 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-04",
-            "title": "Build responsive sprint burndown chart with date range picker",
-            "assignee_id": "usr-layla",
+            "task_id": "task-s4-08",
+            "title": "Implement model inference telemetry logging to ai_runs collection",
+            "assignee_id": "usr-sama",
             "risk_rank": 10,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -1064,9 +1048,9 @@
             "reason": "Task ranked #10 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-06",
-            "title": "Configure automated end-to-end Playwright test suite in GitHub Actions",
-            "assignee_id": "usr-kareem",
+            "task_id": "task-s4-01",
+            "title": "Implement async MongoDB connection pooling with health check",
+            "assignee_id": "usr-sama",
             "risk_rank": 11,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -1077,9 +1061,9 @@
             "reason": "Task ranked #11 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s4-08",
-            "title": "Implement model inference telemetry logging to ai_runs collection",
-            "assignee_id": "usr-sama",
+            "task_id": "task-s4-04",
+            "title": "Build responsive sprint burndown chart with date range picker",
+            "assignee_id": "usr-layla",
             "risk_rank": 12,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -1122,7 +1106,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 11.6,
-              "user_ratio": 1.16,
               "sample_size": 2
             },
             "story_points": 3.0,
@@ -1147,8 +1130,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.568967Z",
-            "id": "6af8504ba19fa79ca91958c4"
+            "created_at": "2026-11-16T17:50:36.121571Z",
+            "id": "6afb426ca1161a6ae6dad2a5"
           },
           {
             "task_id": "task-s5-02",
@@ -1159,7 +1142,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 29.8,
-              "user_ratio": 1.18,
               "sample_size": 6
             },
             "story_points": 5.0,
@@ -1184,8 +1166,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.597974Z",
-            "id": "6af8504ba19fa79ca91958c5"
+            "created_at": "2026-11-16T17:50:36.151747Z",
+            "id": "6afb426ca1161a6ae6dad2a6"
           },
           {
             "task_id": "task-s5-03",
@@ -1196,7 +1178,6 @@
             "original_story_points": 5.0,
             "baseline": {
               "median_hours": 30.2,
-              "user_ratio": 1.21,
               "sample_size": 6
             },
             "story_points": 5.0,
@@ -1221,8 +1202,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.625908Z",
-            "id": "6af8504ba19fa79ca91958c6"
+            "created_at": "2026-11-16T17:50:36.189207Z",
+            "id": "6afb426ca1161a6ae6dad2a7"
           },
           {
             "task_id": "task-s5-04",
@@ -1233,7 +1214,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 17.2,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 3.0,
@@ -1258,8 +1238,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.644909Z",
-            "id": "6af8504ba19fa79ca91958c7"
+            "created_at": "2026-11-16T17:50:36.210506Z",
+            "id": "6afb426ca1161a6ae6dad2a8"
           },
           {
             "task_id": "task-s5-05",
@@ -1270,7 +1250,6 @@
             "original_story_points": null,
             "baseline": {
               "median_hours": 5.9,
-              "user_ratio": 1.18,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -1295,8 +1274,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.668795Z",
-            "id": "6af8504ba19fa79ca91958c8"
+            "created_at": "2026-11-16T17:50:36.232775Z",
+            "id": "6afb426ca1161a6ae6dad2a9"
           },
           {
             "task_id": "task-s5-06",
@@ -1307,7 +1286,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 15.4,
-              "user_ratio": 1.54,
               "sample_size": 2
             },
             "story_points": 3.0,
@@ -1332,8 +1310,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.692955Z",
-            "id": "6af8504ba19fa79ca91958c9"
+            "created_at": "2026-11-16T17:50:36.263080Z",
+            "id": "6afb426ca1161a6ae6dad2aa"
           },
           {
             "task_id": "task-s5-07",
@@ -1344,7 +1322,6 @@
             "original_story_points": 8.0,
             "baseline": {
               "median_hours": 47.2,
-              "user_ratio": 1.18,
               "sample_size": 6
             },
             "story_points": 2.0,
@@ -1369,8 +1346,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.722940Z",
-            "id": "6af8504ba19fa79ca91958ca"
+            "created_at": "2026-11-16T17:50:36.293315Z",
+            "id": "6afb426ca1161a6ae6dad2ab"
           },
           {
             "task_id": "task-s5-08",
@@ -1381,7 +1358,6 @@
             "original_story_points": 5.0,
             "baseline": {
               "median_hours": 30.2,
-              "user_ratio": 1.21,
               "sample_size": 6
             },
             "story_points": 1.0,
@@ -1406,8 +1382,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.746602Z",
-            "id": "6af8504ba19fa79ca91958cb"
+            "created_at": "2026-11-16T17:50:36.323641Z",
+            "id": "6afb426ca1161a6ae6dad2ac"
           },
           {
             "task_id": "task-s5-09",
@@ -1418,7 +1394,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 17.2,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 3.0,
@@ -1443,8 +1418,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.766220Z",
-            "id": "6af8504ba19fa79ca91958cc"
+            "created_at": "2026-11-16T17:50:36.344522Z",
+            "id": "6afb426ca1161a6ae6dad2ad"
           },
           {
             "task_id": "task-s5-10",
@@ -1455,7 +1430,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 5.8,
-              "user_ratio": 1.16,
               "sample_size": 2
             },
             "story_points": 2.0,
@@ -1480,8 +1454,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.786027Z",
-            "id": "6af8504ba19fa79ca91958cd"
+            "created_at": "2026-11-16T17:50:36.364552Z",
+            "id": "6afb426ca1161a6ae6dad2ae"
           },
           {
             "task_id": "task-s5-11",
@@ -1492,7 +1466,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 29.1,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 3.0,
@@ -1517,8 +1490,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.812364Z",
-            "id": "6af8504ba19fa79ca91958ce"
+            "created_at": "2026-11-16T17:50:36.394830Z",
+            "id": "6afb426ca1161a6ae6dad2af"
           },
           {
             "task_id": "task-s5-12",
@@ -1529,7 +1502,6 @@
             "original_story_points": null,
             "baseline": {
               "median_hours": 6.0,
-              "user_ratio": 1.21,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -1554,8 +1526,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.839587Z",
-            "id": "6af8504ba19fa79ca91958cf"
+            "created_at": "2026-11-16T17:50:36.428871Z",
+            "id": "6afb426ca1161a6ae6dad2b0"
           },
           {
             "task_id": "task-s5-13",
@@ -1566,7 +1538,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 29.8,
-              "user_ratio": 1.18,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -1591,8 +1562,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.868905Z",
-            "id": "6af8504ba19fa79ca91958d0"
+            "created_at": "2026-11-16T17:50:36.463276Z",
+            "id": "6afb426ca1161a6ae6dad2b1"
           },
           {
             "task_id": "task-s5-14",
@@ -1603,7 +1574,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 17.4,
-              "user_ratio": 1.16,
               "sample_size": 2
             },
             "story_points": 5.0,
@@ -1628,8 +1598,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.893533Z",
-            "id": "6af8504ba19fa79ca91958d1"
+            "created_at": "2026-11-16T17:50:36.489467Z",
+            "id": "6afb426ca1161a6ae6dad2b2"
           },
           {
             "task_id": "task-s5-15",
@@ -1640,7 +1610,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 7.7,
-              "user_ratio": 1.54,
               "sample_size": 2
             },
             "story_points": 2.0,
@@ -1665,8 +1634,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:12:59.916878Z",
-            "id": "6af8504ba19fa79ca91958d2"
+            "created_at": "2026-11-16T17:50:36.515995Z",
+            "id": "6afb426ca1161a6ae6dad2b3"
           }
         ]
       },
@@ -1679,7 +1648,7 @@
         "fallback_reason": null,
         "explanation_note": "These factors show what the model weighed on similar past sprints; they are hints, not confirmed causes.",
         "sprint_context": {
-          "elapsed_fraction": 0.429,
+          "elapsed_fraction": 0.589,
           "open_tasks": 12,
           "open_points": 34.0,
           "fraction_points_done": 0.15
@@ -1740,7 +1709,7 @@
                     {
                       "feature": "days_in_current_status",
                       "direction": "raises",
-                      "plain_text": "In current status for 11 days"
+                      "plain_text": "In current status for 13 days"
                     }
                   ]
                 }
@@ -1751,9 +1720,9 @@
               "sprint_id": "sprint-05"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:12:59.958874Z",
+            "created_at": "2026-11-16T17:50:36.566493Z",
             "comments": [],
-            "id": "6af8504ba19fa79ca91958e3"
+            "id": "6afb426ca1161a6ae6dad2c4"
           },
           {
             "project_id": "proj-gillo-core",
@@ -1804,12 +1773,12 @@
                     {
                       "feature": "days_in_current_status",
                       "direction": "raises",
-                      "plain_text": "In current status for 14 days"
+                      "plain_text": "In current status for 16 days"
                     },
                     {
                       "feature": "days_since_last_event",
                       "direction": "raises",
-                      "plain_text": "No activity for 4 days"
+                      "plain_text": "No activity for 6 days"
                     }
                   ]
                 }
@@ -1820,9 +1789,9 @@
               "sprint_id": "sprint-05"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:12:59.959876Z",
+            "created_at": "2026-11-16T17:50:36.566493Z",
             "comments": [],
-            "id": "6af8504ba19fa79ca91958e4"
+            "id": "6afb426ca1161a6ae6dad2c5"
           },
           {
             "project_id": "proj-gillo-core",
@@ -1873,12 +1842,12 @@
                     {
                       "feature": "days_in_current_status",
                       "direction": "raises",
-                      "plain_text": "In current status for 8 days"
+                      "plain_text": "In current status for 10 days"
                     },
                     {
                       "feature": "days_since_last_event",
                       "direction": "raises",
-                      "plain_text": "No activity for 5 days"
+                      "plain_text": "No activity for 7 days"
                     }
                   ]
                 }
@@ -1889,9 +1858,9 @@
               "sprint_id": "sprint-05"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:12:59.960876Z",
+            "created_at": "2026-11-16T17:50:36.566493Z",
             "comments": [],
-            "id": "6af8504ba19fa79ca91958e5"
+            "id": "6afb426ca1161a6ae6dad2c6"
           }
         ],
         "scored_tasks": [
@@ -1917,7 +1886,7 @@
               {
                 "feature": "days_in_current_status",
                 "direction": "raises",
-                "plain_text": "In current status for 11 days"
+                "plain_text": "In current status for 13 days"
               }
             ],
             "factor_note": null,
@@ -1941,12 +1910,12 @@
               {
                 "feature": "days_in_current_status",
                 "direction": "raises",
-                "plain_text": "In current status for 14 days"
+                "plain_text": "In current status for 16 days"
               },
               {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 4 days"
+                "plain_text": "No activity for 6 days"
               }
             ],
             "factor_note": null,
@@ -1970,12 +1939,12 @@
               {
                 "feature": "days_in_current_status",
                 "direction": "raises",
-                "plain_text": "In current status for 8 days"
+                "plain_text": "In current status for 10 days"
               },
               {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 5 days"
+                "plain_text": "No activity for 7 days"
               }
             ],
             "factor_note": null,
@@ -1999,12 +1968,12 @@
               {
                 "feature": "days_in_current_status",
                 "direction": "raises",
-                "plain_text": "In current status for 10 days"
+                "plain_text": "In current status for 12 days"
               },
               {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 3 days"
+                "plain_text": "No activity for 5 days"
               }
             ],
             "factor_note": null,
@@ -2012,9 +1981,9 @@
             "reason": "Task ranked #4 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-12",
-            "title": "Benchmark LightGBM inference latency under concurrent thread load",
-            "assignee_id": "usr-nader",
+            "task_id": "task-s5-10",
+            "title": "Fix CSS layout collapse on mobile table view",
+            "assignee_id": "usr-layla",
             "risk_rank": 5,
             "risk_tier": "medium",
             "method": "lightgbm_taskove_v2",
@@ -2026,14 +1995,14 @@
                 "plain_text": "Not started yet"
               },
               {
-                "feature": "days_in_current_status",
-                "direction": "raises",
-                "plain_text": "In current status for 9 days"
-              },
-              {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 2 days"
+                "plain_text": "No activity for 3 days"
+              },
+              {
+                "feature": "added_after_sprint_start",
+                "direction": "raises",
+                "plain_text": "Added after sprint start"
               }
             ],
             "factor_note": null,
@@ -2041,18 +2010,28 @@
             "reason": "Task ranked #5 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-01",
-            "title": "Design notification badge component for suggestion alerts",
-            "assignee_id": "usr-layla",
+            "task_id": "task-s5-12",
+            "title": "Benchmark LightGBM inference latency under concurrent thread load",
+            "assignee_id": "usr-nader",
             "risk_rank": 6,
             "risk_tier": "medium",
             "method": "lightgbm_taskove_v2",
             "model_version": "v2_taskove_features",
             "top_contributing_factors": [
               {
+                "feature": "status_category_is_todo",
+                "direction": "raises",
+                "plain_text": "Not started yet"
+              },
+              {
                 "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 2 days"
+                "plain_text": "No activity for 4 days"
+              },
+              {
+                "feature": "days_in_current_status",
+                "direction": "raises",
+                "plain_text": "In current status for 11 days"
               }
             ],
             "factor_note": null,
@@ -2060,9 +2039,9 @@
             "reason": "Task ranked #6 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-03",
-            "title": "Kubernetes Helm charts for high availability deployment",
-            "assignee_id": "usr-nader",
+            "task_id": "task-s5-09",
+            "title": "End-to-end integration tests for suggestion decision state transitions",
+            "assignee_id": "usr-kareem",
             "risk_rank": 7,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -2073,9 +2052,9 @@
             "reason": "Task ranked #7 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-07",
-            "title": "Fine-tune Ollama prompt templates for grounded standup summaries",
-            "assignee_id": "usr-sama",
+            "task_id": "task-s5-01",
+            "title": "Design notification badge component for suggestion alerts",
+            "assignee_id": "usr-layla",
             "risk_rank": 8,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -2086,9 +2065,9 @@
             "reason": "Task ranked #8 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-09",
-            "title": "End-to-end integration tests for suggestion decision state transitions",
-            "assignee_id": "usr-kareem",
+            "task_id": "task-s5-03",
+            "title": "Kubernetes Helm charts for high availability deployment",
+            "assignee_id": "usr-nader",
             "risk_rank": 9,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -2099,9 +2078,9 @@
             "reason": "Task ranked #9 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-10",
-            "title": "Fix CSS layout collapse on mobile table view",
-            "assignee_id": "usr-layla",
+            "task_id": "task-s5-05",
+            "title": "Refactor sprint fit check logic into reusable domain service",
+            "assignee_id": "usr-sama",
             "risk_rank": 10,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -2112,9 +2091,9 @@
             "reason": "Task ranked #10 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-11",
-            "title": "Add rate limiting headers to all public AI endpoints",
-            "assignee_id": "usr-kareem",
+            "task_id": "task-s5-07",
+            "title": "Fine-tune Ollama prompt templates for grounded standup summaries",
+            "assignee_id": "usr-sama",
             "risk_rank": 11,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -2125,9 +2104,9 @@
             "reason": "Task ranked #11 for carry-over risk in Sprint 'Sprint 5: Integrations, Reporting & Web UI' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-s5-05",
-            "title": "Refactor sprint fit check logic into reusable domain service",
-            "assignee_id": "usr-sama",
+            "task_id": "task-s5-11",
+            "title": "Add rate limiting headers to all public AI endpoints",
+            "assignee_id": "usr-kareem",
             "risk_rank": 12,
             "risk_tier": "low",
             "method": "lightgbm_taskove_v2",
@@ -2157,7 +2136,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 24.8,
-              "user_ratio": 0.98,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -2182,8 +2160,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.014440Z",
-            "id": "6af8504ca19fa79ca91958e7"
+            "created_at": "2026-11-16T17:50:36.635176Z",
+            "id": "6afb426ca1161a6ae6dad2c8"
           },
           {
             "task_id": "task-small-02",
@@ -2194,7 +2172,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 5.8,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 5.0,
@@ -2219,8 +2196,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.034161Z",
-            "id": "6af8504ca19fa79ca91958e8"
+            "created_at": "2026-11-16T17:50:36.660753Z",
+            "id": "6afb426ca1161a6ae6dad2c9"
           },
           {
             "task_id": "task-small-03",
@@ -2231,7 +2208,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 10.4,
-              "user_ratio": 1.04,
               "sample_size": 2
             },
             "story_points": 5.0,
@@ -2256,8 +2232,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.054234Z",
-            "id": "6af8504ca19fa79ca91958e9"
+            "created_at": "2026-11-16T17:50:36.685594Z",
+            "id": "6afb426ca1161a6ae6dad2ca"
           },
           {
             "task_id": "task-small-04",
@@ -2268,7 +2244,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 7.5,
-              "user_ratio": 1.51,
               "sample_size": 2
             },
             "story_points": 2.0,
@@ -2293,8 +2268,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.079059Z",
-            "id": "6af8504ca19fa79ca91958ea"
+            "created_at": "2026-11-16T17:50:36.712591Z",
+            "id": "6afb426ca1161a6ae6dad2cb"
           },
           {
             "task_id": "task-small-05",
@@ -2305,7 +2280,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 18.1,
-              "user_ratio": 1.21,
               "sample_size": 6
             },
             "story_points": 5.0,
@@ -2330,8 +2304,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.109202Z",
-            "id": "6af8504ca19fa79ca91958eb"
+            "created_at": "2026-11-16T17:50:36.748024Z",
+            "id": "6afb426ca1161a6ae6dad2cc"
           }
         ]
       },
@@ -2411,9 +2385,9 @@
               "sprint_id": "sprint-small-active"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:13:00.129920Z",
+            "created_at": "2026-11-16T17:50:36.773275Z",
             "comments": [],
-            "id": "6af8504ca19fa79ca91958f2"
+            "id": "6afb426ca1161a6ae6dad2d3"
           }
         ],
         "scored_tasks": [
@@ -2516,7 +2490,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 9.8,
-              "user_ratio": 0.98,
               "sample_size": 6
             },
             "story_points": 1.0,
@@ -2541,8 +2514,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.177499Z",
-            "id": "6af8504ca19fa79ca91958f4"
+            "created_at": "2026-11-16T17:50:36.828784Z",
+            "id": "6afb426ca1161a6ae6dad2d5"
           },
           {
             "task_id": "task-early-02",
@@ -2553,7 +2526,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 17.1,
-              "user_ratio": 1.14,
               "sample_size": 6
             },
             "story_points": 5.0,
@@ -2578,8 +2550,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.208193Z",
-            "id": "6af8504ca19fa79ca91958f5"
+            "created_at": "2026-11-16T17:50:36.860727Z",
+            "id": "6afb426ca1161a6ae6dad2d6"
           },
           {
             "task_id": "task-early-03",
@@ -2590,7 +2562,6 @@
             "original_story_points": 4.0,
             "baseline": {
               "median_hours": 23.0,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 3.0,
@@ -2615,8 +2586,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.229896Z",
-            "id": "6af8504ca19fa79ca91958f6"
+            "created_at": "2026-11-16T17:50:36.889719Z",
+            "id": "6afb426ca1161a6ae6dad2d7"
           },
           {
             "task_id": "task-early-04",
@@ -2627,7 +2598,6 @@
             "original_story_points": 5.0,
             "baseline": {
               "median_hours": 24.5,
-              "user_ratio": 0.98,
               "sample_size": 6
             },
             "story_points": 5.0,
@@ -2652,8 +2622,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.254888Z",
-            "id": "6af8504ca19fa79ca91958f7"
+            "created_at": "2026-11-16T17:50:36.918389Z",
+            "id": "6afb426ca1161a6ae6dad2d8"
           },
           {
             "task_id": "task-early-05",
@@ -2664,7 +2634,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 7.5,
-              "user_ratio": 1.51,
               "sample_size": 2
             },
             "story_points": 3.0,
@@ -2689,8 +2658,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.279862Z",
-            "id": "6af8504ca19fa79ca91958f8"
+            "created_at": "2026-11-16T17:50:36.944060Z",
+            "id": "6afb426ca1161a6ae6dad2d9"
           },
           {
             "task_id": "task-early-06",
@@ -2701,7 +2670,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 28.8,
-              "user_ratio": 1.14,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -2726,8 +2694,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.311187Z",
-            "id": "6af8504ca19fa79ca91958f9"
+            "created_at": "2026-11-16T17:50:36.978402Z",
+            "id": "6afb426ca1161a6ae6dad2da"
           },
           {
             "task_id": "task-early-07",
@@ -2738,7 +2706,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 15.6,
-              "user_ratio": 1.04,
               "sample_size": 2
             },
             "story_points": 5.0,
@@ -2763,8 +2730,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.335511Z",
-            "id": "6af8504ca19fa79ca91958fa"
+            "created_at": "2026-11-16T17:50:37.010713Z",
+            "id": "6afb426da1161a6ae6dad2db"
           },
           {
             "task_id": "task-early-08",
@@ -2775,7 +2742,6 @@
             "original_story_points": 4.0,
             "baseline": {
               "median_hours": 19.6,
-              "user_ratio": 0.98,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -2800,8 +2766,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.364509Z",
-            "id": "6af8504ca19fa79ca91958fb"
+            "created_at": "2026-11-16T17:50:37.046076Z",
+            "id": "6afb426da1161a6ae6dad2dc"
           },
           {
             "task_id": "task-early-09",
@@ -2812,7 +2778,6 @@
             "original_story_points": 5.0,
             "baseline": {
               "median_hours": 28.7,
-              "user_ratio": 1.15,
               "sample_size": 1
             },
             "story_points": 5.0,
@@ -2837,8 +2802,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.384145Z",
-            "id": "6af8504ca19fa79ca91958fc"
+            "created_at": "2026-11-16T17:50:37.067093Z",
+            "id": "6afb426da1161a6ae6dad2dd"
           },
           {
             "task_id": "task-early-10",
@@ -2849,7 +2814,6 @@
             "original_story_points": 1.0,
             "baseline": {
               "median_hours": 7.5,
-              "user_ratio": 1.51,
               "sample_size": 2
             },
             "story_points": 3.0,
@@ -2874,8 +2838,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.405038Z",
-            "id": "6af8504ca19fa79ca91958fd"
+            "created_at": "2026-11-16T17:50:37.094565Z",
+            "id": "6afb426da1161a6ae6dad2de"
           },
           {
             "task_id": "task-early-11",
@@ -2886,7 +2850,6 @@
             "original_story_points": 2.0,
             "baseline": {
               "median_hours": 11.4,
-              "user_ratio": 1.14,
               "sample_size": 6
             },
             "story_points": 2.0,
@@ -2911,8 +2874,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.428888Z",
-            "id": "6af8504ca19fa79ca91958fe"
+            "created_at": "2026-11-16T17:50:37.117785Z",
+            "id": "6afb426da1161a6ae6dad2df"
           },
           {
             "task_id": "task-early-12",
@@ -2923,7 +2886,6 @@
             "original_story_points": 3.0,
             "baseline": {
               "median_hours": 15.6,
-              "user_ratio": 1.04,
               "sample_size": 2
             },
             "story_points": 3.0,
@@ -2948,8 +2910,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.455665Z",
-            "id": "6af8504ca19fa79ca91958ff"
+            "created_at": "2026-11-16T17:50:37.148016Z",
+            "id": "6afb426da1161a6ae6dad2e0"
           },
           {
             "task_id": "task-early-13",
@@ -2960,7 +2922,6 @@
             "original_story_points": 4.0,
             "baseline": {
               "median_hours": 19.6,
-              "user_ratio": 0.98,
               "sample_size": 6
             },
             "story_points": 3.0,
@@ -2985,8 +2946,8 @@
             "model_version": "deterministic_baseline_v1",
             "generated_by": "system",
             "status": "active",
-            "created_at": "2026-11-14T12:13:00.482634Z",
-            "id": "6af8504ca19fa79ca9195900"
+            "created_at": "2026-11-16T17:50:37.186420Z",
+            "id": "6afb426da1161a6ae6dad2e1"
           }
         ]
       },
@@ -2994,11 +2955,16 @@
         "sprint_id": "sprint-early-active",
         "active_tasks_scanned": 12,
         "k_threshold": 3,
-        "method": "rule_baseline",
-        "model_version": "deterministic_rule_baseline_v1",
-        "fallback_reason": "Sprint ineligible for ML ranking: Sprint elapsed fraction f=0.0721 is outside model domain [0.2, 0.8].",
+        "method": "lightgbm_taskove_v2",
+        "model_version": "v2_taskove_features",
+        "fallback_reason": null,
         "explanation_note": "These factors show what the model weighed on similar past sprints; they are hints, not confirmed causes.",
-        "sprint_context": null,
+        "sprint_context": {
+          "elapsed_fraction": 0.232,
+          "open_tasks": 12,
+          "open_points": 35.0,
+          "fraction_points_done": 0.103
+        },
         "new_risk_warnings_generated": 3,
         "warnings": [
           {
@@ -3013,13 +2979,13 @@
               "TL"
             ],
             "severity": "high",
-            "confidence": "medium",
-            "confidence_note": "Deterministic rule baseline ranking.",
+            "confidence": "high",
+            "confidence_note": "Within-sprint localized top-k risk prioritization.",
             "status": "pending",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "generated_by": "system",
-            "warning": "Sprint ineligible for ML ranking: Sprint elapsed fraction f=0.0721 is outside model domain [0.2, 0.8].",
+            "warning": null,
             "dedupe_key": "risk:sprint-early-active:task-early-09",
             "proposal": {
               "message": "Task 'Verify cross-browser layout on Safari and mobile viewports' ranked #1 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open sprint tasks (top-3 focus). Review scope or blockers during standup."
@@ -3036,7 +3002,7 @@
             "reasoning_steps": [
               {
                 "order": 1,
-                "description": "Rule baseline: ranked #1 by status (todo), stalled days (5), and size (5.0 SP).",
+                "description": "Task ranked #1 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus).",
                 "evidence": {
                   "risk_rank": 1,
                   "risk_tier": "high",
@@ -3045,17 +3011,17 @@
                     {
                       "feature": "status_category_is_todo",
                       "direction": "raises",
-                      "plain_text": "Not started yet (rule-based)"
-                    },
-                    {
-                      "feature": "stalled_days",
-                      "direction": "raises",
-                      "plain_text": "No activity for 5 days (rule-based)"
+                      "plain_text": "Not started yet"
                     },
                     {
                       "feature": "story_points",
                       "direction": "raises",
-                      "plain_text": "Estimate above the sprint median (5 SP) (rule-based)"
+                      "plain_text": "Estimate above the sprint median (5 SP)"
+                    },
+                    {
+                      "feature": "days_since_last_event",
+                      "direction": "raises",
+                      "plain_text": "No activity for 3 days"
                     }
                   ]
                 }
@@ -3066,9 +3032,9 @@
               "sprint_id": "sprint-early-active"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:13:00.505815Z",
+            "created_at": "2026-11-16T17:50:37.237065Z",
             "comments": [],
-            "id": "6af8504ca19fa79ca919590f"
+            "id": "6afb426da1161a6ae6dad2f0"
           },
           {
             "project_id": "proj-gillo-core",
@@ -3082,13 +3048,13 @@
               "TL"
             ],
             "severity": "high",
-            "confidence": "medium",
-            "confidence_note": "Deterministic rule baseline ranking.",
+            "confidence": "high",
+            "confidence_note": "Within-sprint localized top-k risk prioritization.",
             "status": "pending",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "generated_by": "system",
-            "warning": "Sprint ineligible for ML ranking: Sprint elapsed fraction f=0.0721 is outside model domain [0.2, 0.8].",
+            "warning": null,
             "dedupe_key": "risk:sprint-early-active:task-early-03",
             "proposal": {
               "message": "Task 'Refactor auth middleware to support rotating JWT tokens' ranked #2 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open sprint tasks (top-3 focus). Review scope or blockers during standup."
@@ -3105,7 +3071,7 @@
             "reasoning_steps": [
               {
                 "order": 1,
-                "description": "Rule baseline: ranked #2 by status (todo), stalled days (5), and size (4.0 SP).",
+                "description": "Task ranked #2 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus).",
                 "evidence": {
                   "risk_rank": 2,
                   "risk_tier": "high",
@@ -3114,17 +3080,12 @@
                     {
                       "feature": "status_category_is_todo",
                       "direction": "raises",
-                      "plain_text": "Not started yet (rule-based)"
+                      "plain_text": "Not started yet"
                     },
                     {
-                      "feature": "stalled_days",
+                      "feature": "days_since_last_event",
                       "direction": "raises",
-                      "plain_text": "No activity for 5 days (rule-based)"
-                    },
-                    {
-                      "feature": "story_points",
-                      "direction": "raises",
-                      "plain_text": "Estimate above the sprint median (4 SP) (rule-based)"
+                      "plain_text": "No activity for 3 days"
                     }
                   ]
                 }
@@ -3135,9 +3096,9 @@
               "sprint_id": "sprint-early-active"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:13:00.507420Z",
+            "created_at": "2026-11-16T17:50:37.239599Z",
             "comments": [],
-            "id": "6af8504ca19fa79ca9195910"
+            "id": "6afb426da1161a6ae6dad2f1"
           },
           {
             "project_id": "proj-gillo-core",
@@ -3151,13 +3112,13 @@
               "TL"
             ],
             "severity": "high",
-            "confidence": "medium",
-            "confidence_note": "Deterministic rule baseline ranking.",
+            "confidence": "high",
+            "confidence_note": "Within-sprint localized top-k risk prioritization.",
             "status": "pending",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "generated_by": "system",
-            "warning": "Sprint ineligible for ML ranking: Sprint elapsed fraction f=0.0721 is outside model domain [0.2, 0.8].",
+            "warning": null,
             "dedupe_key": "risk:sprint-early-active:task-early-07",
             "proposal": {
               "message": "Task 'Build interactive burndown chart widget for sprint overview' ranked #3 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open sprint tasks (top-3 focus). Review scope or blockers during standup."
@@ -3174,7 +3135,7 @@
             "reasoning_steps": [
               {
                 "order": 1,
-                "description": "Rule baseline: ranked #3 by status (todo), stalled days (5), and size (3.0 SP).",
+                "description": "Task ranked #3 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus).",
                 "evidence": {
                   "risk_rank": 3,
                   "risk_tier": "high",
@@ -3183,12 +3144,12 @@
                     {
                       "feature": "status_category_is_todo",
                       "direction": "raises",
-                      "plain_text": "Not started yet (rule-based)"
+                      "plain_text": "Not started yet"
                     },
                     {
-                      "feature": "stalled_days",
+                      "feature": "days_since_last_event",
                       "direction": "raises",
-                      "plain_text": "No activity for 5 days (rule-based)"
+                      "plain_text": "No activity for 3 days"
                     }
                   ]
                 }
@@ -3199,9 +3160,9 @@
               "sprint_id": "sprint-early-active"
             },
             "apply_status": "none",
-            "created_at": "2026-11-14T12:13:00.508466Z",
+            "created_at": "2026-11-16T17:50:37.239599Z",
             "comments": [],
-            "id": "6af8504ca19fa79ca9195911"
+            "id": "6afb426da1161a6ae6dad2f2"
           }
         ],
         "scored_tasks": [
@@ -3211,28 +3172,28 @@
             "assignee_id": "usr-kareem",
             "risk_rank": 1,
             "risk_tier": "high",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [
               {
                 "feature": "status_category_is_todo",
                 "direction": "raises",
-                "plain_text": "Not started yet (rule-based)"
-              },
-              {
-                "feature": "stalled_days",
-                "direction": "raises",
-                "plain_text": "No activity for 5 days (rule-based)"
+                "plain_text": "Not started yet"
               },
               {
                 "feature": "story_points",
                 "direction": "raises",
-                "plain_text": "Estimate above the sprint median (5 SP) (rule-based)"
+                "plain_text": "Estimate above the sprint median (5 SP)"
+              },
+              {
+                "feature": "days_since_last_event",
+                "direction": "raises",
+                "plain_text": "No activity for 3 days"
               }
             ],
             "factor_note": null,
             "note": null,
-            "reason": "Rule baseline: ranked #1 by status (todo), stalled days (5), and size (5.0 SP)."
+            "reason": "Task ranked #1 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-03",
@@ -3240,28 +3201,23 @@
             "assignee_id": "usr-kareem",
             "risk_rank": 2,
             "risk_tier": "high",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [
               {
                 "feature": "status_category_is_todo",
                 "direction": "raises",
-                "plain_text": "Not started yet (rule-based)"
+                "plain_text": "Not started yet"
               },
               {
-                "feature": "stalled_days",
+                "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 5 days (rule-based)"
-              },
-              {
-                "feature": "story_points",
-                "direction": "raises",
-                "plain_text": "Estimate above the sprint median (4 SP) (rule-based)"
+                "plain_text": "No activity for 3 days"
               }
             ],
             "factor_note": null,
             "note": null,
-            "reason": "Rule baseline: ranked #2 by status (todo), stalled days (5), and size (4.0 SP)."
+            "reason": "Task ranked #2 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-07",
@@ -3269,95 +3225,90 @@
             "assignee_id": "usr-layla",
             "risk_rank": 3,
             "risk_tier": "high",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [
               {
                 "feature": "status_category_is_todo",
                 "direction": "raises",
-                "plain_text": "Not started yet (rule-based)"
+                "plain_text": "Not started yet"
               },
               {
-                "feature": "stalled_days",
+                "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 5 days (rule-based)"
+                "plain_text": "No activity for 3 days"
               }
             ],
             "factor_note": null,
             "note": null,
-            "reason": "Rule baseline: ranked #3 by status (todo), stalled days (5), and size (3.0 SP)."
-          },
-          {
-            "task_id": "task-early-01",
-            "title": "Fix null pointer exception in webhook delivery retry",
-            "assignee_id": "usr-sama",
-            "risk_rank": 4,
-            "risk_tier": "medium",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
-            "top_contributing_factors": [
-              {
-                "feature": "status_category_is_todo",
-                "direction": "raises",
-                "plain_text": "Not started yet (rule-based)"
-              },
-              {
-                "feature": "stalled_days",
-                "direction": "raises",
-                "plain_text": "No activity for 5 days (rule-based)"
-              }
-            ],
-            "factor_note": null,
-            "note": null,
-            "reason": "Rule baseline: ranked #4 by status (todo), stalled days (5), and size (2.0 SP)."
+            "reason": "Task ranked #3 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-11",
             "title": "Resolve intermittent race condition in async notification worker",
             "assignee_id": "usr-nader",
-            "risk_rank": 5,
+            "risk_rank": 4,
             "risk_tier": "medium",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [
               {
                 "feature": "status_category_is_todo",
                 "direction": "raises",
-                "plain_text": "Not started yet (rule-based)"
+                "plain_text": "Not started yet"
               },
               {
-                "feature": "stalled_days",
+                "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 5 days (rule-based)"
+                "plain_text": "No activity for 3 days"
               }
             ],
             "factor_note": null,
             "note": null,
-            "reason": "Rule baseline: ranked #5 by status (todo), stalled days (5), and size (2.0 SP)."
+            "reason": "Task ranked #4 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
-            "task_id": "task-early-05",
-            "title": "Write onboarding guide for third-party webhook integrations",
-            "assignee_id": "usr-alex",
-            "risk_rank": 6,
+            "task_id": "task-early-01",
+            "title": "Fix null pointer exception in webhook delivery retry",
+            "assignee_id": "usr-sama",
+            "risk_rank": 5,
             "risk_tier": "medium",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [
               {
                 "feature": "status_category_is_todo",
                 "direction": "raises",
-                "plain_text": "Not started yet (rule-based)"
+                "plain_text": "Not started yet"
               },
               {
-                "feature": "stalled_days",
+                "feature": "days_since_last_event",
                 "direction": "raises",
-                "plain_text": "No activity for 5 days (rule-based)"
+                "plain_text": "No activity for 3 days"
               }
             ],
             "factor_note": null,
             "note": null,
-            "reason": "Rule baseline: ranked #6 by status (todo), stalled days (5), and size (1.0 SP)."
+            "reason": "Task ranked #5 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
+          },
+          {
+            "task_id": "task-early-02",
+            "title": "Provision isolated VPC subnet for staging cluster",
+            "assignee_id": "usr-nader",
+            "risk_rank": 6,
+            "risk_tier": "medium",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
+            "top_contributing_factors": [
+              {
+                "feature": "days_since_last_event",
+                "direction": "raises",
+                "plain_text": "No activity for 2 days"
+              }
+            ],
+            "factor_note": null,
+            "note": null,
+            "reason": "Task ranked #6 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-04",
@@ -3365,38 +3316,38 @@
             "assignee_id": "usr-sama",
             "risk_rank": 7,
             "risk_tier": "low",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [],
             "factor_note": "Lower priority this sprint",
             "note": "Lower priority this sprint",
-            "reason": "Rule baseline: ranked #7 by status (in_progress), stalled days (0), and size (5.0 SP)."
+            "reason": "Task ranked #7 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
+          },
+          {
+            "task_id": "task-early-05",
+            "title": "Write onboarding guide for third-party webhook integrations",
+            "assignee_id": "usr-alex",
+            "risk_rank": 8,
+            "risk_tier": "low",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
+            "top_contributing_factors": [],
+            "factor_note": "Lower priority this sprint",
+            "note": "Lower priority this sprint",
+            "reason": "Task ranked #8 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-08",
             "title": "Evaluate LightGBM tree depth limits for inference latency",
             "assignee_id": "usr-sama",
-            "risk_rank": 8,
-            "risk_tier": "low",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
-            "top_contributing_factors": [],
-            "factor_note": "Lower priority this sprint",
-            "note": "Lower priority this sprint",
-            "reason": "Rule baseline: ranked #8 by status (in_progress), stalled days (0), and size (4.0 SP)."
-          },
-          {
-            "task_id": "task-early-02",
-            "title": "Provision isolated VPC subnet for staging cluster",
-            "assignee_id": "usr-nader",
             "risk_rank": 9,
             "risk_tier": "low",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [],
             "factor_note": "Lower priority this sprint",
             "note": "Lower priority this sprint",
-            "reason": "Rule baseline: ranked #9 by status (in_progress), stalled days (0), and size (3.0 SP)."
+            "reason": "Task ranked #9 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-12",
@@ -3404,12 +3355,12 @@
             "assignee_id": "usr-layla",
             "risk_rank": 10,
             "risk_tier": "low",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [],
             "factor_note": "Lower priority this sprint",
             "note": "Lower priority this sprint",
-            "reason": "Rule baseline: ranked #10 by status (in_progress), stalled days (0), and size (3.0 SP)."
+            "reason": "Task ranked #10 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-06",
@@ -3417,12 +3368,12 @@
             "assignee_id": "usr-nader",
             "risk_rank": 11,
             "risk_tier": "low",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [],
             "factor_note": "Lower priority this sprint",
             "note": "Lower priority this sprint",
-            "reason": "Rule baseline: ranked #11 by status (in_progress), stalled days (0), and size (2.0 SP)."
+            "reason": "Task ranked #11 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           },
           {
             "task_id": "task-early-10",
@@ -3430,12 +3381,12 @@
             "assignee_id": "usr-alex",
             "risk_rank": 12,
             "risk_tier": "low",
-            "method": "rule_baseline",
-            "model_version": "deterministic_rule_baseline_v1",
+            "method": "lightgbm_taskove_v2",
+            "model_version": "v2_taskove_features",
             "top_contributing_factors": [],
             "factor_note": "Lower priority this sprint",
             "note": "Lower priority this sprint",
-            "reason": "Rule baseline: ranked #12 by status (in_progress), stalled days (0), and size (1.0 SP)."
+            "reason": "Task ranked #12 for carry-over risk in Sprint 'Sprint Ineligible: Just Started' relative to 12 open tasks (top-3 focus)."
           }
         ]
       }

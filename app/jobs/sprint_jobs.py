@@ -246,9 +246,28 @@ async def expire_and_supersede_suggestions(db: Any) -> Tuple[int, int]:
     return expired_count, superseded_count
 
 
+# ---------------------------------------------------------------------------
+# Dynamic Developer Estimation Ratio Maintenance (Internal Only)
+# ---------------------------------------------------------------------------
+# NOTE: Developer ratios (velocity/estimation multipliers) are strictly INTERNAL
+# operational calculations. They are refreshed periodically or on sprint close
+# with Bayesian shrinkage solely to normalize historical task durations and model
+# aggregate sprint capacity fit.
+#
+# PRIVACY & ETHICAL GUARANTEE:
+# 1. Developer ratios are strictly internal: NEVER returned in any client API
+#    response, telemetry payload, export, or response model.
+# 2. Developer ratios are NEVER compared or ranked across developers.
+#    The system enforces zero developer comparison and zero performance scoring.
+# ---------------------------------------------------------------------------
 async def refresh_developer_ratios(db: Any) -> int:
     """
-    Finds developers with completed tasks and refreshes their dynamic estimation ratio.
+    Finds developers with completed tasks and refreshes their internal dynamic estimation ratio.
+    
+    This function operates strictly in the background to update internal Bayesian priors:
+    - Never exposes ratio values to clients or API responses.
+    - Never ranks or compares developers against each other.
+    - Used solely for nominal duration normalization in task baseline calculations.
     """
     cursor = db.task_snapshots.distinct("assignee_id", {"status": "done"})
     developer_ids = await cursor

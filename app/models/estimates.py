@@ -9,7 +9,6 @@ def utc_now() -> datetime:
 
 class BaselineInfo(BaseModel):
     median_hours: float = 0.0
-    user_ratio: float = 1.0
     sample_size: int = 0
 
 

@@ -235,6 +235,19 @@ An unfilled evaluation rating sheet is exported to `reports/model3_eval/human_ra
 
 ---
 
+## 7. Ethical AI, Privacy Guarantees & Developer Ratio Protection
+
+### Internal-Only Developer Estimation Ratios (`refresh_developer_ratios`)
+The background job `refresh_developer_ratios` (in `app/jobs/sprint_jobs.py`) computes dynamic Bayesian developer estimation ratios based on historical task durations. 
+- **Operational Purpose:** Its sole objective is internal operational calibration: preventing overcommitting the sprint by adjusting aggregate sprint capacity fit.
+- **Privacy & Anti-Surveillance Guarantee:**
+  1. **Zero Client Exposure:** Developer ratios are strictly internal. They are never exposed in any client API response (`/estimate`, `/fit-check`, `/scan-risks`, `/suggestions`, `/drafts`, `/chat`), client export, or public telemetry payload.
+  2. **Zero Developer Ranking or Comparison:** Developer ratios are never used to rank, grade, score, or compare developers against one another.
+  3. **No Manager Performance Metric:** Ratios cannot be viewed by engineering managers or team leads as an individual performance metric.
+  4. **Automated Verification:** Verified continuously by `tests/test_ethics_and_privacy.py::test_no_response_contains_per_developer_ratios` (proof in `reports/test_ethics_and_privacy.txt`).
+
+---
+
 ## 8. Security Architecture & Known Limitations
 
 For comprehensive security audit details, threat modeling, and testing verification, refer to:

@@ -172,7 +172,6 @@ async def estimate_sprint_tasks(
             "original_story_points": raw_sp,
             "baseline": {
                 "median_hours": round(mid_base, 1),
-                "user_ratio": user_ratio,
                 "sample_size": sample_size
             },
             "story_points": sp_pred["story_points"],
@@ -496,10 +495,10 @@ async def scan_sprint_risks(
     # Construct SprintSnapshot
     start_d = sprint_doc["start_date"]
     if isinstance(start_d, str):
-        start_d = datetime.fromisoformat(start_d)
+        start_d = datetime.fromisoformat(start_d.replace("Z", "+00:00"))
     end_d = sprint_doc["end_date"]
     if isinstance(end_d, str):
-        end_d = datetime.fromisoformat(end_d)
+        end_d = datetime.fromisoformat(end_d.replace("Z", "+00:00"))
 
     sprint_snapshot = SprintSnapshot(
         sprint_id=sprint_id,

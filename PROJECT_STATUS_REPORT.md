@@ -3,7 +3,7 @@
 
 **Date / التاريخ:** November 2026 / نوفمبر 2026  
 **System / النظام:** Taskove (Gillo) AI Service  
-**Test Suite / الاختبارات:** 60 Passing Tests / 60 اختباراً ناجحاً (81% Code Coverage)  
+**Test Suite / الاختبارات:** 105 Passing Tests / 105 اختبارات ناجحة (82% Code Coverage, reports/pytest_latest.txt)  
 **Models Active / النماذج النشطة:**
 - Model 1 (Story Points): `model_sp_taskove` (`v2_taskove`)
 - Model 2 (Sprint Carry-Over Risk): `model2_sprint_carryover_risk_taskove` (`v2_taskove_features`)
@@ -39,7 +39,7 @@ This document provides a complete, honest, and auditable inventory of everything
 ### Overview / نظرة عامة
 - **Task / المهمة:** Estimating agile story points from task title, description, and task type.
 - **Active Version / الإصدار النشط:** `v2_taskove` (LightGBM L1, TF-IDF + Type, Quantiles Q25/Q50/Q75, No Priority).
-- **Artifact Path / مسار الحزم:** `benchmark_v2/artifacts/model1_sp/v2_taskove/`
+- **Artifact Path / مسار الحزم:** `models/artifacts/model_sp/v2_taskove/` (runtime serving path; benchmark reference in `benchmark_v2/artifacts/model1_sp/v2_taskove/`)
 
 ### A. What is DONE / ما تم إنجازه بالكامل
 
@@ -289,14 +289,14 @@ This document provides a complete, honest, and auditable inventory of everything
 ### A. What is DONE / ما تم إنجازه بالكامل
 
 #### English
-1. **Hermetic Test Suite:** 60 passing tests achieving 81% total statement coverage without external dependencies (in-memory `mongomock-motor`).
+1. **Hermetic Test Suite:** 105 passing tests achieving 82% total statement coverage (reports/pytest_latest.txt) without external dependencies (in-memory `mongomock-motor`).
 2. **Role-Based Access Control (RBAC):** Complete security matrix tested and enforced across all endpoints.
 3. **Production Startup Gate:** Service immediately halts at boot if `ENVIRONMENT=production` and the insecure default JWT secret is detected.
 4. **Rate Limiting:** IP and user-based sliding window rate limits on expensive LLM generation endpoints.
 5. **Auditable `ai_runs` Collection:** Every AI inference, fallback, latency measurement, and fallback reason is transparently logged.
 
 #### العربية
-1. **حزمة اختبارات معزولة وشاملة:** 60 اختباراً برمجياً ناجحاً تحقق تغطية 81% من الكود دون الحاجة لخادم MongoDB خارجي (استخدام `mongomock-motor`).
+1. **حزمة اختبارات معزولة وشاملة:** 105 اختبارات برمجية ناجحة تحقق تغطية 82% من الكود (reports/pytest_latest.txt) دون الحاجة لخادم MongoDB خارجي (استخدام `mongomock-motor`).
 2. **مصفوفة أمان الصلاحيات (RBAC):** تأمين صارم لجميع نقاط النهاية واختبار كافة سيناريوهات الأدوار المختلفة.
 3. **بوابة أمان الإنتاج:** إيقاف تشغيل الخدمة فوراً عند الإقلاع إذا كانت البيئة `production` وكان المفتاح السري لـ JWT هو المفتاح الافتراضي الضعيف.
 4. **تقييد معدل الطلبات (Rate Limiting):** حماية نقاط استدعاء نماذج الذكاء التوليدي بمحددات سرعة زمنية لكل مستخدم وعنوان IP.
@@ -322,14 +322,14 @@ This document provides a complete, honest, and auditable inventory of everything
 
 | Component / المكون | Status / الحالة | Done Highlights / ما تم إنجازه | Pending / Not Done / ما لم يُنجز بعد |
 | :--- | :---: | :--- | :--- |
-| **Model 1: Story Points** | **Production Ready** | TAWOS LightGBM, out-of-project interval ($c=0.1147$), Fibonacci snapping, type mapping, language guard, zero 500 guarantee. | Validation on private Taskove client data; non-English NLP; online retraining. |
-| **Model 2: Carry-Over Risk** | **Production Ready** | TAWOS LightGBM, 23-feature contract, Isotonic calibration, Top-$k$ focus ($k=20\%$), daily automated risk scan. | Commercial team validation; live Kafka event trigger; custom team thresholds. |
-| **Suggestions Inbox** | **Production Ready** | Atomic state machine, HTTP 409 conflict safety, $\ge 5$ char reason validation, two-phase apply, Admin blocked. | Direct mutation on core backend database; bulk actions; automated undo. |
-| **Sprint Fit & Velocity** | **Production Ready** | Three verdicts (`fits`, `tight`, `over`), Bayesian developer ratio shrinkage, skill-neutral proposals. | Live Google/Outlook calendar integration; skill-matrix requirement matching. |
-| **Agile Drafts (LLM)** | **Production Ready** | Multi-provider (`template`, `ollama`, `cloud`), entity grounding, prompt injection defenses, honest token telemetry. | Specialized fine-tuned LoRA weights; SSE streaming responses; Arabic generation. |
-| **Chat Assistant** | **Production Ready** | Grounded read-only tools, honest negative answering, 7-day TTL session purge, RBAC developer isolation. | Vector database RAG (unstructured text); multi-sprint memory summarization. |
-| **Security & RBAC** | **Production Ready** | Admin blocked on all AI endpoints, default secret startup refusal, sliding window rate limits. | Hard physical database multi-tenancy; SSO/SAML integration. |
-| **Test Suite** | **Verified (81%)** | 60/60 passing tests, bit-for-bit parity ($< 10^{-6}$), mutation tests, language guard tests. | Live end-to-end integration tests against actual Kafka brokers and MongoDB clusters. |
+| **Model 1: Story Points** | **Trained on TAWOS, not validated on Taskove data** | TAWOS LightGBM, out-of-project interval ($c_{\text{cold-start}}=0.1147$), Fibonacci snapping, type mapping, language guard, zero 500 guarantee. | Validation on private Taskove client data; non-English NLP; online retraining. |
+| **Model 2: Carry-Over Risk** | **Trained on TAWOS, not validated on Taskove data** | TAWOS LightGBM, 23-feature contract, Isotonic calibration, Top-$k$ focus ($k=20\%$), daily automated risk scan, actionable raising factors. | Commercial team validation; live Kafka event trigger; custom team thresholds. |
+| **Suggestions Inbox** | **Implemented & Hardened** | Atomic state machine, HTTP 409 conflict safety, $\ge 5$ char reason validation, two-phase apply, Admin blocked. | Direct mutation on core backend database; bulk actions; automated undo. |
+| **Sprint Fit & Velocity** | **Implemented & Hardened** | Three verdicts (`fits`, `tight`, `over`), Bayesian developer ratio shrinkage (internal only, privacy-guaranteed), skill-neutral proposals. | Live Google/Outlook calendar integration; skill-matrix requirement matching. |
+| **Agile Drafts (LLM)** | **Provider layer + eval harness; LLM evaluation pending** | Multi-provider (`template`, `ollama`, `cloud`), entity grounding, prompt injection defenses, honest token telemetry, automated eval harness. | Specialized fine-tuned LoRA weights; live LLM model benchmarking against eval harness; SSE streaming responses; Arabic generation. |
+| **Chat Assistant** | **Provider layer + eval harness; LLM evaluation pending** | Grounded read-only tools, honest negative answering, 7-day TTL session purge, RBAC developer isolation. | Vector database RAG (unstructured text); live LLM model benchmarking; multi-sprint memory summarization. |
+| **Security & RBAC** | **Implemented & Hardened** | Admin blocked on all AI endpoints, default secret startup refusal, sliding window rate limits, privacy isolation (no developer ranking/ratios exposed). | Hard physical database multi-tenancy; SSO/SAML integration. |
+| **Test Suite** | **Verified (82%)** | 105/105 passing tests, bit-for-bit parity ($< 10^{-6}$), mutation tests, privacy tests, language guard tests (reports/pytest_latest.txt). | Live end-to-end integration tests against actual Kafka brokers and MongoDB clusters. |
 
 ---
 
@@ -349,7 +349,7 @@ This document provides a complete, honest, and auditable inventory of everything
   5. Product Scope Filtering: Dropped `Type == "Epic"` (Epics represent multi-month initiatives, not sprint backlog items).
 - **Final Clean Partitions / أحجام العينات النهائية:**
   - **Train / التدريب:** 29,330 issues
-  - **Validation / التحقق:** 5,177 issues
+  - **Validation / التحقق:** 6,101 issues
   - **Test / الاختبار:** 6,167 issues
 - **Runtime Model Feature Vector / تمثيل الخصائص أثناء التشغيل:**
   - `Title` + `Description` sliced to max 2,000 characters $\to$ TF-IDF Unigram/Bigram matrix ($2,500$ numerical features).
@@ -400,76 +400,95 @@ This document provides a complete, honest, and auditable inventory of everything
 }
 ```
 
-#### Sample 2: Model 1 Production Inference Request & Output / عينة من استدعاء ومخرجات تقدير نقاط القصة
-**Client Request Input:**
-```python
-title = "Fix connection pooling timeout under high concurrent checkout load"
-description = "HikariCP pool exhausts connections after 30 seconds of peak traffic in payment service."
-task_type = "bug"  # Maps canonically to TAWOS 'Bug'
-```
+#### Sample 2: Model 1 Production Inference Request & Output (Captured from `reports/demo_outputs.json`)
+*Source:* `reports/demo_outputs.json` (`POST /sprints/sprint-04/estimate`, task `task-s4-01`)
+- **Task Title:** `"Implement async MongoDB connection pooling with health check"`
+- **Task Description:** `"Refactor database client to use bounded connection pool and add automatic ping on reconnection."`
+- **Task Type:** `"backend"` (mapped canonically to TAWOS `"Development"`)
+
 **Model Output Payload:**
 ```json
 {
-  "story_points": 2.0,
-  "raw_story_points": 1.8419,
-  "interval": [1.0, 3.5],
-  "method": "lightgbm_taskove_v2",
-  "model_version": "v2_taskove",
-  "confidence_note": "rough guide for new teams; improves as your team's history grows",
-  "fallback_reason": null
+  "task_id": "task-s4-01",
+  "story_points": 3.0,
+  "raw_story_points": 3.576005884218608,
+  "story_points_interval": [
+    2.6,
+    6.8
+  ],
+  "story_points_confidence_note": "approximate range (rough guide for new teams; improves as your team's history grows)",
+  "sp_method": "lightgbm_taskove_v2",
+  "sp_model_version": "v2_taskove",
+  "sp_fallback_reason": null,
+  "low_hours": 21.4,
+  "mid_hours": 32.9,
+  "high_hours": 44.4,
+  "hours_conversion_note": "unvalidated heuristic (weak SP-to-time correlation r~0.06-0.30; hours conversion not empirical)"
 }
 ```
 
-#### Sample 3: Real 23-Feature Vector (Model 2 Sprint Carry-Over) / عينة من متجه الخصائص الـ 23 للنموذج الثاني
-Task mid-sprint ($f = 0.50$, Todo status, 3 Story Points, assigned, 2 blockers):
-```python
-X = [
-    0.50,  # 1. f (50% of sprint elapsed)
-    14.0,  # 2. sprint_open_tasks
-    38.0,  # 3. sprint_open_points
-    0.35,  # 4. fraction_points_done (35% done)
-    8.0,   # 5. assignee_open_points
-    3.0,   # 6. assignee_open_tasks
-    4.2,   # 7. days_in_current_status
-    1.1,   # 8. days_since_last_event
-    3.0,   # 9. story_points
-    1.0,   # 10. has_sp (True)
-    0.0,   # 11. added_after_sprint_start (committed at planning)
-    1.0,   # 12. assignee_present (assigned)
-    2.0,   # 13. links_depends_on (2 predecessor blockers)
-    1.0,   # 14. status_category_is_todo (still in Todo)
-    0.0,   # 15. type_Bug
-    1.0,   # 16. type_Story (Feature)
-    0.0,   # 17. type_Improvement
-    0.0,   # 18. type_Task
-    0.0,   # 19. type_New Feature
-    0.0,   # 20. type_Suggestion
-    0.0,   # 21. type_Enhancement Request
-    0.0,   # 22. type_Epic
-    0.0    # 23. type_other
-]
-# Output Calibrated Carry-Over Probability: 0.7821 -> Ranked into High Risk Tier (Top-k Focus)
-```
+#### Sample 3: Model 2 Sprint Carry-Over Scan Output (Captured from `reports/demo_outputs.json`)
+*Source:* `reports/demo_outputs.json` (`POST /sprints/sprint-04/scan-risks`, Rank 1 task `task-s4-03`)
+- **Sprint Context:** `sprint-04` (13 active tasks, $k$-threshold = 3 for top-tier focus)
+- **Task Title:** `"Add Prometheus metrics exporter for HTTP endpoint latencies"`
+- **Assignee:** `usr-nader`
 
-#### Sample 4: Sprint Estimation Endpoint Response (`POST /sprints/{id}/estimate`)
+**Model Output Payload:**
 ```json
 {
-  "sprint_id": "sprint_01",
-  "tasks_estimated": 3,
-  "total_low_hours": 12.5,
-  "total_mid_hours": 18.0,
-  "total_high_hours": 24.5,
+  "task_id": "task-s4-03",
+  "title": "Add Prometheus metrics exporter for HTTP endpoint latencies",
+  "assignee_id": "usr-nader",
+  "risk_rank": 1,
+  "risk_tier": "high",
+  "method": "lightgbm_taskove_v2",
+  "model_version": "v2_taskove_features",
+  "top_contributing_factors": [
+    {
+      "feature": "days_in_current_status",
+      "direction": "raises",
+      "plain_text": "In current status for 20 days"
+    },
+    {
+      "feature": "status_category_is_todo",
+      "direction": "raises",
+      "plain_text": "Not started yet"
+    },
+    {
+      "feature": "days_since_last_event",
+      "direction": "raises",
+      "plain_text": "No activity for 9 days"
+    }
+  ],
+  "reason": "Task ranked #1 for carry-over risk in Sprint 'Sprint 4: Active Core Features & Inference' relative to 13 open tasks (top-3 focus)."
+}
+```
+
+#### Sample 4: Sprint Estimation Endpoint Summary Response (Captured from `reports/demo_outputs.json`)
+*Source:* `reports/demo_outputs.json` (`POST /sprints/sprint-04/estimate`)
+```json
+{
+  "sprint_id": "sprint-04",
+  "tasks_estimated": 16,
+  "total_low_hours": 215.7,
+  "total_mid_hours": 331.7,
+  "total_high_hours": 447.8,
   "estimates": [
     {
-      "task_id": "task_101",
+      "task_id": "task-s4-01",
       "story_points": 3.0,
-      "story_points_interval": [2.0, 5.0],
-      "story_points_confidence_note": "rough guide for new teams; improves as your team's history grows",
+      "raw_story_points": 3.576005884218608,
+      "story_points_interval": [
+        2.6,
+        6.8
+      ],
+      "story_points_confidence_note": "approximate range (rough guide for new teams; improves as your team's history grows)",
       "sp_method": "lightgbm_taskove_v2",
       "sp_model_version": "v2_taskove",
-      "low_hours": 4.5,
-      "mid_hours": 6.0,
-      "high_hours": 8.5,
+      "sp_fallback_reason": null,
+      "low_hours": 21.4,
+      "mid_hours": 32.9,
+      "high_hours": 44.4,
       "hours_conversion_note": "unvalidated heuristic (weak SP-to-time correlation r~0.06-0.30; hours conversion not empirical)",
       "confidence": "high",
       "method": "rule_baseline",
@@ -508,11 +527,11 @@ X = [
   * *الفجوة الحقيقية:* انعدام تام لأي بيانات تدريب بلغات أخرى (مثل العربية)، مما يمنع النماذج من استيعاب معاني المهام المكتوبة بلغة غير الإنجليزية.
 
 #### 5. Deleted Jira Fields Missing in Taskove / حقول كانت موجودة في TAWOS وحُذفت لعدم وجودها في Taskove
-* **`Priority`:** In Jira, Priority was one of the strongest predictive features (explaining ~0.15 of MAE). It was stripped because Taskove's task model does not contain Priority.
+* **`Priority`:** In Jira, Priority was present. It was excluded in `v2_taskove` because Taskove's task schema does not contain Priority and to avoid cross-tenant schema fragility.
 * **`Components` & `Fix_Versions`:** Project subsystem tags present in Jira were discarded.
 * **Detailed Changelog Table:** TAWOS had every timestamped transition between statuses. Taskove only maintains `stalled_days` and an `updated_at` timestamp.
-* **`sprint_assigned_at`:** Taskove does not record the exact timestamp when a backlog item was assigned to an active sprint, forcing the model to approximate with `created_at`.
-* *الفجوة الحقيقية:* التخلي عن متغيرات مؤثرة جداً (مثل درجة الأولوية، سجل التحولات الزمني الدقيق، وتاريخ إضافة المهمة للسبرنت) لعدم وجودها في هيكل بيانات Taskove.
+* **`sprint_assigned_at`:** Model 2 strictly requires `sprint_assigned_at` on every open task to compute `added_after_sprint_start`. If this field is missing on any active task, the service does not approximate with `created_at`; it safely falls back to `rule_baseline`.
+* *الفجوة الحقيقية:* التخلي عن متغيرات في TAWOS غير متوافقة مع Taskove (مثل درجة الأولوية لتجنب الهشاشة، سجل التحولات الزمني الدقيق، وفرض وجود تاريخ إضافة المهمة للسبرنت بدلاً من التخمين والتراجع لخط الأساس عند غيابه) لضمان متانة عمل النماذج.
 
 #### 6. Missing Real-World Context in TAWOS / بيانات يحتاجها النظام ومفقودة كلياً في بيانات التدريب
 * **Real Developer Calendars & PTO:** Neither TAWOS nor the current service knows if a developer has 2 days of sickness, public holidays, or vacations during a sprint. Capacity is naively assumed as 60 hours.

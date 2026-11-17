@@ -1,6 +1,6 @@
 ===================================================================================================================
 REAL CAPTURED OUTPUTS FROM demo_outputs.json
-Reference Now: 2026-11-14T12:00:00+00:00 | Captured: 2026-11-14T12:12:57.666974+00:00
+Reference Now: 2026-11-14T12:00:00+00:00 | Captured: 2026-11-16T17:50:33.976358+00:00
 ===================================================================================================================
 
 TABLE 1: STORY POINT ESTIMATION (POST /sprints/{id}/estimate)
@@ -66,33 +66,33 @@ TABLE 2: SPRINT CARRY-OVER RISK SCAN (POST /sprints/{id}/scan-risks)
 Sprint         | Rank | Task ID        | Tier   | Method               | Model Version          | Top Contributing Factors
 -------------------------------------------------------------------------------------------------------------------
 [sprint-04] Active Tasks: 13, k threshold: 3, Method: lightgbm_taskove_v2
-sprint-04      | 1    | task-s4-03     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 18 days; No activity for 7 days
-sprint-04      | 2    | task-s4-05     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 3 days; Added after sprint start
-sprint-04      | 3    | task-s4-11     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 9 days; No activity for 4 days
-sprint-04      | 4    | task-s4-07     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 12 days; No activity for 6 days
-sprint-04      | 5    | task-s4-10     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 2 days; Added after sprint start
-sprint-04      | 6    | task-s4-13     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 2 days; Added after sprint start
-sprint-04      | 7    | task-s4-09     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-04      | 8    | task-s4-01     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-04      | 9    | task-s4-02     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-04      | 10   | task-s4-04     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-04      | 11   | task-s4-06     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-04      | 12   | task-s4-08     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-04      | 1    | task-s4-03     | high   | lightgbm_taskove_v2  | v2_taskove_features    | In current status for 20 days; Not started yet; No activity for 9 days
+sprint-04      | 2    | task-s4-05     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 5 days; Added after sprint start
+sprint-04      | 3    | task-s4-09     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 3 days; Added after sprint start
+sprint-04      | 4    | task-s4-11     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 11 days; No activity for 6 days
+sprint-04      | 5    | task-s4-13     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 7 days; No activity for 4 days
+sprint-04      | 6    | task-s4-07     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 14 days; No activity for 8 days
+sprint-04      | 7    | task-s4-10     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-04      | 8    | task-s4-02     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-04      | 9    | task-s4-06     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-04      | 10   | task-s4-08     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-04      | 11   | task-s4-01     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-04      | 12   | task-s4-04     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
 sprint-04      | 13   | task-s4-12     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
 -------------------------------------------------------------------------------------------------------------------
 [sprint-05] Active Tasks: 12, k threshold: 3, Method: lightgbm_taskove_v2
-sprint-05      | 1    | task-s5-08     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; Estimate above the sprint median (5 SP); In current status for 11 days
-sprint-05      | 2    | task-s5-02     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 14 days; No activity for 4 days
-sprint-05      | 3    | task-s5-04     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 8 days; No activity for 5 days
-sprint-05      | 4    | task-s5-06     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 10 days; No activity for 3 days
-sprint-05      | 5    | task-s5-12     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 9 days; No activity for 2 days
-sprint-05      | 6    | task-s5-01     | medium | lightgbm_taskove_v2  | v2_taskove_features    | No activity for 2 days
-sprint-05      | 7    | task-s5-03     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-05      | 8    | task-s5-07     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-05      | 9    | task-s5-09     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-05      | 10   | task-s5-10     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-05      | 11   | task-s5-11     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
-sprint-05      | 12   | task-s5-05     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-05      | 1    | task-s5-08     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; Estimate above the sprint median (5 SP); In current status for 13 days
+sprint-05      | 2    | task-s5-02     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 16 days; No activity for 6 days
+sprint-05      | 3    | task-s5-04     | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 10 days; No activity for 7 days
+sprint-05      | 4    | task-s5-06     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; In current status for 12 days; No activity for 5 days
+sprint-05      | 5    | task-s5-10     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 3 days; Added after sprint start
+sprint-05      | 6    | task-s5-12     | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 4 days; In current status for 11 days
+sprint-05      | 7    | task-s5-09     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-05      | 8    | task-s5-01     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-05      | 9    | task-s5-03     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-05      | 10   | task-s5-05     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-05      | 11   | task-s5-07     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-05      | 12   | task-s5-11     | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
 -------------------------------------------------------------------------------------------------------------------
 [sprint-small-active] Active Tasks: 4, k threshold: 1, Method: rule_baseline (Fallback: Sprint ineligible for ML ranking: Sprint has 4 open tasks (< 10 tasks required for statistical ranking).)
 sprint-small-active | 1    | task-small-01  | high   | rule_baseline        | deterministic_rule_baseline_v1 | Not started yet (rule-based); No activity for 10 days (rule-based); Estimate above the sprint median (2 SP) (rule-based)
@@ -100,17 +100,17 @@ sprint-small-active | 2    | task-small-02  | medium | rule_baseline        | de
 sprint-small-active | 3    | task-small-04  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
 sprint-small-active | 4    | task-small-03  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
 -------------------------------------------------------------------------------------------------------------------
-[sprint-early-active] Active Tasks: 12, k threshold: 3, Method: rule_baseline (Fallback: Sprint ineligible for ML ranking: Sprint elapsed fraction f=0.0721 is outside model domain [0.2, 0.8].)
-sprint-early-active | 1    | task-early-09  | high   | rule_baseline        | deterministic_rule_baseline_v1 | Not started yet (rule-based); No activity for 5 days (rule-based); Estimate above the sprint median (5 SP) (rule-based)
-sprint-early-active | 2    | task-early-03  | high   | rule_baseline        | deterministic_rule_baseline_v1 | Not started yet (rule-based); No activity for 5 days (rule-based); Estimate above the sprint median (4 SP) (rule-based)
-sprint-early-active | 3    | task-early-07  | high   | rule_baseline        | deterministic_rule_baseline_v1 | Not started yet (rule-based); No activity for 5 days (rule-based)
-sprint-early-active | 4    | task-early-01  | medium | rule_baseline        | deterministic_rule_baseline_v1 | Not started yet (rule-based); No activity for 5 days (rule-based)
-sprint-early-active | 5    | task-early-11  | medium | rule_baseline        | deterministic_rule_baseline_v1 | Not started yet (rule-based); No activity for 5 days (rule-based)
-sprint-early-active | 6    | task-early-05  | medium | rule_baseline        | deterministic_rule_baseline_v1 | Not started yet (rule-based); No activity for 5 days (rule-based)
-sprint-early-active | 7    | task-early-04  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
-sprint-early-active | 8    | task-early-08  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
-sprint-early-active | 9    | task-early-02  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
-sprint-early-active | 10   | task-early-12  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
-sprint-early-active | 11   | task-early-06  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
-sprint-early-active | 12   | task-early-10  | low    | rule_baseline        | deterministic_rule_baseline_v1 | Lower priority this sprint
+[sprint-early-active] Active Tasks: 12, k threshold: 3, Method: lightgbm_taskove_v2
+sprint-early-active | 1    | task-early-09  | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; Estimate above the sprint median (5 SP); No activity for 3 days
+sprint-early-active | 2    | task-early-03  | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 3 days
+sprint-early-active | 3    | task-early-07  | high   | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 3 days
+sprint-early-active | 4    | task-early-11  | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 3 days
+sprint-early-active | 5    | task-early-01  | medium | lightgbm_taskove_v2  | v2_taskove_features    | Not started yet; No activity for 3 days
+sprint-early-active | 6    | task-early-02  | medium | lightgbm_taskove_v2  | v2_taskove_features    | No activity for 2 days
+sprint-early-active | 7    | task-early-04  | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-early-active | 8    | task-early-05  | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-early-active | 9    | task-early-08  | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-early-active | 10   | task-early-12  | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-early-active | 11   | task-early-06  | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
+sprint-early-active | 12   | task-early-10  | low    | lightgbm_taskove_v2  | v2_taskove_features    | Lower priority this sprint
 -------------------------------------------------------------------------------------------------------------------
